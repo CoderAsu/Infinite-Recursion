@@ -44,6 +44,7 @@ D --> deleted
 git add filename --> to add a file in staging area (git is aware of the files)
 git add . --> to add all files in staging area
 git restore --staged <file> --> to unstage files
+git rm --cached <file> -> remove a file from Git's index
 git commit -m "message" --> track
 
 # In staging area all the records must be captured through encryption technique called SHA1.
@@ -178,7 +179,7 @@ git diff <local_branch/remote_branch> --> to show the exact changes we made in f
 
 # There are two ways to connect to remote repository: i. https ii. ssh
 
-git remote add <branch_name> link (link can be https or ssh) --> used to manage connections between your local git repository and remote repository (such as Github)
+git remote add <link_name> link (link can be https or ssh) --> used to manage connections between your local git repository and remote repository (such as Github)
 
 1. https: git remote set-url <branch_name> https://username:<token>@github.com/username/repository_name.git --> to set the token access
 
