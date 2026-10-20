@@ -25,6 +25,19 @@ console.log(addTwoNumbers(3, 5));
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+// default parameter
 function loginUserMessage(username = "sam"){
     if (username === undefined){
         return console.log("please enter a username");
@@ -37,6 +50,18 @@ console.log(loginUserMessage());
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+// rest operator (...)
 function calculateCartPrice(...num1){
     return num1;
 };
@@ -46,6 +71,20 @@ console.log(calculateCartPrice(200, 400, 500));
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+// using object as a parameter
 const user = {
     username: "Asu",
     price: 199
@@ -57,9 +96,28 @@ function handleObject(anyobject){
 };
 
 handleObject(user);
+console.log();
 
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// using array as a parameter
 const myNewArray = [200, 400, 100, 600];
 
 function returnSecondValue(getArray){
@@ -67,15 +125,7 @@ function returnSecondValue(getArray){
 };
 
 console.log(returnSecondValue(myNewArray));
-
-
-
-
-
-
-
-
-
+console.log();
 
 
 
@@ -109,6 +159,7 @@ console.log(z);
 // Function expression are mainly used for callbacks and event handlers.
 
 // Function expression uses semi-colon.
+console.log();
 
 
 
@@ -138,8 +189,7 @@ console.log(y);
 
 // Most of the time, you can avoid using the new keyword in JavaScript.
 
-
-
+console.log();
 
 
 
@@ -171,7 +221,7 @@ function myFun(y){
 }
 
 // Functions defined using an expression are not hoisted.
-
+console.log();
 
 
 
@@ -198,134 +248,4 @@ function myFun(y){
 (function () {
     console.log("Hello World!");  // I will invoke myself
 })();
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Functions are Objects
-// The typeof operator in JavaScript returns "function" for functions.
-
-// JavaScript functions have both properties and methods.
-
-// The arguments.length property returns the number of arguments received when the function was invoked.
-
-
-function myFunction2(a, b) {
-    return arguments.length;
-};
-
-console.log(myFunction2(3, 8));
-console.log(typeof myFunction2);
-
-
-// The toString() method returns the function as a string.
-
-let text = myFunction2.toString();
-console.log(text);
-
-// A function defined as the property of an object, is called a method to the object.
-// A function designed to create new objects, is called an object constructor.
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-// Arrow Functions
-// Arrow functions allows a short syntax for writing function expressions.
-
-// You don't need the function keyword, the return keyword, and the curly brackets.
-
-
-// ES5
-let multiply = function(numb1, numb2) {
-    return numb1 * numb2;
-}
-
-// or
-
-// ES6
-let multiply2 = (numb1, numb2) => numb1 * numb2;
-
-console.log(multiply(12, 6));
-console.log(multiply2(14, 4));
-
-// Arrow functions do not have their own this. They are not well suited for defining object methods.
-
-// Arrow functions are not hoisted. They must be defined before they are used.
-
-// You can only omit the return keyword and the curly brackets if the function is a single statement. Because of this, it might be a good habit to always keep them
-
-const multiply3 = (x, y) => { return x * y };
-
-console.log(multiply3(16, 5));
-
-
-
-
-
-
-// See the arrow functions
-
-const normal_sum = (a, b) => console.log(a + b);
-normal_sum(1, 2);
-
-const sayHi = () => console.log("Hi");
-sayHi();
-
-const square = a => console.log(a * a);
-square(4);
-
-
-const add = (a, b) => {
-    console.log(`Adding ${a} and ${b}`);
-    let sum = a + b;
-    return sum;
-}
-
-
-console.log(add(9, 2));
-
-
-
-
-const person = {
-    name: "john",
-    greet: function(){
-        console.log("Hello,", this.name);
-    }
-}
-
-person.greet();
+console.log();
