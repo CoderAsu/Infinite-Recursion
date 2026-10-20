@@ -3,17 +3,22 @@
 
 
 
-let obj = {
-    name: "asu",
-    age: 20,
-    a: 10,
-    b: 20
-}
+// let obj = {
+//     name: "asu",
+//     age: 20,
+//     a: 10,
+//     b: 20
+// }
 
-with (obj){
-    console.log(a + b);
-}
+// with (obj){
+//     console.log(a + b);
+// }
 
-with (obj){
-    console.log(`Name: ${name} and Age: ${age}`)
-}
+// with (obj){
+//     console.log(`Name: ${name} and Age: ${age}`)
+// }
+
+
+
+// don't use with operator in real time projects
+// it doesn't work in strict mode

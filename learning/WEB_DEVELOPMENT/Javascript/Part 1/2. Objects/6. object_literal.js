@@ -1,12 +1,14 @@
 
-let name = "Jinwoo";
+let name1 = "Jinwoo";
+let name2 = "Asu";
 
 let s = "song";
 
 let n = "Fav";
 
 let obj1 = {
-    name, // name: name (we can write this as a single)
+    name1,
+    FavName:name2,
     ["lname"]: "Sung",
     age: 24,
     [s]: "Only Mine",
@@ -23,7 +25,8 @@ let obj1 = {
 console.log(obj1);
 
 
-console.log(obj1.name);
+console.log(obj1.name1);
+console.log(obj1.FavName);
 
 console.log(obj1[s]);
 console.log(obj1.song);

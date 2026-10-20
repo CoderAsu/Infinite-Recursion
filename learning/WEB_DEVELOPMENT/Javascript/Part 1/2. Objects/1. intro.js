@@ -63,6 +63,25 @@ console.log(person2);
 
 
 
+
+// using object constructor
+
+function Student(name, age, course) {
+    this.name = name;
+    this.age = age;
+    this.course = course;
+}
+
+const student1 = new Student("Subham", 22, "MCA");
+const student2 = new Student("Rahul", 23, "BCA");
+
+console.log(student1.name);  // Subham
+console.log(student2.name); // Rahul
+
+console.log(student1.course); // MCA
+console.log(student2.course); // BCA
+
+
 // Both the examples above do exactly the same.
 // But, there is no need to use new Object().
 // For readability, simplicity and execution speed, use the object literal method.
