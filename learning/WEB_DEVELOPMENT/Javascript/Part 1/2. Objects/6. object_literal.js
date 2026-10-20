@@ -76,6 +76,15 @@ console.log(det(yr, cs));
 
 
 
+
+function det2(year, course){
+    return [year, course];
+}
+
+console.log(det2(yr, cs));
+
+
+
 let fname = "Virat", lname = " Kohli", age = 37;
 
 function detail(fname, lname, age){
