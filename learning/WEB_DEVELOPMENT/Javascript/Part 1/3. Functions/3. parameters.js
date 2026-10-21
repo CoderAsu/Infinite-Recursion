@@ -202,6 +202,64 @@ console.log(y);
 
 
 
+
+// using object as a parameter
+const user = {
+    username: "Asu",
+    price: 199
+}
+
+function handleObject(anyobject){
+    console.log(`Username is ${anyobject.username} and price is ${anyobject.price}.`);
+    
+};
+
+handleObject(user);
+console.log();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// using array as a parameter
+const myNewArray = [200, 400, 100, 600];
+
+function returnSecondValue(getArray){
+    return getArray[1];
+};
+
+console.log(returnSecondValue(myNewArray));
+console.log();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 // Objects are passed by reference
 // In javascript, object references are values.
 // Because of this, objects will behave like they are passed by reference.
