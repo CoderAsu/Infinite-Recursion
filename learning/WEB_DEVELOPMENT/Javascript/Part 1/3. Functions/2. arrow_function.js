@@ -53,3 +53,60 @@ const add = (a, b) => {
 
 console.log(add(9, 2));
 console.log();
+
+
+
+
+
+
+
+
+
+
+
+
+// Arrow functions can use this, but they don’t create their own this. They use the value of this from the surrounding code where the arrow function was created. This is called lexical this.
+
+
+const person = {
+  name: "Asu",
+  greet: () => {
+    console.log(this.name);
+  }
+};
+
+person.greet(); // `this` isn't `person
+
+
+
+
+
+// These techniques will not work, here they don't create their own this so use normal functions instead of using arrow functions in this case.
+
+/*
+    const person2 = {
+    greet: () => {
+        console.log(this.name);
+    }
+    };
+
+
+    let p1 = {
+        name: "asu"
+    }
+
+    person2.greet.call(p1);
+
+
+    let Person = name => {
+    this.name = name;
+
+    this.greet = () => {
+        console.log(this.name);
+    };
+    }
+
+    const p2 = new Person("Asu");
+    p2.greet(); 
+
+*/
