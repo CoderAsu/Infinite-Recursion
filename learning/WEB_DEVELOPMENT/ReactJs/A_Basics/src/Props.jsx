@@ -2,9 +2,9 @@ function Props(prop){
 
     let message;
 
-    if(name && age){
+    if((prop.name && prop.age) && !(prop.country)){
         message = <p>Hello, I am {prop.name} and my age is {prop.age}</p>
-    } else{
+    } else {
         message = <p>Hello, I am {prop.name} from {prop.country} and my age is {prop.age}</p>
     }
 
