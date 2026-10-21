@@ -65,7 +65,7 @@ echo "Hello Everyone I am using Git" >> a1.txt --> writing some lines through te
 
 
 
-git commit -a -m "message" -> when we modified a file which is already tracked
+git commit -a -m "message" / git commit -am "message" -> when we modified a file which is already tracked
 git commit --amend --> to attach the latest commit with existing commit
 git commit --amend --no-edit --> when we don't want to change the commit message
 git commit -s -m "message" --> to sign-off which was seen by senior
