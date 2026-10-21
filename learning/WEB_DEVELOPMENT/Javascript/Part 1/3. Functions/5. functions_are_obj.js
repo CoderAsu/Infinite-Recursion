@@ -12,6 +12,8 @@ function myFunction2(a, b) {
 
 myFunction2(3, 8);
 console.log(typeof myFunction2);
+console.log(myFunction2 instanceof Object);
+console.log(myFunction2 instanceof Function);
 console.log();
 
 
@@ -120,19 +122,3 @@ function execute(callback){
 
 execute(greet2);
 console.log();
-
-
-
-
-
-
-
-
-
-
-
-
-// Important technical distinction
-
-console.log(greet2 instanceof Object);
-console.log(greet2 instanceof Function);
