@@ -122,9 +122,6 @@ class User{
 class Admin extends User{
     constructor(username, email, password, role){
         super(username, email, password);
-        this.username = username;
-        this.email = email;
-        this.password = password;
         this.role = role;
     }
 
@@ -144,20 +141,3 @@ class Admin extends User{
 let student1 = new Admin("Asu", "asu@gmail.com", "3473874", "student");
 student1.logMe();
 student1.adminDetails();
-
-
-
-
-let a = class{
-    constructor(word){
-        this.word = word;
-    }
-
-    say(){
-        console.log(this.word);
-    }
-}
-
-let greet = new a("hello");
-greet.say();
-
