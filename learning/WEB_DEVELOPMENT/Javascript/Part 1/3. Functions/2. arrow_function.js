@@ -7,7 +7,7 @@
 // ES5
 let multiply = function(numb1, numb2) {
     return numb1 * numb2;
-}
+};
 
 // or
 
