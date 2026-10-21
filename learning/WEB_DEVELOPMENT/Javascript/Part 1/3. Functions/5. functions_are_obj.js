@@ -28,13 +28,15 @@ console.log();
 
 
 
-// Assign properties to a function
-// we can attach properties to a function just like we do with an object
+// Assign properties and methods to a function
+// we can attach properties and methods to a function just like we do with an object
 
 function greet(){
     console.log("Hello!");
 }
 
+
+// adding properties
 greet.language = "English";
 greet.version = 1;
 
@@ -42,6 +44,16 @@ console.log(greet.language);
 console.log(greet.version);
 
 greet();
+
+
+
+// adding methods
+greet.sayHello = function(){
+    console.log("Hello to All 😊");
+}
+
+greet.sayHello();
+
 console.log();
 
 
