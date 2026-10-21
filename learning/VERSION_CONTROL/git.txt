@@ -258,6 +258,8 @@ git stash = when we modified a file in a branch we can't move to another branch 
 
 git stash list = to show how many files have been stashed
 
+git stash pop = It is used to restore your stashed changes and remove that stash entry from the stash list
+
 git stash apply id = apply for the non-staged path
 
 git stash clear = to delete the history of stashed file in git stash list
