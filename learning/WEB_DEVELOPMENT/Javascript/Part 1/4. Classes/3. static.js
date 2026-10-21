@@ -14,6 +14,6 @@ class Car{
 }
 
 const myCar = new Car("Ferrari");
-// myCar.hello(); we can call hello from object because we use static keyword.
+// myCar.hello(); we can't call hello from object because we use static keyword.
 
 console.log(Car.hello('Ferrari'));
