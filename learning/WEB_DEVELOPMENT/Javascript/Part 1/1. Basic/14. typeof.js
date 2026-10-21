@@ -14,9 +14,6 @@ JavaScript has 7 primitive data types:
 
 let num = 3;
 console.log(num, typeof num);
-console.log(typeof(num));
-
-
 
 
 let str = "Hello";
