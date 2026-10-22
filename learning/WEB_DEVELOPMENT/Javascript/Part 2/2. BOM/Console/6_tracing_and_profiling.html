@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tracing and profiling</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+
+    /*
+        console.trace() -> Display the current call stack
+    
+        console.profile() -> Start a supported console profiler
+    
+        console.profileEnd() -> Stop a supported console profiler
+    */
+
+
+    function first() {
+        second();
+    }
+
+    function second() {
+        third();
+    }
+
+    function third() {
+        console.trace("How did I get here?");
+    }
+
+    first();
+
+
+
+
+
+
+
+
+    
+
+    function calculateTotal() {
+        let total = 0;
+
+        for (let i = 0; i < 1000000; i++) {
+            total += i;
+        }
+
+        return total;
+    }
+
+    console.profile("Loop Performance");
+
+    console.log(calculateTotal());
+
+    console.profileEnd("Loop Performance");
+
+</script>
+
+</html>
