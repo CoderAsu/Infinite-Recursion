@@ -1,0 +1,151 @@
+1. Node.js commands
+=====================
+
+To check versions
+-----------------
+node --version
+node -v
+
+
+Run JavaScript files
+---------------------
+node app.js
+
+
+Run and watch a file for changes
+--------------------------------
+node --watch app.js
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+2. npm project commands
+========================
+
+
+Create a project
+-----------------
+npm init -> need to give the details
+npm init -y -> no need to give the details
+
+
+Install dependencies
+--------------------
+npm install <package_name>
+npm i <package_name>
+
+
+Remove a dependencies
+---------------------
+npm uninstall <package_name>
+
+
+Update dependencies
+-------------------
+npm update
+
+
+List project dependencies
+-------------------------
+npm list
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+3. npm and npm exec 
+=====================
+
+
+Run Nodemon
+-----------
+npx nodemon app.js
+
+
+Run the Vite project creator
+----------------------------
+npx create-vite@latest
+
+
+Run TypeScript compiler
+-----------------------
+npx tsc --version
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+4. Global package commands
+===========================
+
+
+Install globally
+----------------
+npm install -g <pkg_name>
+
+
+List global packages
+--------------------
+npm list -g --depth=0
+
+
+Uninstall a global package
+--------------------------
+npm uninstall -g <pkg_name>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+5. Project scripts and environment
+====================================
+
+
+Run scripts defined in package.json
+-----------------------------------
+rpm run
+
+
+Run a development script
+------------------------
+npm run dev

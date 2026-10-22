@@ -1,0 +1,159 @@
+Node.js is an open-source, cross-platform JavaScript runtime environment that allows JavaScript to run outside a browser.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+A module is a rusable block of code that helps organize an application into smaller, maintainable files.
+
+Types of Node.js Modules:
+1. Core Modules
+2. External Modules
+3. Custom Modules
+
+
+
+
+
+
+
+1. Core Modules: These are provided by Node.js itself. They do not require separate npm installation.
+
+Examples: fs, path, http, os, events, crypto, url, stream, util, process...
+
+Access:
+const fs = require("node:fs");
+
+The "node:" prefix explicitly identifies a built-in module.
+Core modules can be imported using require() or import
+
+
+
+
+
+
+
+2. External Modules: These are the packages developed separately form Node.js and commonly distributed through npm. These are genearlly installed using npm.
+
+Examples: colors, express, nodemon, mysql2, typescript, tailwindcss...
+
+Access:
+const express = require("express");
+
+So here express is an external package, not a Node.js core module.
+External packages are usually installed locally inside the project's node_modules directory.
+
+Their dependencies and metadata are managed through package.json and the package-lock.json.
+
+External modules can be imported using require() or import
+
+
+
+
+
+
+
+3. Custom Modules: These are the files created by the developer to organize and reuse application code.
+
+Example project structure:
+
+calculator/|-- app.js|-- math.js
+
+-----------------------------------------------
+File: math.js
+-----------------
+function add(a, b) {return a + b}
+function sub(a, b) {return a - b}
+
+module.exports = {add, sub};
+-----------------------------------------------
+
+-----------------------------------------------
+File: app.js
+-----------------
+const math = require("./math");
+
+console.log(math.add(10, 5));
+console.log(math.sub(10, 5));
+-----------------------------------------------
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Important Definition:
+---------------------
+1. V8 Engine: It is the javascript engine used by Node.js to compile and execute JavaScript Code.
+
+2. Runtime Environment: It provides the tools and APIs required to execute a program.
+
+3. NPM (Node Package Manager): It is the default package manager distributed with Node.js. It is used to install, update, remove and manage packages and project dependencies.
+
+4. NPX: It is a command-line tool provided through mpm that executes package binaries without requiring a global installation.
+
+5. Package: A package is a distributable unit of code that can contain modules, metadata, dependencies, and other resources.
+
+6. package.json -> It stores project metadata, dependency declarations, scripts, and configuration information.
+
+7. package-lock.json -> It records the resolved dependency tree to support reproducible dependency installations.
+
+8. node_modules -> It is the direcotry where locally installed npm packages and their dependencies are normally stored.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Global Installation:
+A global installation makes a package's command available across projects through the global npm installaion.
+
+Local Installation:
+A local installation installs a package into current project, normally under node_modules.
