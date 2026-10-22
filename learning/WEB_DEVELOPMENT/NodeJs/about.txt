@@ -2,39 +2,12 @@ Node.js is an open-source, cross-platform JavaScript runtime environment that al
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 A module is a rusable block of code that helps organize an application into smaller, maintainable files.
 
 Types of Node.js Modules:
 1. Core Modules
 2. External Modules
 3. Custom Modules
-
-
-
 
 
 
@@ -51,10 +24,6 @@ Core modules can be imported using require() or import
 
 
 
-
-
-
-
 2. External Modules: These are the packages developed separately form Node.js and commonly distributed through npm. These are genearlly installed using npm.
 
 Examples: colors, express, nodemon, mysql2, typescript, tailwindcss...
@@ -68,9 +37,6 @@ External packages are usually installed locally inside the project's node_module
 Their dependencies and metadata are managed through package.json and the package-lock.json.
 
 External modules can be imported using require() or import
-
-
-
 
 
 
@@ -111,14 +77,6 @@ console.log(math.sub(10, 5));
 
 
 
-
-
-
-
-
-
-
-
 Important Definition:
 ---------------------
 1. V8 Engine: It is the javascript engine used by Node.js to compile and execute JavaScript Code.
@@ -136,10 +94,6 @@ Important Definition:
 7. package-lock.json -> It records the resolved dependency tree to support reproducible dependency installations.
 
 8. node_modules -> It is the direcotry where locally installed npm packages and their dependencies are normally stored.
-
-
-
-
 
 
 
