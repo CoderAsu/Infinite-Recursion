@@ -27,7 +27,7 @@
 
 ✅ **HTML**<br>
 ✅ **CSS**<br>
-- [ ] **JavaScript**
+- [ ✓ ] **JavaScript**
 
 **JavaScript stack**
 
@@ -53,7 +53,7 @@ Learn Express.js after Node.js. TypeScript can be used with both React and Expre
 
 ### 🚀 04 · Developer workflow
 
-- [] **Git**
+- [ ] **Git**
 - [ ] **GitHub**
 - [ ] **CI/CD pipelines**
 
