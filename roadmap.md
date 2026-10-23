@@ -25,13 +25,13 @@
 
 **Foundations**
 
-✅ **HTML**
-✅ **CSS**
+- ✅ **HTML**
+- ✅ **CSS**
 - [ ] **JavaScript**
 
 **JavaScript stack**
 
-✅ **Node.js**
+- ✅ **Node.js**
 - [ ] **TypeScript**
 - [ ] **React.js**
 - [ ] **Tailwind CSS**
