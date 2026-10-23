@@ -17,7 +17,7 @@
 
 ### 💻 01 · Programming fundamentals
 
-- [ ] **C Language**
+- [✅] **C Language**
 - [ ] **C++**
 - [ ] **Data Structures & Algorithms (DSA)**
 
@@ -25,8 +25,8 @@
 
 **Foundations**
 
-- [ ] **HTML**
-- [ ] **CSS**
+- [✅] **HTML**
+- [✅] **CSS**
 - [ ] **JavaScript**
 
 **JavaScript stack**
@@ -53,7 +53,7 @@ Learn Express.js after Node.js. TypeScript can be used with both React and Expre
 
 ### 🚀 04 · Developer workflow
 
-- [ ] **Git**
+- [] **Git**
 - [ ] **GitHub**
 - [ ] **CI/CD pipelines**
 
