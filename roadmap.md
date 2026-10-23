@@ -17,7 +17,7 @@
 
 ### 💻 01 · Programming fundamentals
 
-- ✅ **C Language**
+- [ ✓ ] **C Language**
 - [ ] **C++**
 - [ ] **Data Structures & Algorithms (DSA)**
 
@@ -25,13 +25,13 @@
 
 **Foundations**
 
-✅ **HTML**<br>
-✅ **CSS**<br>
-- [✓] **JavaScript**
+- [ ✓ ] **HTML**
+- [ ✓ ] **CSS**
+- [ ] **JavaScript**
 
 **JavaScript stack**
 
-✅ **Node.js** <br>
+- [ ✓ ] **Node.js**
 - [ ] **TypeScript**
 - [ ] **React.js**
 - [ ] **Tailwind CSS**
