@@ -8,9 +8,9 @@ setTimeout(() => {
 
 const timeoutID = setTimeout(() => {
     console.log('This will not run if timeout is cleared!');
-  }, 3000); // Executes after 3 seconds
+}, 3000); // Executes after 3 seconds
   
-  // Clear the timeout
-  clearTimeout(timeoutID);
+// Clear the timeout
+clearTimeout(timeoutID);
   
-  console.log('Timeout cleared.');
+console.log('Timeout cleared.');
