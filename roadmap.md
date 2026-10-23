@@ -31,7 +31,7 @@
 
 **JavaScript stack**
 
-- [ ] **Node.js**
+- ☑️ **Node.js**
 - [ ] **TypeScript**
 - [ ] **React.js**
 - [ ] **Tailwind CSS**
