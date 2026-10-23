@@ -27,7 +27,7 @@
 
 ✅ **HTML**<br>
 ✅ **CSS**<br>
-- [ ✓ ] **JavaScript**
+- |✓| **JavaScript**
 
 **JavaScript stack**
 
