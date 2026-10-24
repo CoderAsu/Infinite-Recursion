@@ -14,7 +14,7 @@
 
 ## 🧰 Tech stack
 
-### Programming, frontend, and version control
+### Programming, Frontend, and Version Control
 
 ![C](https://img.shields.io/badge/C-00599C?style=for-the-badge&logo=c&logoColor=white)
 ![C++](https://img.shields.io/badge/C++-E84393?style=for-the-badge&logo=cplusplus&logoColor=white)
