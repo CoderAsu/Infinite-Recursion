@@ -27,14 +27,14 @@
 
 
 // Handling error
-try{
+try {
     console.log("Start of Try");
 
     blabla();
 
     console.log("End of Try");
 
-}catch(error){
+} catch (error) {
     console.log("Error has occurred");
     console.log(error);
     console.log(error.message);
@@ -48,9 +48,9 @@ try{
 
 
 let num = 1;
-try{
+try {
     num.toPrecision(500);
-}catch(err){
+} catch (err) {
     console.log(err.name);
 }
 
@@ -60,7 +60,7 @@ try{
 
 try {
     eval("'Hello");
-}catch(err){
+} catch (err) {
     console.log(err.name);
 }
 
@@ -71,16 +71,16 @@ try {
 let num2 = 1
 try {
     num2.toUpperCase();
-}catch(err){
+} catch (err) {
     console.log(err.name);
 }
 
 
 
 
-try{
+try {
     decodeURI("%%%");
-}catch(err){
+} catch (err) {
     console.log(err.name);
 }
 
@@ -93,7 +93,7 @@ try{
 // errors property is only used in AggregateError
 try {
     throw new AggregateError([new Error("Error 1"), new Error("Error 2")], "Multiple errors occurred");
-  } catch (e) {
+} catch (e) {
     console.log(e instanceof AggregateError); // true
     console.log(e.message); // "Multiple errors occurred"
     console.log(e.errors); // [Error: "Error 1", Error: "Error 2"]
@@ -105,28 +105,28 @@ try {
 
 
 
-try{
+try {
     fjdfjhh;
-}catch (error){
-    if(error instanceof ReferenceError){
+} catch (error) {
+    if (error instanceof ReferenceError) {
         console.log("ReferenceError");
     }
-    else if(error instanceof TypeError){
-        console.log("TypeError");    
+    else if (error instanceof TypeError) {
+        console.log("TypeError");
     }
-    else if(error instanceof SyntaxError){
+    else if (error instanceof SyntaxError) {
         console.log("SyntaxError");
     }
-    else if(error instanceof RangeError){
+    else if (error instanceof RangeError) {
         console.log("RangeError");
     }
-    else if(error instanceof URIError){
+    else if (error instanceof URIError) {
         console.log("URIError");
     }
-    else if(error instanceof AggregateError){
+    else if (error instanceof AggregateError) {
         console.log("AggregateError");
     }
-    else{
+    else {
         console.log("no Error")
     }
 }
@@ -140,10 +140,10 @@ try{
 // if you want to use try-catch method with setTimeout then use try-catch inside try-catch
 
 setTimeout(() => {
-    try{
+    try {
         Hello;
     }
-    catch(err){
+    catch (err) {
         console.log(err.name);
     }
 }, 3000);
@@ -162,19 +162,18 @@ setTimeout(() => {
 
 // finally and throw keyword
 
-try{
+try {
     let json = '{"age": 30, "nationality": "English"}'
     let user = JSON.parse(json);
 
-    if(!user.name){
+    if (!user.name) {
         throw new Error("Incomplete Data: no name");
     }
 
-        console.log(user.name);
-        console.log(user.age);
-    }catch(error){
-        console.log(error);
-    }
-    finally{
-        console.log("All Done Thank You!")
-    }
+    console.log(user.name); // this line will skip
+    console.log(user.age); // this line will skip
+} catch (error) {
+    console.log(error);
+} finally {
+    console.log("All Done Thank You!")
+}

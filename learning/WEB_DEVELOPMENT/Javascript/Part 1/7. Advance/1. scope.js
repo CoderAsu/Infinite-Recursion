@@ -1,7 +1,7 @@
 // JavaScript variables have 3 types of scope:
 /* 
 => Block scope
-=> Function scope
+=> Function scope / Local scope
 => Global scope
 */
 
@@ -217,3 +217,6 @@ function jackpot(){
 }
 
 jackpot();
+
+
+// If we use var, let, or const inside function to declare a variable then you can't use it outside the function.

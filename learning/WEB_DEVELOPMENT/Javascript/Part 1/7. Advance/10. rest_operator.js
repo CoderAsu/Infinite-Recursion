@@ -43,3 +43,22 @@ let advSum = (name, course, ...marks) => {
 }
 
 advSum("Asu", "MCA", 20, 30, 40);
+
+
+
+
+let takingNumber = (...args) => {
+    return args;
+}
+
+console.log(takingNumber(56, 78, 32, 90));
+
+// The rest parameter collects multiple function arguments into a single array.
+
+// or we can simply use array
+
+let takingNumber2 = (arr) => {
+  return arr;
+}
+
+console.log(takingNumber2([10, 20, 30]));
