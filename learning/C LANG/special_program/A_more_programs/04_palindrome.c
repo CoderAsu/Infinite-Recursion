@@ -24,6 +24,8 @@ int main(){
         printf("It's a palindrome");
     else
         printf("No, it's not a palindrome");
+
     
+    printf("\n");
     return 0;
 }
