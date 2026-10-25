@@ -1,0 +1,11 @@
+DATA TYPES
+
+DataTypes in MySQL: (Default type is signed)
+
+1. String: CHAR(size), VARCHAR(size), TEXT(size), TINYTEXT, MEDIUMTEXT, LONGTEXT, ENUM(val1, val2, val3,...), SET(val1, val2, val3, ...)
+
+2. Numeric: TINYINT(size), SMALLINT(size), INT/INTEGER(size), BIGINT(size), BOOL/BOOLEAN, DEC/DECIMAL(size, d), FLOAT(size, d), DOUBLE(size, d)
+
+3. Date and Time: DATE, TIME, DATETIME, TIMESTAMP, YEAR
+
+4. Binary: Binary(size), VARBINARY(size), BLOB(size), TINYBLOB, MEDIUMBLOB, LONGBLOB

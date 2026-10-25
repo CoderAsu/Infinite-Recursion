@@ -1,0 +1,8 @@
+ALIASES
+
+Aliases:
+
+Alias for Column Syntax: SELECT col_name AS alias_name from table_name;
+Alias for Table Syntax: SELECT col_name FROM table_name AS alias_name;
+
+Note: we can use AS or without AS and also when alias_name contain spaces use quotes or backticks

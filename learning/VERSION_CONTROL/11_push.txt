@@ -1,0 +1,7 @@
+PUSH
+
+git push --> send local commits to the configured remote/upstream.
+git push -u origin <branch_name> --> push the branch and set its upstream, so future git push/pull commands can use that tracking relationship. If the remote branch does not exist, this normally creates it.
+git push -u origin <local_branch>:<remote_branch> --> push a local branch under a different remote branch name and set upstream.
+git push origin --delete <remote_branch> --> delete a branch from the remote repository.
+git remote prune origin --> remove stale local remote-tracking references that were deleted from origin.

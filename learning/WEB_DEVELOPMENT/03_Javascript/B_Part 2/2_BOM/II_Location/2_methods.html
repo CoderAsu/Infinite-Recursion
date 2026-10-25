@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Location methods</title>
+</head>
+
+<body>
+    <h1>Location methods</h1>
+    <p>A sample URL shows what the methods work with. Navigation methods are printed but not run because they would
+        leave or reload this lesson.</p>
+    <p>Open Developer Tools → Console to follow the example output.</p>
+    <script>
+        const url = new URL("https://example.com/products?item=book");
+        console.group("Location methods"); console.log("Sample address:", url.href); console.log("toString() returns:", url.toString());
+        console.log("Methods on current Location:", { assign: location.assign, replace: location.replace, reload: location.reload, toString: location.toString });
+        console.log("Examples (not run): location.assign(url.href), location.replace(url.href), location.reload()"); console.groupEnd();
+    </script>
+</body>
+
+</html>

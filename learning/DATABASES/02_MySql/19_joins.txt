@@ -1,0 +1,27 @@
+JOIN CONCEPTS
+
+JOIN concept:
+
+The INNER JOIN clause returns only rows that have matching values in both tables.
+
+1. INNER JOIN or JOIN: select table1.col1, table1.col2,..., table2.col1, table2.col2,... FROM table1 INNER JOIN / JOIN table2 ON table1.condtion_col = table2.condition_col;
+
+The LEFT JOIN clause returns all rows from the left table (table1), and only the matched rows from the right table (table2). If there is no match in the right table, the result for the columns from the right table will be NULL.
+
+2. LEFT JOIN: select table1.col1, table1.col2,..., table2.col1, table2.col2,... FROM table1 LEFT JOIN table2 ON table1.condtion_col = table2.condition_col;
+
+The RIGHT JOIN clause returns all rows from the right table (table2), and only the matched rows from the left table (table1). If there is no match in the left table, the result for the columns from the left table will be NULL.
+
+3. RIGHT JOIN: select table1.col1, table1.col2,..., table2.col1, table2.col2,... FROM table1 RIGHT JOIN table2 ON table1.condtion_col = table2.condition_col;
+
+The CROSS JOIN clause returns the Cartesian product of two or more tables (combines every row from the first table with every row from the second table).
+
+4. CROSS JOIN: SELECT column_name(s) FROM table1 CROSS JOIN table2;
+
+If you add a WHERE clause (if table1 and table2 has a relationship), the CROSS JOIN will produce the same result as the INNER JOIN clause:
+
+SELECT Customers.CustomerName, Orders.OrderID FROM Customers CROSS JOIN Orders WHERE Customers.CustomerID=Orders.CustomerID;
+
+A self join is a regular join, but the table is joined with itself.
+
+5. Self Join: SELECT column_name(s) FROM table1 T1, table1 T2 WHERE condition;

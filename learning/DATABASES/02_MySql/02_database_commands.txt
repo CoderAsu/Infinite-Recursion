@@ -1,0 +1,16 @@
+DATABASE COMMANDS (DDL)
+
+Commands in terms of Database (only DDL Commands are used with database)
+
+a. show databases;
+b. CREATE DATABASE db_name;
+c. DROP DATABASE db_name;
+d. ALTER DATABASE db_name CHARACTER SET utf8mb4 COLLATE utfmb4_unicode_ci;
+e. ALTER DATABASE db_name READ ONLY = 1;
+f. use db_name;
+g. SELECT database();
+h. we can't remove a database directly so to fix this we need to create a new database and move the data from existing database to new database
+	step 1: create database new_db_name; (inside MySQL)
+	step 2: mysqldump -u username -p old_db_name > old_db_name.sql (command prompt)
+	step 3: MySQL -u username -p new_db_name < old_db_name.sql (command prompt)
+g. Database name is always lowercase

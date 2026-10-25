@@ -1,0 +1,19 @@
+DEBUGGING HISTORY
+
+git blame <file> --> show the commit and author associated with each line. It helps locate when a line changed; it does not prove who is responsible for a bug.
+git log -- <file> --> show commits that changed a file.
+git log -S "text" --all --> find commits that added or removed a specific string.
+git grep "text" --> search tracked files in the current commit.
+
+Binary search through history with git bisect:
+git bisect start
+git bisect bad                 # current commit has the bug
+git bisect good <known-good-commit>
+# Git checks out a middle commit. Test it, then mark it:
+git bisect good                # bug is not present
+# or:
+git bisect bad                 # bug is present
+# Repeat until Git identifies the first bad commit.
+git bisect reset               # leave bisect mode and return to the original branch
+
+Only mark commits good/bad after checking the same reproduction steps. If a tested commit cannot be classified, use git bisect skip.

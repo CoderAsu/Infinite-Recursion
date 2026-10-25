@@ -1,0 +1,8 @@
+COMMITS
+
+git commit -a -m "message" / git commit -am "message" --> stage and commit modifications/deletions to already-tracked files. It does not include new untracked files.
+git commit --amend --> replace the latest commit with a new commit containing the staged changes (and optionally edit the message).
+git commit --amend --no-edit --> amend the latest commit without changing its message.
+git commit -s -m "message" --> add a Signed-off-by line to the commit message. This is a sign-off statement, not proof a senior reviewed it.
+git commit -S -m "message" --> create a cryptographically signed commit, when signing is configured.
+git commit --allow-empty -m "message" --> create a commit with no file changes.

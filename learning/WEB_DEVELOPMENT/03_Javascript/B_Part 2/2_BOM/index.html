@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+</head>
+
+<body>
+    <h1>BOM</h1>
+    <p>Choose a topic page to see its properties or methods using a small example in the console.</p>
+    <p>Open Developer Tools → Console to follow the example output.</p>
+    <script>
+        console.group("Browser Object Model (BOM)"); const browser = window; console.log("window: main object for this browser tab", browser); console.log("location: current address", browser.location.href); console.log("history: this tab's navigation", browser.history); console.log("navigator: browser/device information", browser.navigator); console.log("screen: display information", browser.screen); try { console.log("localStorage: data for this website", browser.localStorage) } catch (error) { console.log("localStorage unavailable:", error.message) } try { console.log("sessionStorage: data for this tab", browser.sessionStorage) } catch (error) { console.log("sessionStorage unavailable:", error.message) } console.groupEnd();
+    </script>
+</body>
+
+</html>

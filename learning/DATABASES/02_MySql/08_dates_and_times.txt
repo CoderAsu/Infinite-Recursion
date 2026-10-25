@@ -1,0 +1,13 @@
+DATES AND TIMES
+
+DATES:
+DATE - format YYYY-MM-DD
+DATETIME - format: YYYY-MM-DD HH:MI:SS
+TIMESTAMP - format: YYYY-MM-DD HH:MI:SS (in seconds)
+TIME - format: HH:MI:SS
+YEAR - format YYYY or YY
+
+when entering the values of dates make sure you have used single inverted comma (' ')
+
+values when inserting:
+CURRENT_DATE() (date), CURRENT_TIME() (time), NOW() (datetime)

@@ -1,0 +1,15 @@
+INDEXES AND TABLE INFORMATION
+
+To see how many indexes are there within a database:
+
+SELECT CONSTRAINT_NAME, CONSTRAINT_TYPE FROM INFORMATION_SCHEMA.TABLE_CONSTRAINTS WHERE TABLE_SCHEMA = 'your_database' AND TABLE_NAME = 'employee';
+
+To see how many indexes are there in a table:
+
+SHOW INDEX FROM table_name;
+
+To see all data when I created the table:
+
+show create table table_name;
+
+To drop FK, CHECK and UNIQUE, index is compulsory so make sure that you have created indexes for these constraints.

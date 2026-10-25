@@ -1,0 +1,26 @@
+TRANSACTIONS (TCL)
+
+TCL:
+
+Check Current Auto Commit Status:
+
+SELECT @@autocommit;
+
+1 means on and 0 means off
+
+To Turn on and off Auto Commit for current session only:
+
+SET autocommit = 0/1;
+SET autocommit = on/off;
+
+To Turn on and off Auto Commit for entire MySQL server:
+
+SET GLOBAL autocommit = 0/1;
+SET GLOBAL autocommit = on/off;
+
+COMMIT;
+
+ROLLBACK;
+
+SAVEPOINT savepoint_name;
+ROLLBACK TO savepoint_name;

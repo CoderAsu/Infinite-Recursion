@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Location properties</title>
+</head>
+
+<body>
+  <h1>Location properties</h1>
+  <p>A URL variable lets us inspect an example address without leaving this lesson. The current Location describes this
+    page.</p>
+  <p>Open Developer Tools → Console to follow the example output.</p>
+  <script>
+    const url = new URL("https://example.com:8080/products/search?q=phone&sort=price#reviews");
+    console.log("Sample URL:", url.href);
+    console.table({ href: url.href, origin: url.origin, protocol: url.protocol, host: url.host, hostname: url.hostname, port: url.port, pathname: url.pathname, search: url.search, hash: url.hash });
+    console.log("Query value q:", url.searchParams.get("q"));
+    console.log("Current page address:", window.location.href);
+    console.log("ancestorOrigins describes this page's embedding, not the sample URL:", Array.from(window.location.ancestorOrigins || []));
+  </script>
+</body>
+
+</html>

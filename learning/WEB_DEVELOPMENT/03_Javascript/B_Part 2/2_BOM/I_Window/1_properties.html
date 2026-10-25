@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window properties</title>
+</head>
+
+<body>
+    <h1>Window properties</h1>
+    <p>The browser provides the window object. Values describe this tab; some change when you resize it.</p>
+    <p>Open Developer Tools → Console to follow the example output.</p>
+    <script>
+        const browserWindow = window;
+        console.group("Window properties: values for this tab");
+        console.table({ self: browserWindow.self === browserWindow, parent: browserWindow.parent === browserWindow ? "not inside a frame" : "inside a frame", top: browserWindow.top === browserWindow ? "top page" : "inside a frame", frameCount: browserWindow.length, name: browserWindow.name, closed: browserWindow.closed, openerExists: Boolean(browserWindow.opener), origin: browserWindow.origin, secureConnection: browserWindow.isSecureContext, innerWidth: browserWindow.innerWidth, innerHeight: browserWindow.innerHeight, outerWidth: browserWindow.outerWidth, outerHeight: browserWindow.outerHeight, scrollX: browserWindow.scrollX, scrollY: browserWindow.scrollY, devicePixelRatio: browserWindow.devicePixelRatio });
+        console.log("Other objects on window:", { document: browserWindow.document, location: browserWindow.location, history: browserWindow.history, navigator: browserWindow.navigator, screen: browserWindow.screen });
+        console.groupEnd();
+    </script>
+</body>
+
+</html>

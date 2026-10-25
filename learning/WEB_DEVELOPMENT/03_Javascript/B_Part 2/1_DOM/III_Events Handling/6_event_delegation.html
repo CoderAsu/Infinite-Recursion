@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event delegation</title>
+  <style>
+    body {
+      font: 16px/1.5 system-ui, sans-serif;
+      max-width: 760px;
+      margin: 2rem auto;
+      padding: 0 1rem
+    }
+
+    button,
+    input {
+      font: inherit;
+      padding: .45rem .7rem;
+      margin: .25rem
+    }
+
+    pre {
+      padding: .75rem;
+      background: #f4f4f4;
+      white-space: pre-wrap
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Event delegation</h1>
+  <p>Event delegation means putting one listener on a parent and using event.target to find which child was clicked. It
+    is handy for lists and for children added later.</p>
+  <ul id="choices">
+    <li><button>Apples</button></li>
+    <li><button>Oranges</button></li>
+    <li><button>Bananas</button></li>
+  </ul><button id="addItem">Add another fruit</button>
+  <p id="result">Select a fruit.</p>
+  <p>Open Developer Tools → Console to follow the output.</p>
+  <script>
+    const list = document.querySelector("#choices");
+    list.addEventListener("click", function (event) {
+      const button = event.target.closest("button");
+      if (button && list.contains(button)) {
+        document.querySelector("#result").textContent = "You selected: " + button.textContent;
+        console.log("One parent listener handled:", button.textContent);
+      }
+    });
+    document.querySelector("#addItem").addEventListener("click", function () {
+      const item = document.createElement("li"); item.innerHTML = "<button>Mango</button>"; list.append(item);
+      console.log("Added Mango. The existing parent listener handles it too.");
+    });
+    console.log("Click a fruit, then add Mango and click it. Only the list has a click listener.");
+  </script>
+  <p><a href="1_event_handling.html">← Event handling topics</a></p>
+</body>
+
+</html>

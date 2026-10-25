@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>localStorage properties</title>
+</head>
+
+<body>
+    <h1>localStorage properties</h1>
+    <p>localStorage keeps text values for this website across browser restarts. This page only checks the saved-key
+        count.</p>
+    <p>Open Developer Tools → Console to follow the example output.</p>
+    <script>
+        const savedData = window.localStorage;
+        console.group("localStorage properties"); try { console.log("Storage object:", savedData); console.log("Saved key count (length):", savedData.length); console.log("length counts keys saved for this website.") } catch (error) { console.log("Storage unavailable:", error.message) } console.groupEnd();
+    </script>
+</body>
+
+</html>

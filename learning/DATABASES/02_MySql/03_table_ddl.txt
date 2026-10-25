@@ -1,0 +1,25 @@
+TABLE STRUCTURE (DDL)
+
+DDL Commands used in terms of Tables
+
+a. show tables;
+b. CREATE TABLE table_name (attr datatype constraint, attr datatype constraint, ...);
+c. DROP TABLE table_name;
+d. TRUNCATE TABLE table_name;
+e. There are 2 ways to rename a table name:
+	1. RENAME TABLE old_table_name TO new_table_name;
+	2. ALTER TABLE old_table_name RENAME TO new_table_name;
+f. Altering tables can have many operations:
+	1. Adding a new column: ALTER TABLE table_name ADD COLUMN column_name datatype constraint;
+	2. Adding multiple column: ALTER TABLE table_name ADD COLUMN column_name datatype constraint, ADD COLUMN column_name datatype constraint;
+	3. Specify column Position: 
+		i. Add first column: ALTER TABLE table_name ADD COLUMN column_name datatype constraint FIRST;
+		ii. Add after a specific column: ALTER TABLE table_name ADD COLUMN column_name datatype constraint AFTER existing column_name;
+	4. Modify a column or change datatype: ALTER TABLE table_name MODIFY COLUMN column_name datatype;
+	5. Adding or removing NOT NULL:
+		i. Add NOT NULL: ALTER TABLE table_name MODIFY COLUMN column_name datatype NOT NULL;
+		ii. Remove NOT NULL: ALTER TABLE table_name MODIFY COLUMN column_name datatype NULL;
+	6. Rename a column: ALTER TABLE table_name RENAME COLUMN old_column_name TO new_column_name;
+	7. Rename and change definition together: ALTER TABLE table_name CHANGE COLUMN old_column_name new_column_name datatype;
+	8. Drop a column: ALTER TABLE table_name DROP COLUMN column_name;
+	9. We can also add or remove constraits using ALTER, and we will see it in constraints 

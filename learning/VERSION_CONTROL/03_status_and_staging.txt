@@ -1,0 +1,22 @@
+STATUS AND STAGING
+
+git status --> shows staged changes, unstaged changes, and untracked files.
+git status -v --> verbose status, including staged and unstaged diffs.
+git status -s --> short status. It uses two columns: first is the index/staging area (X), second is the working tree (Y).
+
+Common short-status marks:
+A --> added
+?? --> untracked
+M --> modified
+D --> deleted
+
+For tracked files, the column matters: M in the first column means staged modifications; M in the second means unstaged modifications.
+
+git add <file> --> stage a file (or stage its latest changes).
+git add . --> stage changes below the current directory.
+git restore --staged <file> --> unstage a file while keeping its working-tree changes.
+git rm --cached <file> --> stop tracking a file but keep the local file.
+git commit -m "message" --> create a commit from the staged snapshot.
+
+Git identifies stored objects with hashes; this is hashing, not encryption. SHA-1 is common, and Git also supports SHA-256 repositories.
+HEAD (usually written in uppercase) points to the current commit, normally the tip of the checked-out branch.

@@ -1,0 +1,6 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sessionStorage methods</title></head>
+<body><h1>sessionStorage methods</h1><p>We save one lesson example, read it, then remove that same key. Other tab data is untouched.</p><p>Open Developer Tools → Console to follow the example output.</p><script>
+console.group("sessionStorage methods"); try{const tabData=window.sessionStorage,key="bom-session-storage-example",value="A note for this tab"; console.log("Methods:",{key:tabData.key,getItem:tabData.getItem,setItem:tabData.setItem,removeItem:tabData.removeItem,clear:tabData.clear}); tabData.setItem(key,value); console.log("setItem saves text:",key,"→",value); console.log("getItem reads it:",tabData.getItem(key)); console.log("key(0):",tabData.key(0)); tabData.removeItem(key); console.log("Example key removed. clear() deletes every key for this tab, so it was not called.")}catch(error){console.log("Storage unavailable:",error.message)} console.groupEnd();
+</script></body></html>

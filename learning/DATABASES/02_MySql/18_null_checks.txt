@@ -1,0 +1,5 @@
+TESTING FOR NULL VALUES
+
+To test for NULL values:
+1. IS NULL syntax: SELECT column_names FROM table_name WHERE column_name IS NULL;
+2. IS NOT NULL syntax: SELECT column_names FROM table_name WHERE column_name IS NOT NULL;

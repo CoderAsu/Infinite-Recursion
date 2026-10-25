@@ -1,0 +1,23 @@
+REMOTE CONNECTIONS
+
+A remote is a named connection to another Git repository, commonly named origin.
+
+git remote add <name> <url> --> add a remote, using an HTTPS or SSH URL.
+git remote set-url <remote_name> <new_url> --> change a remote's URL. Example: git remote set-url origin <repository-url>. The argument is a remote name, not a branch name.
+git remote remove origin --> remove the remote configuration from this local repository; it does not delete the hosted repository.
+git remote --> list remote names.
+git remote -v --> show remote names and URLs.
+git branch -vv --> show local branches and their upstream tracking branches.
+git branch -r --> list remote-tracking branches.
+git branch -a --> list local and remote-tracking branches.
+git branch -r -d origin/branch-name --> delete only the local remote-tracking reference.
+git switch -c feature2 --track origin/feature2 --> create a local branch tracking origin/feature2.
+
+HTTPS authentication: use your Git hosting provider's supported sign-in or credential manager. Do not put a personal access token directly in the remote URL or commit it into a file; URLs can be saved in Git config and shell history.
+
+SSH setup (macOS example):
+ssh-keygen -t ed25519 -C "your-email@example.com" --> create a key pair. The option is uppercase -C; choose a passphrase when prompted.
+pbcopy < ~/.ssh/id_ed25519.pub --> copy the public key, then add it to your Git hosting account's SSH keys.
+git remote set-url origin git@github.com:USERNAME/REPOSITORY.git --> use the SSH address for the remote.
+
+Never share the private key (id_ed25519). Only the .pub public key is added to the hosting account.

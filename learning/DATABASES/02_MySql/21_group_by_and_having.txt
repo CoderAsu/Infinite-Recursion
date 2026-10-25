@@ -1,0 +1,15 @@
+GROUP BY AND HAVING
+
+GROUP BY:
+
+The GROUP BY statement is almost always used in conjunction with aggregate functions, like COUNT(), MAX(), MIN(), SUM(), AVG(), to perform calculations on each group.
+
+Syntax: SELECT column1, aggregate_function(column2), column3, ... FROM table_name WHERE condition GROUP BY column1, column3 ORDER BY column_name;
+
+HAVING:
+
+The HAVING clause is used to filter the results of a GROUP BY query based on aggregate functions. Unlike the WHERE clause, which filters individual rows before grouping, the HAVING clause filters groups after the aggregation has been performed.
+
+Syntax: 
+
+SELECT column1, aggregate_function(column2), column3, ... FROM table_name WHERE condition GROUP BY column1, column3 HAVING condition -- The condition on grouped data ORDER BY column_name;

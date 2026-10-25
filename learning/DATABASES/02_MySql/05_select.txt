@@ -1,0 +1,21 @@
+SELECT AND QUERY DATA
+
+b. SELECT
+	1. Select all columns: SELECT * FROM employee;
+	2. Select specific columns: SELECT name, salary FROM employee;
+	3. Select unique values: SELECT DISTINCT salary FROM employee;
+		Also using COUNT() function with the DISTINCT keyword, we can count the number of unique values.
+		SELECT COUNT(DISTINCT salary) FROM employee;
+	4. Filter rows: SELECT column1, column2,... FROM table_name WHERE condition;
+		Operator used (=, >, <, >=, <=, <> or !=, BETWEEN, LIKE, IN)
+		Also AND, OR and NOT operator are used.
+	5. Sort data: SELECT column1, column2, ... FROM table_name ORDER BY column1, column2, ... ASC|DESC;
+		Order by Several Columns: SELECT * FROM Customers ORDER BY COUNTRY ASC, CustomerName DESC;
+	6. Limit Rows: SELECT column_name(s) FROM table_name WHERE condition LIMIT number OFFSET number;
+	7. Aggregate functions: MIN(), MAX(), COUNT(), SUM(), AVG()
+		SELECT MIN(col_name) FROM table_name WHERE condition;
+		To check the number of rows in a table: select count(*) from table_name;
+	8. LIKE/NOT LIKE operator (%, _): SELECT column1, column2, ... FROM table_name WHERE column_name LIKE/NOT LIKE pattern;
+	9. IN operator: SELECT column_name(s) FROM table_name WHERE column_name IN/NOT IN (value1, value2, ...);
+		IN/NOT IN (SELECT): SELECT * FROM Customers WHERE CustomerID IN (SELECT CustomerID FROM Orders);
+	10. BETWEEN/NOT BETWEEN operator: SELECT column_name(s) FROM table_name WHERE column_name BETWEEN/NOT BETWEEN value1 AND value2;

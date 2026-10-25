@@ -1,0 +1,30 @@
+AUTO_INCREMENT
+
+Auto_increment:
+
+1. CREATE TABLE Persons (
+    Personid int AUTO_INCREMENT PRIMARY KEY,
+    LastName varchar(255) NOT NULL,
+    FirstName varchar(255),
+    Age int
+);
+
+2. To let AUTO_INCREMENT start with another value:
+
+CREATE TABLE employee (
+    employee_id INT AUTO_INCREMENT,
+    name VARCHAR(50),
+    PRIMARY KEY (employee_id)
+) AUTO_INCREMENT = 105;
+
+3. Using alter keyword:
+
+ALTER TABLE Persons AUTO_INCREMENT = 100;
+
+4. To check the current auto_increment value:
+
+SHOW TABLE STATUS LIKE 'employee';
+
+5. If we forget to add auto_increment constraint:
+
+ALTER TABLE table_name MODIFY COLUMN col_name INT NOT NULL AUTO_INCREMENT;

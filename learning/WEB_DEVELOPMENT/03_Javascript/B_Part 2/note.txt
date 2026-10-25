@@ -1,0 +1,5 @@
+document belongs to the DOM API, while window, location, history, navigator, and screen are commonly covered under BOM. Storage APIs are browser Web APIs often taught alongside BOM.
+
+
+DOM -> document
+BOM -> window, location, history, navigator, screen, localStorage/sessionStorage

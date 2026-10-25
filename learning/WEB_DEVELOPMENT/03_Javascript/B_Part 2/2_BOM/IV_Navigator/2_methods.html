@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Navigator methods</title></head>
+<body><h1>Navigator methods</h1><p>We check which browser/device methods exist without sharing data, vibrating, or requesting permissions.</p><p>Open Developer Tools → Console to follow the example output.</p><script>
+const browserInfo=navigator; const methodNames=["canShare","share","sendBeacon","vibrate","getBattery","getGamepads","getInstalledRelatedApps","getAutoplayPolicy","requestMIDIAccess","requestMediaKeySystemAccess","registerProtocolHandler","unregisterProtocolHandler","setAppBadge","clearAppBadge"];
+console.group("Navigator methods"); console.table(methodNames.map(method=>({method,available:typeof browserInfo[method]==="function"}))); const shareExample={title:document.title,url:location.href}; console.log("Example share data (not shared):",shareExample); console.log("After a button click, sharing could use navigator.share(shareExample). Support varies."); console.log("Other examples: navigator.vibrate([100,50,100]); navigator.getBattery()"); console.groupEnd();
+</script></body></html>

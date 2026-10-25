@@ -1,0 +1,22 @@
+DEFAULT CONSTRAINTS
+
+5. DEFAULT:
+
+	a. Adding a default value when creating a table:
+
+	CREATE TABLE Persons (
+    		ID int PRIMARY KEY,
+    		LastName varchar(255) NOT NULL,
+    		FirstName varchar(255),
+    		Age int,
+		Hiredate date DEFAULT CURRENT_DATE(),
+    		City varchar(255) DEFAULT 'Sandnes'
+	);
+
+	b. Adding a default constraint when altering:
+
+	ALTER TABLE Persons ALTER City SET DEFALUT 'Sandnes';
+
+	c. Drop a default constraint:
+
+	ALTER TABLE Persons ALTER City DROP DEFAULT;

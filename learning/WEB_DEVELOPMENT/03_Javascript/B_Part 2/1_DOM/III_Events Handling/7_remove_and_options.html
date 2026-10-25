@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Remove listeners and listener options</title>
+  <style>
+    body {
+      font: 16px/1.5 system-ui, sans-serif;
+      max-width: 760px;
+      margin: 2rem auto;
+      padding: 0 1rem
+    }
+
+    button,
+    input {
+      font: inherit;
+      padding: .45rem .7rem;
+      margin: .25rem
+    }
+
+    pre {
+      padding: .75rem;
+      background: #f4f4f4;
+      white-space: pre-wrap
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Remove listeners and listener options</h1>
+  <p>Use the same function reference with removeEventListener() to detach a listener. Options can control how often or
+    when it runs.</p>
+  <button id="onceButton">Listener that runs once</button><button id="toggleButton">Add/remove listener</button>
+  <p id="status">Toggle listener is currently attached.</p>
+  <p>Open Developer Tools → Console to follow the output.</p>
+  <script>
+    const onceButton = document.querySelector("#onceButton");
+    onceButton.addEventListener("click", () => console.log("This listener runs once."), { once: true });
+    const toggleButton = document.querySelector("#toggleButton");
+    const status = document.querySelector("#status");
+    function reportClick() { console.log("Toggle button listener ran.") }
+    toggleButton.addEventListener("click", reportClick);
+    let attached = true;
+    toggleButton.addEventListener("dblclick", function () {
+      if (attached) { toggleButton.removeEventListener("click", reportClick); status.textContent = "Listener removed. Double-click again to attach it." }
+      else { toggleButton.addEventListener("click", reportClick); status.textContent = "Listener attached. Double-click to remove it." }
+      attached = !attached;
+    });
+    console.log("Click the first button repeatedly. Double-click the second to remove/re-add its listener.");
+    console.log("{capture:true} listens during capture; {once:true} removes itself after one run; {passive:true} tells the browser the handler will not cancel scrolling.");
+  </script>
+  <p><a href="1_event_handling.html">← Event handling topics</a></p>
+</body>
+
+</html>

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen events and orientation</title>
+</head>
+
+<body>
+    <h1>Screen events and orientation</h1>
+    <p>This page listens for screen changes. Orientation locking is shown but not run; it requires device support and a
+        user action.</p>
+    <p>Open Developer Tools → Console to follow the example output.</p>
+    <script>
+        const display = window.screen;
+        console.group("Screen events and orientation"); console.log("Screen event methods:", { addEventListener: display.addEventListener, removeEventListener: display.removeEventListener }); console.log("Current orientation:", display.orientation?.type, display.orientation?.angle); console.log("Orientation methods:", { lock: display.orientation?.lock, unlock: display.orientation?.unlock });
+        function reportScreenChange() { console.log("Screen changed:", display.width, "×", display.height) } display.addEventListener("change", reportScreenChange); console.log("Listener added; change display to see an event. Remove it with screen.removeEventListener('change', reportScreenChange)."); console.log('Example (not run): await screen.orientation.lock("landscape"); screen.orientation.unlock()'); console.groupEnd();
+    </script>
+</body>
+
+</html>

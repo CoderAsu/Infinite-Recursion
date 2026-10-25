@@ -1,0 +1,24 @@
+MERGE CONFLICTS
+
+A conflict means Git could not combine changes automatically. It can happen during a merge, rebase, cherry-pick, or stash apply.
+
+Basic merge-conflict steps:
+1. Run git status to see which files need attention.
+2. Open each conflicted file. The markers show the competing versions:
+   <<<<<<< HEAD       current branch version
+   =======            divider
+   >>>>>>> other       incoming version
+3. Edit the file to the correct final content and remove all conflict markers.
+4. Run the app or inspect the file to confirm the result.
+5. Stage the resolved file: git add <file>.
+6. Finish the operation:
+   - merge: git commit (if Git did not finish it automatically)
+   - rebase: git rebase --continue
+   - cherry-pick: git cherry-pick --continue
+
+To cancel instead of finishing:
+git merge --abort
+git rebase --abort
+git cherry-pick --abort
+
+Do not choose one side blindly. Understand both versions and combine the needed changes. A conflict resolution is a normal code change and should be reviewed before committing.
