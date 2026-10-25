@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>addEventListener()</title>
+    <style>
+        body {
+            font: 16px/1.5 system-ui, sans-serif;
+            max-width: 760px;
+            margin: 2rem auto;
+            padding: 0 1rem
+        }
+
+        button,
+        input {
+            font: inherit;
+            padding: .45rem .7rem;
+            margin: .25rem
+        }
+
+        pre {
+            padding: .75rem;
+            background: #f4f4f4;
+            white-space: pre-wrap
+        }
+    </style>
+</head>
+
+<body>
+    <h1>addEventListener()</h1>
+    <p>Use addEventListener(eventName, function) to tell an element which function to run for an event. The event name
+        is written without “on”.</p>
+    <button id="helloButton">Click me</button>
+    <p id="message">Nothing has happened yet.</p>
+    <p>Open Developer Tools → Console to follow the output.</p>
+    <script>
+        const button = document.querySelector("#helloButton");
+        const message = document.querySelector("#message");
+        function showMessage() { message.textContent = "The click event ran this function!"; console.log("Hello from the click handler.") }
+        button.addEventListener("click", showMessage);
+        console.log("Click the button. addEventListener connected the click event to showMessage.");
+    </script>
+    <p><a href="01_event_handling.html">← Event handling topics</a></p>
+</body>
+
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The event object</title>
+  <style>
+    body {
+      font: 16px/1.5 system-ui, sans-serif;
+      max-width: 760px;
+      margin: 2rem auto;
+      padding: 0 1rem
+    }
+
+    button,
+    input {
+      font: inherit;
+      padding: .45rem .7rem;
+      margin: .25rem
+    }
+
+    pre {
+      padding: .75rem;
+      background: #f4f4f4;
+      white-space: pre-wrap
+    }
+  </style>
+</head>
+
+<body>
+  <h1>The event object</h1>
+  <p>When the browser calls your event handler, it passes an event object with details about what happened.</p>
+  <label>Type here: <input id="textInput" placeholder="Watch the console"></label>
+  <p id="output">Your current text will appear here.</p>
+  <p>Open Developer Tools → Console to follow the output.</p>
+  <script>
+    const input = document.querySelector("#textInput");
+    const output = document.querySelector("#output");
+    input.addEventListener("input", function (event) {
+      output.textContent = "You typed: " + event.target.value;
+      console.log({ type: event.type, target: event.target, currentTarget: event.currentTarget, value: event.target.value });
+    });
+    console.log("Type into the box. target is the element that produced the event; currentTarget is the element whose handler is running.");
+  </script>
+  <p><a href="01_event_handling.html">← Event handling topics</a></p>
+</body>
+
+</html>
