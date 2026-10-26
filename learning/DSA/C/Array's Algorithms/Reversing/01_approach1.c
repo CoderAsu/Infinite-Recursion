@@ -44,6 +44,6 @@ int main(){
     free(arr);
     arr = NULL;
 
-    printf("\n";)
+    printf("\n");
     return 0;
 }
