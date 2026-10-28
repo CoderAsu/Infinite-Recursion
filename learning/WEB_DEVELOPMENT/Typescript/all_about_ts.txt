@@ -1,0 +1,67 @@
+TYPESCRIPT FOLDER AND FILE SEQUENCE
+===================================
+
+Folders use two-digit hyphen prefixes. Files use two-digit underscore prefixes.
+Read README.md for complete explanations.
+
+01-setup/
+  01_hello.ts
+  02_compiler-options.ts
+  03_type-checking.ts
+
+02-types-and-inference/
+  01_inference-and-annotations.ts
+  02_primitives.ts
+  03_arrays-tuples.ts
+  04_objects.ts
+  05_void-object-nullish.ts
+  06_readonly-and-const.ts
+  07_symbol-and-unique-symbol.ts
+  08_structural-typing.ts
+  09_excess-property-checks.ts
+  10_tuple-features.ts
+
+03-functions/
+  01_parameters-and-returns.ts
+  02_optional-default-rest.ts
+  03_function-types-and-callbacks.ts
+  04_overloads.ts
+  05_this-parameter.ts
+
+04-interfaces-and-type-aliases/
+  01_contracts.ts
+  02_index-signatures.ts
+  03_interface-vs-type.ts
+  04_call-and-construct-signatures.ts
+
+05-unions-intersections-literals/
+  01_union-literals.ts
+  02_intersections.ts
+
+06-narrowing-and-guards/
+  01_typeof-in-guards.ts
+  02_instanceof-and-equality.ts
+  03_discriminated-unions.ts
+  04_custom-guards.ts
+
+07-enums/  01_enums-and-alternatives.ts, 02_enum-features.ts
+08-generics/  01 through 05 generic lessons
+09-classes-and-oop/  01 through 04 class lessons
+10-modules/  01_math.ts, 02_greeting.ts, 03_main.ts
+11-type-operators/  01 through 06 type operator lessons
+12-utility-types/  01 through 03 utility type lessons
+13-special-types-and-assertions/  01 through 05 safety lessons
+14-errors/  01_error-handling.ts
+15-async-and-promises/  01_promises-async.ts, 02_promise-all-and-fetch.ts
+16-dom-and-browser/  01_browser-typing.ts
+17-declaration-files/  01 through 06 declaration lessons
+18-tooling/  01_npm-and-tsconfig.ts
+19-practical-patterns/  01 through 03 pattern lessons
+20-projects/01-task-manager/  01_types.ts, 02_store.ts, 03_main.ts
+
+COMMANDS
+========
+npm install       Install the compiler.
+npm run check     Check every TypeScript file.
+npm run build     Compile the lessons into dist/.
+npm run run:hello Run 01-setup/01_hello.ts after compilation.

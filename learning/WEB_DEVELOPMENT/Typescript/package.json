@@ -1,0 +1,18 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "check": "tsc --noEmit",
+    "build": "tsc",
+    "run:hello": "node dist/01-setup/01_hello.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "dependencies": {
+    "typescript": "^7.0.2"
+  }
+}
