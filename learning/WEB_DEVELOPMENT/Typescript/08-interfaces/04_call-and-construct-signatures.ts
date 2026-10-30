@@ -1,12 +1,14 @@
 // A call signature describes a callable object that may also have properties.
 interface Formatter {
-  (value: number): string;
   prefix: string;
+  (value: number): string;
 }
 
-const format: Formatter = Object.assign((value: number) => String(value), {
+const format: Formatter = Object.assign((value: number): string => String(value), {
   prefix: "Value: ",
 });
+
+
 
 // A construct signature describes a value that can be used with `new`.
 interface Constructor<T> {

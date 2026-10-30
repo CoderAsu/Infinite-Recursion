@@ -1,7 +1,7 @@
 const learner: {
   readonly id: number;
   name: string;
-  favoriteTopics?: string[];
+  favoriteTopics?: string[]; // ? -> optional property
 } = {
   id: 1,
   name: "Ada",

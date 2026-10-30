@@ -10,3 +10,24 @@ const firstTopic: Topic = "types";
 console.log(topics, firstTopic);
 
 export {};
+
+
+
+
+
+/*
+    See here how const can be useful
+
+    TypeScript can sometimes widen specific literal types into broader types.
+
+    let name = "Asu";
+    const city = "Berhampur";
+
+
+
+    What are their inferred types?
+
+    let name: string = "Asu";
+    const city: "Berhampur" = "Berhampur";
+
+*/

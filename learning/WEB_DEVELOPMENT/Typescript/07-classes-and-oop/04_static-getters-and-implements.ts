@@ -22,7 +22,8 @@ class Temperature implements Describable {
 }
 
 const temperature = new Temperature(20);
-temperature.celsius = 22;
+temperature.celsius = 22;   // access directly because of set keyword
+console.log(temperature.celsius);  // because of get keyword
 console.log(temperature.describe());
 
 export {};

@@ -9,6 +9,9 @@ interface Lesson extends Printable {
   durationMinutes?: number;
 }
 
+
+// syntax -> Pick<Type, Keys>
+
 type LessonSummary = Pick<Lesson, "id" | "title">;
 
 const lesson: Lesson = {

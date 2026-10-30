@@ -1,0 +1,28 @@
+1. Inference and annotation
+
+2. Datatypes:
+    -> Primitive Type (string, number, bigint, boolean, null, undefined, symbol)
+    -> Object Type (object, array, tuple)
+    -> Special Type (any, unknown, void, never)
+    -> Advanced Type (union, intersection, type alias, enum)
+
+3. Optional property (?)
+    -> We can make an object property and method optional in a type or interface or object or class.
+    -> We can make a function parameter optional.
+    -> A tuple can have an optional element.
+
+4. We can add extra property used as a parameter in structural typing.
+
+5. An existing variable is checked for structural compatibility but A fresh object literal receives an excess-property check.
+
+6. void is used to indicate that a function's return value should not be used as a meaningful result. It is most commonly used with functions that perform an action instead of returning a value. Also a void function can return "return" and "return undefined".
+
+7. A function type describes the parameters and return value of a function.
+
+8. A higher-order function receives a callback and uses it later.
+
+9. You can use void with arrow functions, too.
+
+10. An interface in TypeScript defines the structure that an object or class must follow. It specifies which properties and methods are required and what types they must have.
+
+11. An index signature describes objects whose keys are not known in advance.
