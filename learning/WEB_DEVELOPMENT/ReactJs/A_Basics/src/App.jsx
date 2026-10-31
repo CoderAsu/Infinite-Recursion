@@ -1,11 +1,12 @@
-import Fruit from "./Fruit";
-import Greet from "./Greet"
-import User from "./User";
-import Login from "./Login";
-import Props from "./Props";
+import Greet from "./01_Greet"
+import Hello from "./02_Hello";
+import Fruit from "./03_Fruit";
+import User from "./04_User";
+import Login from "./05_Login";
+import Props from "./06_Props";
+import Button from "./07_Button";
 import reactLogo from './assets/react.svg'
-import Button from "./Button";
-import Hello from "./Hello";
+
 
 
 function App() {

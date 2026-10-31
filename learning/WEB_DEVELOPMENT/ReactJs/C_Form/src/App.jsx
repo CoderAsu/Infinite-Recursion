@@ -1,8 +1,10 @@
-import AdvanceForm from "./AdvanceForm"
-import AltMethod from "./AltMethod"
-import FormValidation from "./FormValidation"
-import MultiInput from "./MultiInput"
-import SimpleForm from "./SimpleForm"
+import SimpleForm from "./01_SimpleForm"
+import MultiInput from "./02_MultiInput"
+import AdvanceForm from "./03_AdvanceForm"
+import AltMethod from "./04_AltMethod"
+import FormValidation from "./05_FormValidation"
+
+
 
 
 const App = () => {

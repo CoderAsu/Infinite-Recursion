@@ -1,6 +1,6 @@
-import Counter from './Counter'
-import Toggle from './Toggle'
-import Input from './Input'
+import Counter from './01_Counter'
+import Toggle from './02_Toggle'
+import Input from './03_Input'
 
 function App() {
   return (
