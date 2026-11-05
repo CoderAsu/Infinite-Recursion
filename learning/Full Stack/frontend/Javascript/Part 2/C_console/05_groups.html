@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>group</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+
+/*
+    console.group() -> Start an expanded message group
+
+    console.groupCollapsed() -> Start a collapsed message group
+
+    console.groupEnd() -> End the current group
+*/
+
+
+    console.group("Student Details");
+
+    console.log("Name: Asu");
+    console.log("Course: MCA");
+
+    console.groupCollapsed("Marks");
+
+    console.log("JavaScript: 90");
+    console.log("C++: 85");
+
+    console.groupEnd(); // Closes Marks
+
+    console.log("Status: Learning JavaScript");
+
+    console.groupEnd(); // Closes Student Details
+
+    console.log("Program completed");
+
+</script>
+
+</html>

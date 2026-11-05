@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cookie</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // The cookie property sets or returns a semicolon-separated list of key=value pairs (document cookies).
+
+    // Cookies are data, stored in small text files, on your computer.
+
+    // When a web server has sent a web page to a browser, the connection is shut down, and the server forgets everything about the user.
+
+    /* 
+       Cookies were invented to solve the problem "how to remember information about the user":
+       
+        => When a user visits a web page, his/her name can be stored in a cookie.
+        => Next time the user visits the page, the cookie "remembers" his/her name.
+    */ 
+
+    let cookie = document.cookie="username=John Doe; expires=Thu, 18 Dec 2025 12:00:00 UTC; path=/; secure; ";
+
+    console.log(cookie);
+
+
+
+
+
+    // Deleting a cookie is very simple.
+    // Just set the expires parameter to a past date.
+
+    // You should define the cookie path to ensure that you delete the right cookie.
+
+    // Some browsers will not let you delete a cookie if you don't specify the path.
+
+</script>
+</html>

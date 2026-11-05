@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Form events and validation</title>
+  <style>
+    body { font: 16px/1.5 system-ui, sans-serif; max-width: 680px; margin: 2rem auto; padding: 0 1rem; }
+    label { display: block; margin: .75rem 0; }
+    input, button { font: inherit; padding: .4rem; }
+  </style>
+</head>
+<body>
+  <h1>Form events and validation</h1>
+  <p>The submit event fires when a user submits a form. Listen on the form, validate its fields, then use preventDefault() when JavaScript should handle submission without reloading the page.</p>
+  <form id="signupForm">
+    <label>Name: <input name="name" required minlength="2"></label>
+    <label>Email: <input name="email" type="email" required></label>
+    <button type="submit">Sign up</button>
+  </form>
+  <p id="status">Complete the form and submit it.</p>
+  <p>Open Developer Tools → Console to see the submitted values.</p>
+  <script>
+    const form = document.querySelector("#signupForm");
+    const status = document.querySelector("#status");
+
+    form.addEventListener("submit", (event) => {
+      event.preventDefault(); // Stop the default reload/navigation.
+      if (!form.reportValidity()) {
+        status.textContent = "Please fix the highlighted fields.";
+        return;
+      }
+
+      const formData = new FormData(form);
+      const user = Object.fromEntries(formData.entries());
+      status.textContent = `Thanks, ${user.name}! JavaScript handled the form.`;
+      console.log("Form values:", user);
+    });
+
+    form.addEventListener("input", (event) => {
+      console.log("Input changed:", event.target.name, event.target.value);
+    });
+  </script>
+</body>
+</html>

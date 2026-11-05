@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-sizing</title>
+    <style>
+        #box1 {
+            width: 320px;
+            height: 50px;
+            border: 5px solid black;
+            padding: 10px;
+            margin: 20px;
+            box-sizing: content-box;
+            /* default */
+        }
+
+        #box2 {
+            width: 320px;
+            height: 50px;
+            border: 5px solid black;
+            padding: 10px;
+            margin: 20px;
+            box-sizing: border-box;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- CSS box model -->
+
+    <!-- In CSS, the term "box model" is used when talking about design and layout.
+    The CSS box model is essentially a box that wraps around every HTML element. It consists of: content, padding, borders and margins.
+    
+    Explanation of the different parts:
+    Content - The content of the box, where text and images appear
+    Padding - Clears an area around the content. The padding is transparent
+    Border - A border that goes around the padding and content
+    Margin - Clears an area outside the border. The margin is transparent -->
+
+
+    <h1>content-box</h1>
+
+    <!-- Demonstration of box model or content-box -->
+    <!-- 320px (width of content area)
+        + 20px (left padding + right padding)
+        + 10px (left border + right border)
+        = 350px (total width)
+
+        50px (height of content area)
+        + 20px (top padding + bottom padding)
+        + 10px (top border + bottom border)
+        = 80px (total height)  
+    -->
+
+    <div id="box1">content-box</div>
+
+
+
+    <h1>border-box</h1>
+
+    <div id="box2">border-box</div>
+
+    <!-- 
+        Box-sizing works only with the content area, padding and border.
+        In border-box, the content is adjust.
+    -->
+</body>
+
+</html>

@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>multiple background</title>
+    <style>
+        #example1 {
+            background-image: url(images/img4.jpg), url(images/lion.jpg);
+            background-position: left top, right bottom;
+            background-repeat: no-repeat, repeat;
+        }
+
+        #example2 {
+            background: url(images/img4.jpg) right bottom no-repeat, url(images/lion.jpg) left top repeat;
+        }
+
+
+        /* The CSS background-size property allows you to specify the size of background images.
+
+        The size can be specified in lengths, percentages, or by using one of the two keywords: contain or cover. */
+
+        #example3 {
+            border: 1px solid black;
+            background-image: url(images/lion.jpg);
+            background-size: 210px 150px;
+            background-repeat: no-repeat;
+            padding: 15px;
+        }
+
+        #example4 {
+            border: 1px solid black;
+            background: url(images/lion.jpg);
+            background-repeat: no-repeat;
+            padding: 15px;
+        }
+
+
+        /* Define size of multiple background images */
+
+        #example5 {
+            border: 1px solid black;
+            background: url(images/img4.jpg) left top no-repeat, url(images/lion.jpg) right bottom no-repeat;
+            background-size: 100px, 180px;
+        }
+
+
+
+        /* Full size background images */
+        /* 
+         The requirements are as follows:
+            Fill the entire page with the image (no white space)
+            Scale image as needed
+            Center image on page
+            Do not cause scrollbars
+        */
+
+        .example6 {
+            background: url(images/gradient\ resize.jpg) no-repeat fixed;
+            background-size: cover;
+            height: 300px;
+            border: 2px solid black;
+        }
+
+        .example7 {
+            background: url(images/gradient.jpg) no-repeat scroll;
+            background-size: contain;
+            height: 400px;
+            border: 2px solid black;
+        }
+
+        .example8 {
+            background: url(images/gradient.jpg) no-repeat scroll;
+            background-size: auto;
+            height: 400px;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- background-size values -->
+    <!-- 
+        1. auto
+        2. length(px)
+        3. percentage(%)
+        4. cover
+        5. contain
+     -->
+
+
+    <div id="example1">
+        <h1>Lorem Ipsum Dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus cumque nisi excepturi
+            id voluptatum? Dolore, aliquid? Placeat fuga quidem quasi eligendi temporibus consectetur, deleniti optio
+            voluptatibus dignissimos nesciunt nostrum magnam mollitia distinctio impedit corporis eos dicta maxime. Odio
+            consectetur, ipsa aliquid id sed distinctio quasi ea minus commodi. Repellendus aliquam maxime ex, corporis
+            ducimus adipisci ipsum voluptatem accusantium iste laboriosam alias voluptatum ad nemo distinctio
+            voluptates, iusto cupiditate a dolores impedit unde quod perferendis voluptas aut harum? Quidem iste
+            laudantium doloremque ipsum ex similique ea magni ipsa quasi dolore? Fugit nulla nemo officia aspernatur
+            recusandae reiciendis voluptatibus aut obcaecati enim?
+        </p>
+    </div>
+
+    <div id="example2">
+        <h1>Lorem Ipsum Dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat. Lorem, ipsum dolor sit amet consectetur adipisicing elit. Delectus cumque nisi excepturi
+            id voluptatum? Dolore, aliquid? Placeat fuga quidem quasi eligendi temporibus consectetur, deleniti optio
+            voluptatibus dignissimos nesciunt nostrum magnam mollitia distinctio impedit corporis eos dicta maxime. Odio
+            consectetur, ipsa aliquid id sed distinctio quasi ea minus commodi. Repellendus aliquam maxime ex, corporis
+            ducimus adipisci ipsum voluptatem accusantium iste laboriosam alias voluptatum ad nemo distinctio
+            voluptates, iusto cupiditate a dolores impedit unde quod perferendis voluptas aut harum? Quidem iste
+            laudantium doloremque ipsum ex similique ea magni ipsa quasi dolore? Fugit nulla nemo officia aspernatur
+            recusandae reiciendis voluptatibus aut obcaecati enim?
+        </p>
+    </div>
+
+    <h1>The background-size Property</h1>
+
+    <p>Resized background-image:</p>
+    <div id="example3">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
+
+    <p>Original size of the background-image:</p>
+    <div id="example4">
+        <h2>Lorem Ipsum Dolor</h2>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div> <br><br>
+
+    <div id="example5">
+        <h1>Lorem Ipsum Dolor</h1>
+        <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat.</p>
+        <p>Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea
+            commodo consequat.</p>
+    </div>
+
+    <br><br>
+
+    <div class="example6">
+
+    </div>
+
+    <br><br>
+
+    <div class="example7">
+
+    </div>
+
+    <br><br>
+
+    <div class="example8">
+
+    </div>
+</body>
+
+</html>

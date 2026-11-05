@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic methods</title>
+</head>
+<body>
+    <div id="outer" title="container">
+        <p lang="hi">यह एक हिंदी पैराग्राफ है।</p>
+        <div class="inner" id="child-div" dir="ltr" lang="fr">
+            Ceci est un paragraphe en français.
+            <div class="sub-child">
+                Hello I am using JS
+                <p>Lorem    ipsum,          dolor sit amet consectetur                  adipisicing elit.               Ratione, nesciunt.</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="mydiv1">
+        <ul id="myul1">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    <div id="mydiv2">
+        <ul id="myul2">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+
+    <div id="mydiv3">
+        <ul id="myul3">
+            <li>Item 1</li>
+            <li>Item 2</li>
+            <li>Item 3</li>
+            <li>Item 4</li>
+        </ul>
+    </div>
+</body>
+<script>
+    let element1 = document.querySelector(".inner");
+    let element2 = document.querySelector("#outer");
+
+    console.log(element1.id);
+    console.log(element1.className);
+    console.log(element1.dir);
+    console.log(element2.title);
+    console.log(element1.tagName);
+    console.log(element1.lang);
+
+
+    element2.id = "outer-div";
+    element2.className = "outer";
+    element1.dir = "rtl";
+    element1.title = "parent";
+    element2.lang = "hi"
+
+    
+
+
+
+    console.log(element2.innerText);
+    console.log(element2.innerHTML);
+    console.log(element2.textContent);
+
+
+    let subChild = document.querySelector(".sub-child");
+
+    console.log(subChild.outerHTML);
+    console.log(subChild.outerText);
+
+
+
+
+
+
+    let div1 = document.getElementById("mydiv1");
+    let u1 = document.getElementById("myul1");
+
+    let firstChild = u1.firstElementChild;
+    console.log(firstChild);
+
+    firstChild.innerText = "DOM Manipulation";
+
+
+    let lastChild = u1.lastElementChild;
+    console.log(lastChild);
+
+    lastChild.innerHTML = "<h4> Web Development </h4>"
+
+
+    let secondChild = document.querySelector("#myul1 :nth-child(2)");
+    console.log(secondChild);
+
+    secondChild.textContent = "Scooby Doo";
+
+
+
+
+    let div2 = document.getElementById("mydiv2");
+    let u2 = document.getElementById("myul2");
+    
+    u2.outerHTML = "<h2>JavaScript is a Scripting Language</h2>";
+    console.log(div2);
+
+
+
+
+    let div3 = document.getElementById("mydiv3");
+    let u3 = document.getElementById("myul3");
+    
+    u3.outerText = "Welcome to JavaScript";
+    console.log(div3);
+
+    console.log(document.documentElement)
+    
+</script>
+</html>

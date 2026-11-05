@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text formatting</title>
+    <style>
+        /* text-align */
+        .cen {
+            text-align: center;
+        }
+
+        .lt {
+            text-align: left;
+        }
+
+        .rt {
+            text-align: right;
+        }
+
+        div.just {
+            border: 1px solid black;
+            padding: 10px;
+            width: 200px;
+            height: 200px;
+            text-align: justify;
+        }
+
+
+
+
+        /* text-align-last */
+        p.a {
+            text-align-last: right;
+        }
+
+        p.b {
+            text-align-last: center;
+        }
+
+        p.c {
+            text-align-last: justify;
+        }
+
+        p.d {
+            text-align-last: left;
+        }
+
+
+
+        /* vertical-align */
+        img.a {
+            vertical-align: baseline;
+        }
+
+        img.b {
+            vertical-align: text-top;
+        }
+
+        img.c {
+            vertical-align: text-bottom;
+        }
+
+        img.d {
+            vertical-align: sub;
+        }
+
+        img.e {
+            vertical-align: super;
+        }
+
+
+
+
+        /* text-transform */
+        .uc {
+            text-transform: uppercase;
+        }
+
+        .lc {
+            text-transform: lowercase;
+        }
+
+        .c {
+            text-transform: capitalize;
+        }
+
+
+
+        /* text-indent */
+        p.indent {
+            text-indent: 50px;
+        }
+
+
+
+
+        /* letter-spacing */
+        h2.ls1 {
+            letter-spacing: 5px;
+        }
+
+        h3.ls2 {
+            letter-spacing: -2px;
+        }
+
+
+
+
+        /* word-spacing */
+        p.one {
+            word-spacing: 10px;
+        }
+
+        p.two {
+            word-spacing: -2px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS text properties -->
+    <!-- 
+        1. text-align
+        2. text-align-last
+        3. text-transform
+        4. text-indent
+        5. vertical-align
+        6. letter-spacing
+        7. word-spacing
+     -->
+
+
+    <!-- values of text-align and text-align-last -->
+    <!-- 
+        1. right
+        2. left
+        3. center
+        4. justify
+     -->
+
+
+    <!-- values of vertical-align -->
+    <!-- 
+        1. baseline
+        2. text-top
+        3. text-bottom
+        4. sub
+        5. super
+     -->
+
+
+    <!-- values of text-transform -->
+    <!-- 
+        1. uppercase
+        2. lowercase
+        3. capitalize
+     -->
+
+
+    <h1>text-align</h1>
+    <div>
+        <h1 class="cen">center</h1>
+        <h1 class="lt">left</h1>
+        <h1 class="rt">right</h1>
+        <div class="just">In my younger and more vulnerable years my father gave me some advice that I've been turning
+            over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all
+            the people in this world haven't had the advantages that you've had.'</div>
+    </div>
+
+    <br><br><br>
+
+    <h1>text-align-last</h1>
+    <div>
+        <p class="a">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+            pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Nam, facere. Quasi iure nulla ab non dolorum recusandae
+            incidunt impedit placeat fugiat eveniet nesciunt deleniti numquam, reiciendis unde maxime ut rerum.</p>
+
+        <p class="b">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+            pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Dolores quasi similique deleniti dolore ipsa quam quos iste
+            veniam! Aperiam excepturi accusamus eos id ex at perferendis obcaecati nisi voluptas nihil!</p>
+
+        <p class="c">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+            pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Lorem ipsum
+            dolor sit amet consectetur adipisicing elit. Quo unde sapiente libero, maxime deserunt asperiores nam!
+            Tempore sit placeat error qui possimus quibusdam facere ducimus sunt quo voluptatibus? Cumque, rem.</p>
+
+        <p class="d">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam semper diam at erat pulvinar, at
+            pulvinar felis blandit. Vestibulum volutpat tellus diam, consequat gravida libero rhoncus ut. Lorem ipsum
+            dolor sit, amet consectetur adipisicing elit. Similique maiores incidunt, officiis itaque id enim, quas
+            nesciunt eum veniam ducimus praesentium nihil corporis minima soluta iste? Quis assumenda fuga aperiam.</p>
+    </div>
+
+    <br><br><br>
+
+    <h1>vertical-align</h1>
+    <div>
+        <h2>vertical-align: baseline (default):</h2>
+        <p>An <img class="a" src="images/dog.ico" width="9" height="9"> image with a default alignment.</p>
+
+        <h2>vertical-align: text-top:</h2>
+        <p>An <img class="b" src="images/dog.ico" width="9" height="9"> image with a text-top alignment.</p>
+
+        <h2>vertical-align: text-bottom:</h2>
+        <p>An <img class="c" src="images/dog.ico" width="9" height="9"> image with a text-bottom alignment.</p>
+
+        <h2>vertical-align: sub:</h2>
+        <p>An <img class="d" src="images/dog.ico" width="9" height="9"> image with a sub alignment.</p>
+
+        <h2>vertical-align: sup:</h2>
+        <p>An <img class="e" src="images/dog.ico" width="9" height="9"> image with a super alignment.</p>
+    </div>
+
+    <br><br><br>
+
+    <h1>text-transform</h1>
+    <div>
+        <p class="uc">uppercase</p>
+        <p class="lc">lowercase</p>
+        <p class="c">capitalize</p>
+    </div>
+
+
+    <br><br><br>
+
+    <h1>text-indent</h1>
+    <div>
+        <p class="indent">In my younger and more vulnerable years my father gave me some advice that I've been turning
+            over in my mind ever since. 'Whenever you feel like criticizing anyone,' he told me, 'just remember that all
+            the people in this world haven't had the advantages that you've had.'Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. A architecto dolorum sunt, maxime iure suscipit obcaecati modi, perspiciatis illum
+            molestias veniam, dicta quis minus. Consequatur numquam quam laborum sint facilis. Perspiciatis consequatur
+            est quisquam incidunt quia. Similique aut totam nostrum neque, nisi aspernatur obcaecati sit dicta,
+            voluptatem repellendus eos accusamus provident possimus ab, laudantium doloribus illo? Itaque nostrum
+            consectetur quos a quaerat sapiente corrupti quidem modi eius placeat iste rem unde, inventore dignissimos
+            ipsa distinctio amet sed? Rem voluptas, assumenda totam praesentium quia necessitatibus sit placeat possimus
+            cum quaerat ratione, magni, error consectetur dolore. Deserunt minus recusandae minima maiores quasi?</p>
+    </div>
+
+    <br><br><br>
+
+    <h1>letter-spacing</h1>
+    <div>
+        <h2 class="ls1">This is heading 2</h2>
+        <h3 class="ls2">This is heading 3</h3>
+    </div>
+
+    <br><br><br>
+
+    <h1>word-spacing</h1>
+    <div>
+        <p class="one">This is a paragraph with larger word spacing.</p>
+        <p class="two">This is a paragraph with smaller word spacing.</p>
+    </div>
+</body>
+
+</html>

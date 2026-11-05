@@ -1,0 +1,131 @@
+db.collection_name.updateOne(
+    {field: "Value"},
+    {$set: {updated_field1: "new_value", updated_field2: "new_value"}}
+)
+
+
+db.collection_name.replaceOne(
+    {_id: ObjectId()},
+    {name: "value", age: 23, course: ""}
+)
+
+
+db.collection_name.updateMany(
+    { filter },
+    { update }
+)
+
+
+for example: 
+
+[
+    { name: "Subham", age: 22, city: "Berhampur" },
+    { name: "Rahul", age: 21, city: "Berhampur" },
+    { name: "Aman", age: 23, city: "Cuttack" }
+]
+
+db.students.updateMany(
+    { city: "Berhampur" },
+    { $set: { state: "Odisha" } }
+)
+
+
+
+
+Update Operators
+
+1. Field Update Operators:
+
+    $set: Set/change a field
+    $unset: Removes the field from the document
+    $rename: Renames the field
+    $inc: Increments/Decrements the field value
+    $mul: Multiplies the field value
+    $currentDate: Sets the field to the current date
+    $min: Update only if new value is smaller
+    $max: Update only if new value is larger
+
+
+2. Array Update Operators:
+
+    $push: Add an element to an array
+    $pop: Remove first/last element
+    $addToSet: Add element only if it doesn't already exist
+    $pull: Remove matching elements
+    $pullAll: Remove multiple specified elements
+    $each: Add multiple elements with $push / $addToSet
+    $position: Specify insertion position with $push
+    $slice: Limit array size with $push
+    $sort: Sort array elements with $push
+
+
+
+
+$inc can take positive and negative values
+$currentDate take true value
+$pop will remove the last if we set the value 1 and remove the first element if we set the value -1
+
+
+
+$lt -> less than
+for example: 
+
+marks: [40, 55, 70, 85, 30]
+db.students.updateOne(
+    { name: "Subham" },
+    { $pull: { marks: { $lt: 50 } } }
+)
+
+
+
+
+
+
+$each
+
+db.students.updateOne(
+    { name: "Subham" },
+    {
+        $push: {
+            skills: {
+                $each: ["React", "Node.js", "MongoDB"]
+            }
+        }
+    }
+)
+
+
+
+
+
+$position
+
+db.students.updateOne(
+    { name: "Subham" },
+    {
+        $push: {
+            skills: {
+                $each: ["React"],
+                $position: 1
+            }
+        }
+    }
+)
+
+
+
+
+
+$sort
+
+db.students.updateOne(
+    { name: "Subham" },
+    {
+        $push: {
+            marks: {
+                $each: [],
+                $sort: 1
+            }
+        }
+    }
+)

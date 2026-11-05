@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>html collection</title>
+</head>
+<body>
+    <ul class="list">
+        <li name="firstChild">Home</li>
+        <li id="child2">About</li>
+        <li>Contact Us</li>
+        <li>Help</li>
+    </ul>
+</body>
+<script>
+    
+    // An HTMLCollection is an array-like collection (list) of HTML elements.
+
+
+    // Methods that returns HTMLCollection:
+    /* 
+        1. getElementsByTagName()
+        2. getElementsByClassName()
+        3. children
+    */
+
+
+    /* 
+        HTMLCollection has three methods:
+        1. length
+        2. item()
+        3. namedItem()
+    */
+
+    let list = document.querySelector(".list").children;
+
+    console.log(list);
+    console.log(list.length);
+    console.log(list.item(2));
+    console.log(list.namedItem("child2"));
+    console.log(list.namedItem("firstChild"));
+
+
+    // The namedItem() method uses the id or name attribute to identify the element.
+
+
+</script>
+</html>

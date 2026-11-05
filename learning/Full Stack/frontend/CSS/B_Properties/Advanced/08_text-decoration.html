@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-decoration</title>
+    <style>
+        /* text-decoration-line */
+        .a {
+            text-decoration-line: overline;
+        }
+
+        .b {
+            text-decoration-line: line-through;
+        }
+
+        .c {
+            text-decoration-line: underline;
+        }
+
+        .d {
+            text-decoration-line: overline underline;
+        }
+
+
+
+        /* text-decoration-color */
+        .e {
+            text-decoration-line: overline;
+            text-decoration-color: red;
+        }
+
+        .f {
+            text-decoration-line: line-through;
+            text-decoration-color: green;
+        }
+
+
+
+
+        /* text-decoration-style */
+        .g {
+            text-decoration-line: underline;
+            text-decoration-style: solid;
+        }
+
+        .h {
+            text-decoration-line: underline;
+            text-decoration-style: double;
+        }
+
+        .i {
+            text-decoration-line: underline;
+            text-decoration-style: dotted;
+        }
+
+        .j {
+            text-decoration-line: underline;
+            text-decoration-style: dashed;
+        }
+
+        .k {
+            text-decoration-line: underline;
+            text-decoration-style: wavy;
+        }
+
+        .l {
+            text-decoration-line: underline;
+            text-decoration-color: red;
+            text-decoration-style: wavy;
+        }
+
+
+
+
+
+        /* text-decoration-thickness */
+        .m {
+            text-decoration-line: underline;
+            text-decoration-thickness: auto;
+        }
+
+        .n {
+            text-decoration-line: underline;
+            text-decoration-thickness: 5px;
+        }
+
+        .o {
+            text-decoration-line: underline;
+            text-decoration-thickness: 25%;
+        }
+
+        .p {
+            text-decoration-line: underline;
+            text-decoration-color: red;
+            text-decoration-style: double;
+            text-decoration-thickness: 5px;
+        }
+
+
+
+
+
+
+        /* text-decoration (shorthand) */
+        .q {
+            text-decoration: underline;
+        }
+
+        .r {
+            text-decoration: underline red;
+        }
+
+        .s {
+            text-decoration: underline red double;
+        }
+
+        .t {
+            text-decoration: underline red double 5px;
+        }
+
+
+
+
+
+        /* All links in HTML are underlined by default. Sometimes you see that links are styled with no underline. The text-decoration: none; is used to remove the underline from links. */
+        .link {
+            text-decoration: none;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- text-decoration properties -->
+    <!-- 
+        1. text-decoration-line
+        2. text-decoration-color
+        3. text-decoration-style
+        4. text-decoration-thickness
+     -->
+
+
+
+    <!-- values of text-decoration-line -->
+    <!-- 
+        1. overline
+        2. underline
+        3. line-through
+        4. none
+     -->
+
+
+
+    <!-- values of text-decoration-style -->
+    <!-- 
+        1. solid
+        2. double
+        3. dotted
+        4. dashed
+        5. wavy
+     -->
+
+
+
+
+    <!-- text-decoration (shorthand) -->
+    <!-- 
+        1. text-decoration-line (required)
+        2. text-decoration-color (optional)
+        3. text-decoration-style (optional)
+        4. text-decoration-thickness (optional)
+     -->
+
+    <h1>text-decoration-line</h1>
+    <div>
+        <h1 class="a">overline</h1>
+        <h1 class="b">line-through</h1>
+        <h1 class="c">underline</h1>
+        <h1 class="d">overline and underline</h1>
+    </div>
+
+    <br><br>
+
+    <h1>text-decoration-color</h1>
+    <div>
+        <h1 class="e">red</h1>
+        <h1 class="f">green</h1>
+    </div>
+
+    <br><br>
+
+    <h1>text-decoration-style</h1>
+    <div>
+        <h1 class="g">solid</h1>
+        <h1 class="h">double</h1>
+        <h1 class="i">dotted</h1>
+        <h1 class="j">dashed</h1>
+        <h1 class="k">wavy</h1>
+        <h1 class="l">red wavy</h1>
+    </div>
+
+    <br><br>
+
+    <h1>text-decoration-thickness</h1>
+    <div>
+        <h1 class="m">thickness</h1>
+        <h1 class="n">thickness</h1>
+        <h1 class="o">thickness</h1>
+        <h1 class="p">thickness</h1>
+    </div>
+
+    <br><br>
+
+    <h1>text-decoration (shorthand)</h1>
+    <div>
+        <h1 class="q">shorthand</h1>
+        <h1 class="r">shorthand</h1>
+        <h1 class="s">shorthand</h1>
+        <h1 class="t">shorthand</h1>
+    </div>
+
+    <br><br>
+
+    <a href="www.youtube.com" class="link">Youtube</a>
+</body>
+
+</html>

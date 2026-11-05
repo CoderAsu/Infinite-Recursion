@@ -1,0 +1,25 @@
+<!-- HTML <dialog> Tag -->
+<!-- The <dialog> tag defines a dialog box or subwindow.
+
+The <dialog> element makes it easy to create popup dialogs and modals on a web page. -->
+
+    <h1>The dialog element</h1>
+
+    <p>This is some text.</p>
+    
+    <p>This is some text.</p>
+    
+    <dialog open style="background-color: yellow; opacity: .9; border-radius: 5px ;">This is an open dialog window</dialog>
+    
+    <p>This is some text.</p>
+    
+    <p>This is some text.</p>
+
+    <br><br><br>
+    
+    <dialog id="myDialog">
+        <p>This is a dialog box!</p>
+        <button onclick="document.getElementById('myDialog').close()">Close</button>
+    </dialog>
+      
+      <button onclick="document.getElementById('myDialog').showModal()">Open Dialog</button>

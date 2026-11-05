@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Screen properties</title>
+</head>
+
+<body>
+    <h1>Screen properties</h1>
+    <p>Screen describes the display attached to this device. These values come from your current screen.</p>
+    <p>Open Developer Tools → Console to follow the example output.</p>
+    <script>
+        const display = window.screen;
+        console.group("Screen properties"); console.table({ width: display.width, height: display.height, availableWidth: display.availWidth, availableHeight: display.availHeight, colorDepth: display.colorDepth, pixelDepth: display.pixelDepth, orientationType: display.orientation?.type, orientationAngle: display.orientation?.angle, multipleScreensAvailable: display.isExtended }); console.log("Orientation object:", display.orientation); console.groupEnd();
+    </script>
+</body>
+
+</html>

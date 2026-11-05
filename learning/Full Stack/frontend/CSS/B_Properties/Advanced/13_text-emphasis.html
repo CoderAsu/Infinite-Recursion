@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-emphasis</title>
+    <style>
+        p {
+            font-size: 32px;
+        }
+
+        .test1 {
+            text-emphasis: filled red;
+        }
+
+        .test2 {
+            text-emphasis: open blue;
+        }
+
+        .test3 {
+            text-emphasis: dot green;
+        }
+
+        .test4 {
+            text-emphasis: circle rgb(0, 0, 0);
+        }
+
+        .test5 {
+            text-emphasis: double-circle rgb(231, 34, 156);
+        }
+
+        .test6 {
+            text-emphasis: sesame rgb(233, 30, 233);
+        }
+
+        .test7 {
+            text-emphasis: triangle orange;
+        }
+
+        .test8 {
+            text-emphasis: "em" crimson;
+        }
+
+        .test9 {
+            text-emphasis: none;
+        }
+
+        .test10 {
+            text-emphasis-style: double-circle;
+            text-emphasis-color: rgb(21, 240, 32);
+            text-emphasis-position: under;
+        }
+
+        .test11 {
+            writing-mode: vertical-lr;
+            text-emphasis: filled red;
+            text-emphasis-position: over right;
+        }
+
+        .test12 {
+            writing-mode: vertical-lr;
+            text-emphasis: filled red;
+            text-emphasis-position: under left;
+        }
+
+
+
+        /* text-emphasis shorthand:
+            1. text-emphasis-style
+            2. text-emphasis-color
+        */
+
+        /* values of text-emphasis-style:
+            1. filled
+            2. open
+            3. dot
+            4. circle
+            5. double-circle
+            6. sesame
+            7. triangle
+            8. string
+            9. none
+        */
+
+        /* values of text-emphasis-position:
+            1. over (default)
+            2. under
+            3. left
+            4. right
+        */
+    </style>
+</head>
+
+<body>
+    <h1>text-emphasis property</h1>
+
+    <p class="test1">Here is some text</p>
+    <p class="test2">Here is some text</p>
+    <p class="test3">Here is some text</p>
+    <p class="test4">Here is some text</p>
+    <p class="test5">Here is some text</p>
+    <p class="test6">Here is some text</p>
+    <p class="test7">Here is some text</p>
+    <p class="test8">Here is some text</p>
+    <p class="test9">Here is some text</p>
+    <p class="test10">Here is some text</p>
+    <p class="test11">Here is some text</p>
+    <br><br>
+    <p class="test12">Here is some text</p>
+</body>
+
+</html>

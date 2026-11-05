@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <style>
+        body {
+            display: flex;
+            justify-content: center;
+            /* Horizontal */
+            align-items: center;
+            /* Vertical */
+            height: 100vh;
+        }
+
+        form {
+            border: 2px solid black;
+            width: 210px;
+            height: 100px;
+            padding: 40px;
+        }
+
+        input:nth-of-type(3) {
+            margin-left: 70px;
+            width: 70px;
+            height: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <form action="/submit" method="post">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name">
+        <br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email">
+        <br><br>
+
+        <input type="submit">
+    </form>
+</body>
+
+</html>

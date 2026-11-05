@@ -1,0 +1,41 @@
+db.collection_name.find(
+    {field: "value"}
+)
+
+db.collection_name.findOne(
+    {field: "value"}
+)
+
+
+using Projection
+
+db.collection_name.find(
+    {field: "value"},
+    {field1:1, field2:1, field3: 0}
+)
+
+or
+
+db.collection_name.find({field: value}).projection({field1:1, field2:1, field3: 0})
+
+
+
+
+db.collection_name.find().sort({field: 1})
+
+1 -> ascending
+-1 -> decending
+
+
+
+
+db.collection_name.find().count()
+
+
+
+
+db.collection_name.find().limit(3)
+
+
+
+db.collection_name.find().skip()

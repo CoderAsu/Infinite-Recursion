@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>rounded border</title>
+    <style>
+        /* (first value applies to top-left corner, second value applies to top-right corner, third value applies to bottom-right corner, and fourth value applies to bottom-left corner) */
+        #rcorners1 {
+            border-radius: 15px 50px 30px 5px;
+            background: #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+
+        /* (first value applies to top-left corner, second value applies to top-right and bottom-left corners, and third value applies to bottom-right corner) */
+        #rcorners2 {
+            border-radius: 15px 50px 30px;
+            background: #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+
+
+
+        /* (first value applies to top-left and bottom-right corners, and the second value applies to top-right and bottom-left corners) */
+        #rcorners3 {
+            border-radius: 15px 50px;
+            background: #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+
+
+        /* (the value applies to all four corners, which are rounded equally) */
+        #rcorners4 {
+            border-radius: 15px;
+            background: #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #tl {
+            border-top-left-radius: 50px;
+            background: #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #tr {
+            border-top-right-radius: 50px;
+            background: #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #br {
+            border-bottom-right-radius: 50px;
+            background: #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        #bl {
+            border-bottom-left-radius: 50px;
+            background: #73AD21;
+            padding: 20px;
+            width: 200px;
+            height: 150px;
+        }
+
+        .circle {
+            border: 2px solid black;
+            background-color: blueviolet;
+            border-radius: 50%;
+            height: 200px;
+            width: 200px;
+            margin-left: 30px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>The border-radius Property</h1>
+
+    <p>Four values - border-radius: 15px 50px 30px 5px:</p>
+    <p id="rcorners1"></p> <br><br><br>
+
+    <p>Three values - border-radius: 15px 50px 30px:</p>
+    <p id="rcorners2"></p> <br><br><br>
+
+    <p>Two values - border-radius: 15px 50px:</p>
+    <p id="rcorners3"></p> <br><br><br>
+
+    <p>One value - border-radius: 15px:</p>
+    <p id="rcorners4"></p> <br><br><br>
+
+    <p>border-top-left-radius</p>
+    <p id="tl"></p> <br><br><br>
+
+    <p>border-top-right-radius</p>
+    <p id="tr"></p> <br><br><br>
+
+    <p>border-bottom-right-radius</p>
+    <p id="br"></p> <br><br><br>
+
+    <p>border-bottom-left-radius</p>
+    <p id="bl"></p> <br><br><br>
+
+    <p>circle</p>
+    <div class="circle"></div>
+</body>
+
+</html>

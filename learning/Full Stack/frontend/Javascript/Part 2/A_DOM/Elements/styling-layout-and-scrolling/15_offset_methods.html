@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>offset methods</title>
+    <style>
+
+        body{
+            margin: 0;
+            padding: 0;
+        }
+
+
+        .test1{
+            height: 250px;
+            width: 400px;
+            padding: 10px;
+            margin: 15px;
+            border: 5px solid red;
+            background-color: lightskyblue;
+        }
+
+        .test2{
+            top: 40px;
+            left: 50px;
+            margin: 10px;
+            padding: 10px;
+            width: 300px;
+            position: relative;
+            border: 1px solid black
+        }
+
+
+        .outer{
+            position: relative;
+            width: 400px;
+            height: 200px;
+            border: 1px solid black;
+            margin-top: 100px;
+            margin-left: 50px;
+            
+        }
+
+        .test3{
+            position: absolute;
+            width: 300px;
+            border: 1px solid black;
+            top: 50px;
+            left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test1">
+        <b>Information about this div:</b><br>
+        Height: 250px<br>
+        Width: 400px<br>
+        Padding: 10px<br>
+        Margin: 15px<br>
+        Border: 5px<br>
+        <p id="demo1"></p>
+    </div>
+
+
+    <div class="test2">
+        <p>The offset values of "test2" are:</p>
+        <p id="demo2"></p>
+    </div>
+
+    <div class="outer">
+        <div class="test3">
+            <p>My offsetParent is:</p>
+            <p id="demo3"></p>
+        </div>
+    </div>
+</body>
+<script>
+
+    const element =  document.querySelector(".test1");
+    let text = `offsetHeight: ${element.offsetHeight}px<br>`;
+    text += `offsetWidth: ${element.offsetWidth}px`;
+
+    document.getElementById("demo1").innerHTML = text;
+
+
+    /* 
+        The offsetWidth and offsetHeight property returns the viewable width and height of an element (in pixels) including padding, border and scrollbar, but not the margin.
+    */
+
+
+    const element2 = document.querySelector(".test2");
+    let text2 = `Left: ${element2.offsetLeft} <br>Top: ${element2.offsetTop}`;
+
+    document.getElementById("demo2").innerHTML = text2;
+
+
+    /* 
+        The offsetTop and offsetLeft property returns the top and left position (in pixels) relative to the parent. It takes only margin, top and left property.
+    */
+
+
+    const element3 = document.querySelector(".test3");
+    document.getElementById("demo3"). innerHTML = element3.offsetParent;
+
+    console.log(element3.offsetParent);
+    console.log(`offsetTop: ${element3.offsetTop}`);
+    console.log(`offsetLeft: ${element3.offsetLeft}`);
+
+
+    /* 
+        The offsetParent property returns the nearest ancestor that has a position other than static. The offsetParent property returns null if the element is not visible (display="none").
+    */
+</script>
+</html>

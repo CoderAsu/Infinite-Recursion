@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Window methods</title>
+</head>
+
+<body>
+    <h1>Window methods</h1>
+    <p>Methods are actions. This page safely runs a timer and reads information; browser-changing actions are only
+        listed.</p>
+    <p>Open Developer Tools → Console to follow the example output.</p>
+    <script>
+        const browserWindow = window;
+        console.group("Window methods");
+        console.log("Available methods:", { alert: browserWindow.alert, confirm: browserWindow.confirm, prompt: browserWindow.prompt, open: browserWindow.open, close: browserWindow.close, focus: browserWindow.focus, blur: browserWindow.blur, moveBy: browserWindow.moveBy, moveTo: browserWindow.moveTo, resizeBy: browserWindow.resizeBy, resizeTo: browserWindow.resizeTo, scroll: browserWindow.scroll, scrollBy: browserWindow.scrollBy, scrollTo: browserWindow.scrollTo, setTimeout: browserWindow.setTimeout, clearTimeout: browserWindow.clearTimeout, setInterval: browserWindow.setInterval, clearInterval: browserWindow.clearInterval, requestAnimationFrame: browserWindow.requestAnimationFrame, cancelAnimationFrame: browserWindow.cancelAnimationFrame, addEventListener: browserWindow.addEventListener, removeEventListener: browserWindow.removeEventListener, postMessage: browserWindow.postMessage, print: browserWindow.print, getComputedStyle: browserWindow.getComputedStyle, matchMedia: browserWindow.matchMedia });
+        const timerId = browserWindow.setTimeout(() => console.log("setTimeout ran after 1 second"), 1000);
+        console.log("Timer ID:", timerId); console.log("Dark mode preferred?", browserWindow.matchMedia("(prefers-color-scheme: dark)").matches); console.log("Body display style:", browserWindow.getComputedStyle(document.body).display);
+        console.log("Calling dialog, navigation, pop-up, move, or resize methods can affect the browser, so they are not run here."); console.groupEnd();
+    </script>
+</body>
+
+</html>

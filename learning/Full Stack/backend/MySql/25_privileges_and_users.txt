@@ -1,0 +1,45 @@
+PRIVILEGES AND USERS (DCL)
+
+DCL:
+
+a. Grant: The GRANT command gives privileges to a user.
+b. Revoke: The REVOKE command removes previously granted privileges.
+
+GRANT/REVOKE privilege_name ON database_name.table_name TO 'username'@'host';
+
+Privilege_name can be SELECT, INSERT, UPDATE, DELETE, CREATE, ALTER, DROP, INDEX
+
+1. Give/remove one permission:
+
+Ex: GRANT/REVOKE SELECT ON company.employee TO 'john'@'localhost';
+
+2. Give/remove multiple permission:
+
+Ex: GRANT/REVOKE SELECT, INSERT, UPDATE ON company.employee TO 'john'@'localhost';
+
+3. Give/remove all permissions on a database:
+
+Ex: GRANT/REVOKE ALL PRIVILEGES ON company.* TO 'john'@'localhost';
+
+4. Give/remove all permissions on all databases:
+
+Ex: GRANT/REVOKE ALL PRIVILEGES ON *.* TO 'admin'@'localhost';
+
+To see the privileges assigned to a user:
+
+SHOW GRANTS FOR 'john'@'localhost';
+
+How to create a user in MySQL:
+
+1. Create one user: CREATE USER 'john'@'localhost' IDENTIFIED BY 'john123';
+2. Create multiple users: CREATE USER 'john'@'localhost' IDENTIFIED BY 'john123', 'alice'@'localhost' IDENTIFIED BY 'alice123', 'bob'@'localhost' IDENTIFIED BY 'bob123';
+
+Verify Created Users: SELECT User, Host FROM mysql.user;
+
+1. Remove a user: DROP USER 'john'@'localhost';
+2. Remove multiple users: DROP USER 'user1'@'localhost', 'user2'@'localhost', 'user3'@'localhost';
+
+Check the Current Logged-In User: SELECT USER(); OR SELECT CURRENT_USER();
+
+Set a password for user:
+ALTER USER 'john'@'localhost' IDENTIFIED BY 'john123';

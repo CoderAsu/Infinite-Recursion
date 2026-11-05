@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>cloneNode()</title>
+</head>
+<body>
+    <ul id="list1">
+        <li>Orange</li>
+        <li>Apple</li>
+        <li>Grapes</li>
+        <li>Banana</li>
+    </ul>
+    <br>
+
+    <ul id="list2">
+        <li>Carrot</li>
+        <li>Reddish</li>
+    </ul>
+</body>
+<script>
+
+    let target = document.getElementById("list1").children[1];
+
+    let copyElement = target.cloneNode(true);
+
+    
+    document.getElementById("list2").appendChild(copyElement);
+
+
+    // true means both element and content and false means only element not content
+
+</script>
+</html>

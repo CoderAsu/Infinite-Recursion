@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>contrast-color()</title>
+    <style>
+        :root {
+            --bg: rgb(242, 80, 150);
+            --bg-hover: rgb(9, 125, 9);
+        }
+
+        button {
+            color: contrast-color(var(--bg));
+            background-color: var(--bg);
+            font-size: 30px;
+            padding: 15px 25px;
+            border: 0;
+            border-radius: 10px;
+        }
+
+
+        button:hover {
+            background: var(--bg-hover);
+            color: contrast-color(var(--bg-hover));
+        }
+    </style>
+</head>
+
+<body>
+    <button>Click</button>
+</body>
+
+</html>

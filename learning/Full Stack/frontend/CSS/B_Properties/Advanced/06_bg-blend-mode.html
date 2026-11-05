@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background-blend-mode</title>
+    <style>
+        .container1 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: normal;
+            background-size: 100%;
+        }
+
+        .container2 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: multiply;
+            background-size: 100%;
+        }
+
+        .container3 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: screen;
+            background-size: 100%;
+        }
+
+        .container4 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: overlay;
+            background-size: 100%;
+        }
+
+        .container5 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: darken;
+            background-size: 100%;
+        }
+
+        .container6 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: lighten;
+            background-size: 100%;
+        }
+
+        .container7 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: color-dodge;
+            background-size: 100%;
+        }
+
+        .container8 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: color-burn;
+            background-size: 100%;
+        }
+
+        .container9 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: hard-light;
+            background-size: 100%;
+        }
+
+        .container10 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: soft-light;
+            background-size: 100%;
+        }
+
+        .container11 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: difference;
+            background-size: 100%;
+        }
+
+        .container12 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: exclusion;
+            background-size: 100%;
+        }
+
+        .container13 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: hue;
+            background-size: 100%;
+        }
+
+        .container14 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: color;
+            background-size: 100%;
+        }
+
+        .container15 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: saturation;
+            background-size: 100%;
+        }
+
+        .container16 {
+            width: 400px;
+            height: 265px;
+            border: 2px solid black;
+            background-image: linear-gradient(to right, red, yellow), url("images/img4.jpg");
+            background-blend-mode: luminosity;
+            background-size: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Values of background-blend-mode -->
+    <!-- 
+        1. normal
+        2. multiply
+        3. screen
+        4. overlay
+        5. darken
+        6. lighten
+        7. color-dodge
+        8. color-burn
+        9. hard-light
+        10. soft-light
+        11. difference
+        12. exclusion
+        13. hue
+        14. color
+        15. saturation
+        16. luminosity
+     -->
+    <h1>normal</h1>
+    <div class="container1"></div> <br>
+
+    <h1>multiply</h1>
+    <div class="container2"></div> <br>
+
+    <h1>screen</h1>
+    <div class="container3"></div> <br>
+
+    <h1>overlay</h1>
+    <div class="container4"></div> <br>
+
+    <h1>darken</h1>
+    <div class="container5"></div> <br>
+
+    <h1>lighten</h1>
+    <div class="container6"></div> <br>
+
+    <h1>color-dodge</h1>
+    <div class="container7"></div> <br>
+
+    <h1>color-burn</h1>
+    <div class="container8"></div> <br>
+
+    <h1>hard-light</h1>
+    <div class="container9"></div> <br>
+
+    <h1>soft-light</h1>
+    <div class="container10"></div> <br>
+
+    <h1>difference</h1>
+    <div class="container11"></div> <br>
+
+    <h1>exclusion</h1>
+    <div class="container12"></div> <br>
+
+    <h1>hue</h1>
+    <div class="container13"></div> <br>
+
+    <h1>color</h1>
+    <div class="container14"></div> <br>
+
+    <h1>saturation</h1>
+    <div class="container15"></div> <br>
+
+    <h1>luminosity</h1>
+    <div class="container16"></div>
+</body>
+
+</html>

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Combinator Selectors</title>
+    <style>
+        /* A combinator is something that explains the relationship between the selectors. */
+
+        /* There are four different combinators in CSS: 
+        -> Descendant combinator (space)
+        -> Child combinator (>)
+        -> Next sibling combinator (+)
+        -> Subsequent-sibling combinator (~)
+        */
+
+
+        .cont1 p {
+            background-color: yellow;
+        }
+
+        .cont2>p {
+            background-color: hotpink;
+        }
+
+        .cont3+p {
+            background-color: aqua;
+        }
+
+        .cont4~p {
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Descendant Combinator</h1>
+    <div class="cont1">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section>
+            <!-- not Child but Descendant -->
+            <p>Paragraph 3 in the div (inside a section element).</p>
+        </section>
+        <p>Paragraph 4 in the div.</p>
+    </div>
+
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+    <br><br>
+
+
+    <h1>Child Combinator</h1>
+    <div class="cont2">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section>
+            <!-- not Child but Descendant -->
+            <p>Paragraph 3 in the div (inside a section element).</p>
+        </section>
+        <p>Paragraph 4 in the div.</p>
+    </div>
+
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+    <br><br>
+
+
+    <h1>Next Sibling Combinator </h1>
+    <div class="cont3">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section>
+            <!-- not Child but Descendant -->
+            <p>Paragraph 3 in the div (inside a section element).</p>
+        </section>
+        <p>Paragraph 4 in the div.</p>
+    </div>
+
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+    <br><br>
+
+
+    <h1>Susequent Combinator </h1>
+    <div class="cont4">
+        <p>Paragraph 1 in the div.</p>
+        <p>Paragraph 2 in the div.</p>
+        <section>
+            <!-- not Child but Descendant -->
+            <p>Paragraph 3 in the div (inside a section element).</p>
+        </section>
+        <p>Paragraph 4 in the div.</p>
+    </div>
+
+    <p>Paragraph 5. Not in a div.</p>
+    <p>Paragraph 6. Not in a div.</p>
+</body>
+
+</html>

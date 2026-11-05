@@ -1,0 +1,2 @@
+Hillo, welcome to all in Python.
+Python is an interpreted programming language.

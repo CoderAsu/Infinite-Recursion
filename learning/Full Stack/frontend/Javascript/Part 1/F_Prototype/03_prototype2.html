@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype 2</title>
+</head>
+<body>
+    
+</body>
+<script>
+    let myName = new String();
+    console.log(myName);
+    
+    let myHeroes = ["thor", "spiderman"];
+
+    let heroPower = {
+        thor: "hammer",
+        spiderman: "sling",
+        getSpidyPower: function() {
+            console.log(`Spidy power is ${this.spiderman}`);
+            
+        }
+    }
+
+
+    Object.prototype.asu = function() {
+        console.log("Asu is present in all Object");
+        
+    }
+
+    heroPower.asu();
+    myHeroes.asu();
+    myName.asu();
+
+
+    console.log(heroPower);
+    console.log(myHeroes);
+    console.log(myName);
+
+    Array.prototype.heyAsu = function() {
+        console.log(`Asu says hello`);
+    }
+
+    myHeroes.heyAsu();
+    // heroPower.heyAsu();
+    // myName.heyAsu();
+</script>
+</html>

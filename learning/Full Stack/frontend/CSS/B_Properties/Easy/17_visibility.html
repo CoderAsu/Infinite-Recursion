@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>visibility</title>
+    <style>
+        .container1 {
+            border: 2px solid black;
+        }
+
+        .a {
+            visibility: hidden;
+        }
+
+
+        .container2 {
+            border: 2px solid red;
+        }
+
+        .b {
+            visibility: visible;
+        }
+
+        /* for table, visibility: collapse is used */
+
+
+        .vis {
+            visibility: collapse;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS visibility values -->
+    <!-- 
+        1. visible
+        2. hidden
+        3. collapse
+     -->
+    <div class="container1">
+        <ul>
+            <li class="a">list item 1</li>
+            <li class="a">list item 2</li>
+            <li class="a">list item 3</li>
+            <li class="a">list item 4</li>
+            <li class="a">list item 5</li>
+        </ul>
+    </div>
+    <br>
+    <div class="container2">
+        <ul>
+            <li class="b">list item 1</li>
+            <li class="b">list item 2</li>
+            <li class="b">list item 3</li>
+            <li class="b">list item 4</li>
+            <li class="b">list item 5</li>
+        </ul>
+    </div>
+
+    <br>
+
+    <div>
+        <table border="1">
+            <tr>
+                <td>Hello</td>
+                <td>World</td>
+            </tr>
+            <tr>
+                <td>welcome</td>
+                <td class="vis">hyyy</td>
+            </tr>
+        </table>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>white-space</title>
+    <style>
+        p.a {
+            white-space: normal;
+        }
+
+        p.b {
+            white-space: nowrap;
+        }
+
+        div.c {
+            white-space: pre;
+        }
+
+        div.d {
+            white-space: pre-line;
+        }
+
+        div.e {
+            white-space: pre-wrap;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- values of white-space -->
+    <!-- 
+        1. normal
+        2. nowrap
+        3. pre (text displayed as nowrap)
+        4. pre-line
+        5. pre-wrap
+     -->
+
+    <p class="a">This is some text that will not wrap.
+        This is some text that will wrap.
+        This is some text that will wrap.
+        This is some text that will wrap.
+        This is some text that will wrap.
+        This is some text that will wrap.
+        This is some text that will wrap.
+        This is some text that will wrap.
+        This is some text that will wrap.
+    </p>
+
+    <br><br>
+
+    <p class="b">This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+        This is some text that will not wrap.
+    </p>
+
+    <br><br>
+
+    <div class="c">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Soluta veniam quis eius at minus provident deserunt tenetur consequuntur, placeat repudiandae ipsum quas fugiat
+        distinctio quia atque doloremque rerum dolor sunt!</div>
+
+    <br><br>
+
+    <div class="d">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Dolorum facilis fugit aperiam nihil tenetur quaerat itaque iusto, distinctio nisi corrupti! Ipsa architecto
+        maxime magni porro, animi quidem praesentium sit laboriosam? Lorem ipsum dolor sit amet consectetur adipisicing
+        elit. Id dignissimos, pariatur sapiente doloribus fugit labore, nostrum nemo exercitationem deserunt non tempore
+        possimus et laudantium numquam nisi totam facere? Reiciendis mollitia illum dolorem eius similique! Consectetur
+        voluptates nobis mollitia laboriosam cumque magnam, saepe rerum id enim dolore, tenetur modi. Totam, harum.
+    </div>
+
+    <br><br>
+
+    <div class="e">Lorem ipsum dolor sit amet consectetur adipisicing elit.
+        Blanditiis odit voluptates voluptate hic iste neque similique aperiam eveniet suscipit omnis veniam
+        exercitationem consequuntur, natus perspiciatis autem quibusdam error deleniti atque.
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni aspernatur doloremque quod rem consequuntur a
+        voluptas ipsam cumque nulla necessitatibus officia neque incidunt perspiciatis labore, corporis earum, sequi
+        iusto. Commodi?
+    </div>
+</body>
+
+</html>

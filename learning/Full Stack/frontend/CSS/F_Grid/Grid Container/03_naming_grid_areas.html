@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>naming_grid_areas</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 720px;
+            margin: 45px auto 0;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            grid-template-rows: 120px 60px 100px 400px 50px;
+            gap: 15px;
+
+            grid-template-areas: "header header ."
+                                 "menu menu menu"
+                                 "box1 box2 sidebar"
+                                 "content content sidebar"
+                                 "footer footer footer";
+        }
+
+        .header{
+            background-color: orangered;
+            grid-area: header;
+        }
+
+        .menu{
+            background-color: yellowgreen;
+            grid-area: menu;
+        }
+
+        .box1{
+            background-color: mediumpurple;
+            grid-area: box1;
+        }
+
+        .box2{
+            background-color: hotpink;
+            grid-area: box2;
+        }
+
+        .sidebar{
+            background-color: royalblue;
+            grid-area: sidebar;
+        }
+
+        .content{
+            background-color: goldenrod;
+            grid-area: content;
+        }
+
+        .footer{
+            background-color: lightsalmon;
+            grid-area: footer;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items header">Header</div>
+        <div class="items menu">Menu</div>
+        <div class="items box1">Box 1</div>
+        <div class="items box2">Box 2</div>
+        <div class="items sidebar">Sidebar</div>
+        <div class="items content">Content</div>
+        <div class="items footer">Footer</div>
+    </div>
+</body>
+</html>

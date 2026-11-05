@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hyphens</title>
+    <style>
+        #box1 {
+            width: 150px;
+            height: 150px;
+            margin: 30px;
+            border: 1px solid black;
+            background: pink;
+            hyphens: auto;
+        }
+
+
+        #box2 {
+            width: 150px;
+            height: 150px;
+            margin: 30px;
+            border: 1px solid black;
+            background: lightblue;
+            hyphens: manual;
+        }
+
+        #box3 {
+            width: 150px;
+            height: 150px;
+            margin: 30px;
+            border: 1px solid black;
+            background: lightgreen;
+            hyphens: auto;
+            hyphenate-character: "=";
+        }
+
+        #box4 {
+            width: 150px;
+            height: 150px;
+            margin: 30px;
+            border: 1px solid black;
+            background: lightyellow;
+            hyphens: auto;
+            hyphenate-limit-chars: 5 3 2;
+
+            /* 5 denotes minimum word length, 3 denotes minimum number of characters before the hyphen and 2 denotes minimum number of characters after the hyphen*/
+        }
+
+        /* values of hyphens:
+            1. none
+            2. auto
+            3. manual
+        */
+
+        /* values of hyphens: manual in text
+            1. &shy;
+            2. &hyphen;
+        */
+    </style>
+</head>
+
+<body>
+    <div id="box1">
+        Lorem ipsum dolor sit amet consectetur adipisicingffkljdfjsjkljkfkjfsdfdfsf elit. Architecto iure consectetur
+        eligendi amet magni
+    </div>
+    <br><br>
+
+    <div id="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicingffklj&shy;dfjsjkljkfkjfsdfdfsf elit. Architecto iure
+        consectetur eligendi amet magni
+    </div>
+    <br><br>
+
+    <div id="box3">
+        Lorem ipsum dolor sit amet consectetur adipisicingffkljdfjsjkljkfkjfsdfdfsf elit. Architecto iure consectetur
+        eligendi amet magni
+    </div>
+    <br><br>
+
+    <div id="box4">
+        Lorem ipsum dolor sit amet consectetur adipisicing ffkljdfjsjkljkfkjfsdfdfsf elit. Architecto iure consectetur
+        eligendi amet magni
+    </div>
+</body>
+
+</html>

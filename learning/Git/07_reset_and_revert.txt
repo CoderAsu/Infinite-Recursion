@@ -1,0 +1,10 @@
+RESET AND REVERT
+
+git reset --soft <commit> --> move the current branch/HEAD to <commit>; keep the index and working files unchanged.
+git reset --mixed <commit> (default) --> move HEAD and update the index to match; keep working files unchanged. Changes become unstaged.
+git reset --hard <commit> --> move HEAD, index, and working files to <commit>. This can discard tracked changes and overwrite untracked files. Use with care.
+git revert <commit> --> make a new commit that reverses the selected commit's changes. Usually safer for commits already shared with others.
+
+HEAD~1 means the parent of the current commit; resetting to it moves the branch back one commit. HEAD~2 moves it back two commits. These commands do not mean “reset the first/second commit.”
+
+Use reset when you intentionally need to move local history. For shared history, prefer revert unless the team agrees to rewrite it.

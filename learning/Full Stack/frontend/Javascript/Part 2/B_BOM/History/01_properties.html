@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History properties</title>
+</head>
+
+<body>
+    <h1>History properties</h1>
+    <p>History belongs to this tab. Browsers do not let a page read the other addresses in the tab history.</p>
+    <p>Open Developer Tools → Console to follow the example output.</p>
+    <script>
+        const pageHistory = window.history;
+        console.group("History properties for this tab"); console.table({ length: pageHistory.length, state: JSON.stringify(pageHistory.state), scrollRestoration: pageHistory.scrollRestoration });
+        console.log("length counts history entries; state is data saved for the current entry."); console.groupEnd();
+    </script>
+</body>
+
+</html>

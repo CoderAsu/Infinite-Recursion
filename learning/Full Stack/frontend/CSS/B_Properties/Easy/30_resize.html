@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resize</title>
+    <style>
+        .container1 {
+            width: 400px;
+            height: 200px;
+            border: 1px solid red;
+            background-color: bisque;
+            text-align: center;
+            overflow: auto;
+            resize: horizontal;
+        }
+
+        .container2 {
+            width: 400px;
+            height: 200px;
+            border: 1px solid red;
+            background-color: bisque;
+            text-align: center;
+            overflow: auto;
+            resize: vertical;
+        }
+
+        .container3 {
+            width: 400px;
+            height: 200px;
+            border: 1px solid red;
+            background-color: bisque;
+            text-align: center;
+            overflow: auto;
+            resize: both;
+        }
+
+        #address {
+            resize: none;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS Resize Values -->
+    <!-- 
+        1. horizontal
+        2. vertical
+        3. both
+        4. none
+       -->
+
+    <!-- overflow: auto is necessary to use with resize property. -->
+
+    <h1>horizontal</h1>
+    <div class="container1">resize the div</div> <br><br>
+
+    <h1>vertical</h1>
+    <div class="container2">resize the div</div> <br><br>
+
+    <h1>both</h1>
+    <div class="container3">resize the div</div> <br><br>
+
+    <div>
+        <textarea name="demo" id="address" cols="30" rows="10">write your address</textarea>
+    </div>
+</body>
+
+</html>

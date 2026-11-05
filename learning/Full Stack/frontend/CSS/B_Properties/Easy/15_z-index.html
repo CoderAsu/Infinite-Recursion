@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>z-index</title>
+    <style>
+        div {
+            height: 130px;
+            width: 150px;
+        }
+
+        div.a {
+            background-color: aqua;
+            position: static;
+            z-index: 3;
+        }
+
+        div.b {
+            background-color: lightcoral;
+            position: absolute;
+            top: 70px;
+            left: 50px;
+            z-index: 487598;
+        }
+
+        div.c {
+            background-color: lightgreen;
+            position: absolute;
+            top: 130px;
+            left: 90px;
+            z-index: 4;
+        }
+
+        div.d {
+            background-color: rgb(250, 183, 95);
+            position: absolute;
+            top: 180px;
+            left: 130px;
+            z-index: 9;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="a">block1</div>
+    <div class="b">block2</div>
+    <div class="c">block3</div>
+    <div class="d">block4</div>
+</body>
+
+</html>

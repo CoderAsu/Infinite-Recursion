@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>appearance</title>
+    <style>
+        button {
+            appearance: none;
+
+            &:hover {
+                background-color: black;
+                color: white;
+            }
+        }
+
+
+        input {
+            width: 1em;
+            height: 1em;
+            display: inline-block;
+            background: red;
+            appearance: none;
+        }
+
+        input:checked {
+            border-radius: 50%;
+            background: green;
+        }
+
+        select {
+            border: 1px solid black;
+            font-size: 1em;
+        }
+
+        select.none {
+            appearance: none;
+        }
+
+        /* values of appearance:
+            1. auto
+            2. none
+        */
+    </style>
+</head>
+
+<body>
+    <button>Click Me</button>
+
+    <br><br>
+
+
+    Checkboxes appearance none
+    <input type="checkbox" />
+    <input type="checkbox" checked />
+    <br><br>
+    Normal Select
+    <select>
+        <option>default</option>
+        <option>option 2</option>
+    </select>
+    <br><br>
+    Appearance - None
+    <select class="none">
+        <option>appearance: none</option>
+        <option>option 2</option>
+    </select>
+</body>
+
+</html>

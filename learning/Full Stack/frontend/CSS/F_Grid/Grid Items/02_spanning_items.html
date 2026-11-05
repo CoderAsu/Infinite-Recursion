@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>spanning_items</title>
+    <style>
+        .container{
+            background: lightgray;
+            width: 700px;
+            margin: 70px 0 0 50px;
+            height: 400px;
+
+            display: grid;
+            grid-template-columns: repeat(3, 150px) 1fr;
+            grid-template-rows: 30% 130px auto;
+            gap: 10px;
+        }
+
+        .item1{
+            background-color: coral;
+            grid-column-start: 1;
+            grid-column-end: 3;
+            grid-row-start: 1;
+            grid-row-end: 3;
+        }
+        .item2{
+            background-color: hotpink;
+        }
+        .item3{
+            background-color: rgb(211, 243, 93);
+            grid-column: 4 / span 2;
+        }
+        .item4{
+            background-color: rgb(199, 97, 230);
+            grid-area: 2 / 3 / 3 / span 1;
+        }
+        .item5{
+            background-color: rgb(241, 94, 114);
+            grid-area: 2 / span 2 / 5 / 6;
+        }
+        .item6{
+            background-color: rgb(71, 187, 255);
+            grid-row: 3 / span 2;
+            grid-column: 1 / span 3;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">first</div>
+        <div class="items item2">second</div>
+        <div class="items item3">third</div>
+        <div class="items item4">fourth</div>
+        <div class="items item5">fifth</div>
+        <div class="items item6">sixth</div>
+    </div>
+</body>
+</html>

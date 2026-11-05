@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ruby tag</title>
+    <style>
+        /* 
+            values of ruby-align:
+            1. start
+            2. center
+            3. space-between
+            4. space-around
+        */
+
+        #para1 .rb1 {
+            ruby-align: start;
+        }
+
+        #para2 .rb2 {
+            ruby-align: center;
+        }
+
+        #para3 .rb3 {
+            ruby-align: space-between;
+        }
+
+        #para4 .rb4 {
+            ruby-align: space-around;
+        }
+
+
+
+
+        /* 
+            values of ruby-position:
+            1. over
+            2. under
+        */
+
+
+        #para5 .rb5 {
+            ruby-position: over;
+        }
+
+        #para6 .rb6 {
+            ruby-position: under;
+        }
+    </style>
+</head>
+
+<body>
+    <h2>ruby-align</h2>
+    <p id="para1">
+        <ruby class="rb1">HTML<rt>Hyper Text Markup Language</rt></ruby> is heavily used for creating pages that are
+        displayed on the <ruby>WWW.<rt>World Wide Web</rt><ruby>
+    </p>
+
+    <p id="para2">
+        <ruby class="rb2">HTML<rt>Hyper Text Markup Language</rt></ruby> is heavily used for creating pages that are
+        displayed on the <ruby>WWW.<rt>World Wide Web</rt><ruby>
+    </p>
+    <p id="para3">
+        <ruby class="rb3">HT ML<rt>Hyper Text Markup Language</rt></ruby> is heavily used for creating pages that are
+        displayed on the <ruby>WWW.<rt>World Wide Web</rt><ruby>
+    </p>
+    <p id="para4">
+        <ruby class="rb4">HT ML<rt>Hyper Text Markup Language</rt></ruby> is heavily used for creating pages that are
+        displayed on the <ruby>WWW.<rt>World Wide Web</rt><ruby>
+    </p>
+    <br><br><br><br>
+
+
+
+
+
+    <h1>ruby-position</h1>
+    <p id="para5">
+        <ruby class="rb5">HTML<rt>Hyper Text Markup Language</rt></ruby> is heavily used for creating pages that are
+        displayed on the <ruby>WWW.<rt>World Wide Web</rt><ruby>
+    </p>
+
+    <p id="para6">
+        <ruby class="rb6">HTML<rt>Hyper Text Markup Language</rt></ruby> is heavily used for creating pages that are
+        displayed on the <ruby>WWW.<rt>World Wide Web</rt><ruby>
+    </p>
+
+</body>
+
+</html>

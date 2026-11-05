@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>creating_methods</title>
+    <style>
+        .player{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1>Virat Kohli</h1>
+    <ul class="myList"></ul>
+</body>
+<script>
+
+    // createAttribute()
+
+    const att = document.createAttribute("class");
+    
+    att.value = "player";
+
+    document.querySelector("h1").setAttributeNode(att);
+
+
+
+
+
+    // createComment()
+
+    let comment = document.createComment("Hello World");
+
+    document.body.appendChild(comment);
+
+    console.log(document.documentElement);
+    
+
+
+
+
+
+    // createElement()
+
+    let element = document.createElement("h2");
+
+    element.innerText = "AB Devilliers";
+
+    document.body.appendChild(element);
+
+    
+
+
+
+
+
+    // createTextNode()
+
+    let text = document.createTextNode("Welcome to JavaScript");
+
+    document.body.appendChild(text);
+
+
+
+
+
+
+    // createDocumentFragment()
+
+    const fruits = ["Banana", "Orange", "Mango"];
+
+    const dFrag = document.createDocumentFragment();
+
+    for (let x in fruits){
+        const li = document.createElement("li");
+        li.textContent = fruits[x];
+        dFrag.appendChild(li);
+    }
+
+    document.querySelector(".myList").appendChild(dFrag);
+
+    console.log(dFrag);
+</script>
+</html>

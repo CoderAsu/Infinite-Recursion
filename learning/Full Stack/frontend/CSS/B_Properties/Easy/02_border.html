@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border</title>
+    <style>
+        /* border-width */
+
+        p.one {
+            border-style: solid;
+            border-width: 5px;
+        }
+
+        p.two {
+            border-style: solid;
+            border-width: medium;
+        }
+
+        p.three {
+            border-style: solid;
+            border-width: thin;
+        }
+
+        p.four {
+            border-style: double;
+            border-width: thick;
+        }
+
+        p.five {
+            border-style: solid;
+            border-width: 5px 15px;
+            /* 5px top and bottom, 20px on the sides */
+        }
+
+        p.six {
+            border-style: solid;
+            border-width: 5px 15px 25px;
+            /* 5px top, 15px both sides, 25px bottom */
+        }
+
+        p.seven {
+            border-style: solid;
+            border-width: 5px 15px 25px 35px;
+            /* 25px top, 10px right, 4px bottom and 35px left */
+        }
+
+
+
+
+        /* border-style */
+
+
+        .dot {
+            border-style: dotted;
+        }
+
+        .das {
+            border-style: dashed;
+        }
+
+        .sol {
+            border-style: solid;
+        }
+
+        .dou {
+            border-style: double;
+        }
+
+        .gro {
+            border-style: groove;
+        }
+
+        .rid {
+            border-style: ridge;
+        }
+
+        .ins {
+            border-style: inset;
+        }
+
+        .out {
+            border-style: outset;
+        }
+
+        .non {
+            border-style: none;
+        }
+
+        .hid {
+            border-style: hidden;
+        }
+
+        .mix {
+            border-style: dotted dashed solid double;
+        }
+
+
+
+        /* border-color */
+
+
+        .red {
+            border-width: 2px;
+            border-style: solid;
+            border-color: red
+        }
+
+        .mix_color {
+            border-width: 2px;
+            border-style: solid;
+            border-color: red blue rgb(240, 52, 183) yellowgreen;
+        }
+
+
+
+        /* border-shorthand */
+
+
+        .short {
+            border: 6px solid red;
+        }
+
+
+
+
+        /* border-side */
+
+
+        .a {
+            border-top-width: 4px;
+            border-top-style: solid;
+            border-top-color: red;
+        }
+
+        .b {
+            border-right-width: 4px;
+            border-right-style: solid;
+            border-right-color: blue;
+        }
+
+        .c {
+            border-bottom-width: 4px;
+            border-bottom-style: solid;
+            border-bottom-color: green;
+        }
+
+        .d {
+            border-left-width: 4px;
+            border-left-style: solid;
+            border-left-color: rgb(248, 165, 11);
+        }
+
+        .e {
+            border-top: 4px solid red;
+            border-right: 4px solid blue;
+            border-bottom: 4px solid green;
+            border-left: 4px solid orange;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS Border Properties -->
+    <!-- 
+        1. border-width
+        2. border-style
+        3. border-color
+     -->
+
+
+    <!-- CSS Border Style -->
+    <!-- 
+        1. solid
+        2. dotted
+        3. dashed
+        4. double
+        5. groove
+        6. ridge
+        7. inset
+        8. outset
+        9. none
+        10. mix
+        11. hidden
+     -->
+
+
+    <!-- CSS Border Side -->
+    <!-- 
+        1. border-top
+        2. border-right
+        3. border-bottom
+        4. border-left
+     -->
+
+    <!-- The border property is a shorthand property for the following individual border properties:
+        1. border-width
+        2. border-style (required)
+        3. border-color 
+    -->
+    <h1>border-width</h1>
+    <div class="bdr-width">
+        <p class="one">single</p>
+        <p class="two">medium</p>
+        <p class="three">thin</p>
+        <p class="four">thick</p>
+        <p class="five">double</p>
+        <p class="six">triple</p>
+        <p class="seven">quadraple</p>
+    </div>
+
+    <br><br>
+
+    <h1>border-style</h1>
+    <div class="bdr-style">
+        <p class="dot">dotted</p>
+        <p class="das">dashed</p>
+        <p class="sol">solid</p>
+        <p class="dou">double</p>
+        <p class="gro">groove</p>
+        <p class="rid">ridge</p>
+        <p class="ins">inset</p>
+        <p class="out">outset</p>
+        <p class="non">none</p>
+        <p class="hid">hidden</p>
+        <p class="mix">mix</p>
+    </div>
+
+    <br><br>
+
+    <h1>border-color</h1>
+    <div class="bdr-color">
+        <p class="red">red color border</p>
+        <p class="mix_color">Mixed color border</p>
+    </div>
+
+    <br><br>
+
+    <h1>border-shorthand</h1>
+    <div class="bdr-shorthand">
+        <p class="short">shorthand property</p>
+    </div>
+
+    <br><br>
+
+    <h1>border-side</h1>
+    <div class="bdr-side">
+        <p class="a">border-top</p>
+        <p class="b">border-right</p>
+        <p class="c">border-bottom</p>
+        <p class="d">border-left</p>
+        <p class="e">border all sides shorthand</p>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,6 @@
+REPOSITORY SETUP
+
+git init --> creates an empty local Git repository (a hidden .git folder) and an initial branch with no commits. The initial branch name depends on your Git configuration; it is not always main.
+git init -b main --> creates the repository with an initial branch named main.
+
+DANGER: rm -rf .git deletes this repository's local Git history and settings. Use it only when you intentionally want to remove Git from this folder. It does not delete your project files.

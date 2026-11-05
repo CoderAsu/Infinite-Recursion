@@ -1,0 +1,60 @@
+JSON DataType:
+-> String
+-> Number
+-> Boolean
+-> Array
+-> Object
+-> Null
+
+
+
+
+
+
+BSON DataType:
+-> String
+-> Double
+-> 32-bit Integer
+-> 64-bit Integer
+-> Boolean
+-> Array
+-> Object
+-> Null
+-> Regular Expression
+-> Timestamp
+-> Data
+-> ObjectId
+
+
+
+
+
+
+
+
+
+
+
+{
+    _id: ObjectId("34ddf3h44j3gjk3445489781101"),
+    name: "Jinwoo Sung",
+    age: 25, 
+    ph_no: 9048594389,
+    married: false, 
+    dob: ISODate("2026-08-27T08:00:00Z"),
+    weight: 72.50,
+    kids: null,
+    hobbies: ["music", "sports"],
+    address: {
+        "street": "123 Main St"
+        "city": "New York",
+        "zip": 761008
+    }
+
+}
+
+
+
+
+
+

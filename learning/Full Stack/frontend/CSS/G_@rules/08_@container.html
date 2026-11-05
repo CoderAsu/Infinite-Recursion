@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@container</title>
+    <style>
+        .box1{
+            border: 1px solid black;
+            width: 80%;
+            container-name: myCont1;
+            aspect-ratio: 2/1;
+            container-type: inline-size;
+        }
+
+
+        .box2{
+            border: 1px solid black;
+            width: 80%;
+            container-name: myCont2;
+            aspect-ratio: 2/1;
+            container-type: size;
+        }
+
+
+        .box3{
+            border: 1px solid black;
+            width: 80%;
+            aspect-ratio: 2/1;
+            container: myCont3 / inline-size;
+        }
+
+
+        .box4{
+            border: 1px solid black;
+            width: 80%;
+            aspect-ratio: 2/1;
+            container-name: myCont4 card container;
+            container-type: size;
+        }
+
+
+        @container myCont1 (max-width: 400px){
+           h1{
+                color: red;
+                font-size: 3em;
+            }
+        }
+
+        @container myCont2 (max-height: 200px){
+            h1{
+                color: blue;
+            }
+
+            p{
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+                font-size: 20px;
+            }
+        }
+
+
+        @container myCont3 (max-width: 400px){
+            h1{
+                color: rgb(19, 243, 30);
+            }
+        }
+
+
+
+        @container container (width > 300px) and (height > 200px){
+            h1{
+                color:rgb(213, 20, 220);
+            }
+        }
+
+
+        @container card (width < 300px) or (height < 300px){
+            p{
+                font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-size: 5.3cqw;
+            }
+        }
+
+
+
+        /* values of container-type:
+            1. inline-size (only width checks)
+            2. size (both height and width)
+            3. normal (neither width not width checks)
+        */
+
+
+        /* container shorthand:
+            container-name / container-type
+        */
+
+
+        /* we can give multiple names to a single container */
+
+
+        /* 
+            container query length units:
+            1. cqw (query container's width)
+            2. cqh (query container's height)
+            3. cqi (query container's inline size)
+            4. cqb (query container's block size)
+            5. cqmin (query container's minimum size)
+            6. cqmax (query container's maximum size)
+        */
+    </style>
+</head>
+<body>
+    <div class="box1">
+        <h1>@container</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam nobis reiciendis atque commodi libero aperiam illum tempore inventore. Perspiciatis, rerum ducimus quo esse quis quam consequuntur beatae et facilis porro.</p>
+    </div>
+
+    <br><br>
+
+    <div class="box2">
+        <h1>@container</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam nobis reiciendis atque commodi libero aperiam illum tempore inventore.</p>
+    </div>
+
+    <br><br>
+
+    <div class="box3">
+        <h1>@container</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam nobis reiciendis atque commodi libero aperiam illum tempore inventore.</p>
+    </div>
+
+    <br><br>
+
+    <div class="box4">
+        <h1>@container</h1>
+        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nam nobis reiciendis atque commodi libero aperiam illum tempore inventore.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-decoration-break</title>
+    <style>
+        span {
+            background-image: linear-gradient(red, yellow);
+            font-size: 21px;
+            line-height: 50px;
+            border: 2px solid black;
+            border-radius: 5px;
+            box-decoration-break: clone;
+            padding: 10px;
+        }
+
+        /* values of box-decoration-break
+            1. slice (default)
+            2. clone
+        */
+    </style>
+</head>
+
+<body>
+    <h1>box-decoration-break</h1>
+    <span>Lorem ipsum dolor, <br> sit amet consectetur <br> adipisicing elit.</span>
+</body>
+
+</html>

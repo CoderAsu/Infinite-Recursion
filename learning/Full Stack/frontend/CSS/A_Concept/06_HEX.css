@@ -1,0 +1,30 @@
+/* CSS HEX Colors  */
+
+/* A hexadecimal color is specified with: #RRGGBB, where the RR (red), GG (green) and BB (blue) hexadecimal intergers specify the components of the color. */
+
+
+
+/* HEX Color Values  */
+
+/* In CSS, a color can be specified using a hexadecimal value in the form:
+
+#rrggbb
+
+where rr (red), gg (green), bb (blue) are hexadecimal values between 00 and ff (same as decimal 0-255).
+
+for example, #ff0000 is displayed as red, because red is set to its highest value (ff), and the other two (green and blue) are set to 00.
+
+Another example, #00ff00 is displayed as green, because green is set to its highest value (ff), and the other two (red and blue) are set to 00.
+
+another example, #0000ff is displayed as blue, because blue is set to its highest value (ff), and the other two (red and green) are set to 00.
+
+To display black, set all color parameters to 0, like this: #000000.
+
+To display white, set all color parameters to ff, like this: #ffffff. */
+
+
+
+
+/* Shades of Gray  */
+
+/* Shades of gray are often defined using equal values for all three parameters like #404040, #686868, #a0a0a0, #bebebe, #dcdcdc, #f8f8f8 etc. */

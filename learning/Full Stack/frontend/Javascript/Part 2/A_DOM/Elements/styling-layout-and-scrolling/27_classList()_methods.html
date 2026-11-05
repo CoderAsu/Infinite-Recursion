@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>classList() methods</title>
+</head>
+<body>
+    <div id="parent" class="container parent mydiv"></div>
+    <h1 class="heading">Scooby Doo</h1>
+    <h1 class="heading2">Spongebob Squarepants</h1>
+    <h1 class="heading3">Power Rangers</h1>
+    <p id="demo1" class="c1 c2 c3 c4"></p>
+</body>
+<script>
+
+    // The classList property of an HTML element represents a DOMTokenList.
+
+
+    /* 
+    
+        methods of DOMTokenList:
+        1. add()
+        2. contains()
+        3. entries()
+        4. forEach()
+        5. item()
+        6. keys()
+        7. length
+        8. remove()
+        9. replace()
+        10. toggle()
+        11. values()
+        12. value
+    
+    */
+
+    // value
+
+    let element = document.querySelector("#parent").classList;
+
+    console.log(element.value);
+
+
+
+    //length
+
+    console.log(element.length);
+
+
+
+
+    // item()
+
+    console.log(element.item(0));
+
+
+
+
+    // add()
+
+    document.querySelector(".heading").addEventListener("click", abc);
+
+    function abc(){
+        document.querySelector(".heading").classList.add("xyz", "efg");
+    }
+
+
+
+    // remove()
+
+    document.querySelector(".heading").addEventListener("dblclick", function(){
+        document.querySelector(".heading").classList.remove("xyz", "efg");
+    })
+
+
+
+
+    // toggle()
+
+    document.querySelector(".heading2").addEventListener("click", function(){
+        let a = document.querySelector(".heading2").classList.toggle("klm");
+
+        console.log(a);
+    })
+
+
+
+
+    // forEach()
+
+    let para1 = document.getElementById("demo1").classList;
+
+    let text1 = "";
+
+    para1.forEach(function(token, index){
+        text1 += `Token: ${index} = ${token} \n`;
+    })
+
+    console.log(text1);
+
+
+
+
+    // entries()
+
+    let text2 = "";
+
+    for(let x of para1.entries()){
+        text2 += x[0] + " " + x[1] + "\n";
+    }
+
+    console.log(text2);
+
+
+
+
+
+    // keys()
+
+    let text3 = "";
+
+    for(let x of para1.keys()){
+        text3 += x + "\n";
+    }
+
+    console.log(text3);
+
+
+
+
+
+    // values()
+
+    let text4 = "";
+
+    for(let x of para1.values()){
+        text4 += x + "\n";
+    }
+
+    console.log(text4);
+
+
+
+
+
+    // contains()
+
+    console.log(element.contains("parent"));
+    console.log(element.contains("container"));
+
+
+
+
+    // replace()
+
+    element.replace("parent", "div1");
+    console.log(element.value);
+
+
+
+    
+</script>
+</html>

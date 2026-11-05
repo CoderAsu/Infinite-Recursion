@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>field-sizing</title>
+    <style>
+        div {
+            margin-bottom: 10px;
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        label {
+            min-width: 120px;
+            text-align: right;
+        }
+
+        input[type="text"],
+        input[type="email"] {
+            field-sizing: content;
+            min-width: 100px;
+        }
+
+        textarea {
+            resize: none;
+            field-sizing: content;
+        }
+
+        select {
+            field-sizing: content;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <label for="name">Enter name: </label>
+        <input type="text" id="name">
+    </div>
+
+    <div>
+        <label for="email">Enter email: </label>
+        <input type="email" id="email">
+    </div>
+
+    <div>
+        <label for="comment">Enter comment: </label>
+        <textarea name="comment" id="comment">This is a comment.</textarea>
+    </div>
+
+    <div>
+        <label for="country">Enter country: </label>
+        <select name="country" id="country" multiple>
+            <option value="ind" selected>India</option>
+            <option value="ger">Germany</option>
+            <option value="us">USA</option>
+            <option value="fr">France</option>
+            <option value="ch">China</option>
+            <option value="rus">Russia</option>
+            <option value="nz">Newzealand</option>
+            <option value="sa">South Africa</option>
+        </select>
+    </div>
+</body>
+
+</html>

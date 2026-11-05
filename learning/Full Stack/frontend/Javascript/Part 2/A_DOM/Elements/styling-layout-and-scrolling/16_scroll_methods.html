@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>scroll methods</title>
+    <style>
+        #box{
+            background-color: aqua;
+            width: 300px;
+            aspect-ratio: 1;
+            border: 1px solid black;
+            overflow: auto;
+            padding: 30px;
+        }
+
+        #innerbox{
+            width: 1000px;
+            height: 100px;
+            border: 1px solid black;
+            background-color: lightgreen;
+        }
+    </style>
+</head>
+<body>
+    <div id="box">
+        <div id="innerbox"></div>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illum aperiam placeat blanditiis obcaecati deserunt natus labore nesciunt perferendis voluptatum tempora adipisci ex non, quasi ducimus sit. Minus dolores excepturi odio distinctio non itaque aliquid, labore odit ratione libero cumque repellat quis corrupti? Voluptate, iure. Illum accusamus placeat ipsam voluptate nemo cum quisquam molestias? Labore ducimus vel temporibus velit optio quod assumenda cumque voluptate quis inventore possimus praesentium, eum veritatis, corporis itaque. Nostrum ad, a dignissimos sed praesentium dolore dicta dolor itaque laboriosam cumque minus dolores nulla quisquam suscipit explicabo quas iste. Itaque distinctio consequatur eveniet veniam culpa iure iusto exercitationem sit saepe maiores aliquam porro illum, voluptatem id! Laborum rem, voluptates eaque illum praesentium error consequatur nam voluptatem, quis, facere eius! Aspernatur ad earum eligendi est consequuntur unde rem accusantium dolores quae quam asperiores, fugit, quod expedita enim repellat labore! Ipsa, tempore. Unde sed voluptatibus rerum sapiente possimus maiores culpa, accusamus dolore debitis illum nisi ipsum quod amet ut voluptate excepturi, ratione eaque accusantium provident quae! Pariatur exercitationem beatae ab mollitia molestias nihil, voluptatem a sed. Dignissimos sunt at voluptatem itaque voluptatum temporibus illo maxime cupiditate nesciunt quis officia accusamus illum, reprehenderit cum blanditiis animi voluptates magnam rerum sed tempora exercitationem voluptas recusandae! Repellat earum incidunt aperiam sit officia amet reiciendis voluptate? Perspiciatis cum praesentium repudiandae autem eaque libero qui facilis sed dolor odit iusto nulla dolorum molestias quia molestiae culpa, veniam obcaecati quam quisquam a voluptatibus debitis soluta officiis. Nemo eligendi excepturi nisi, inventore, autem rem vel vero non dolorum officia voluptas! Delectus commodi reprehenderit, quasi accusamus voluptatum nostrum sunt, perspiciatis adipisci necessitatibus quo earum quas debitis. Consequuntur vel aperiam animi distinctio amet. Praesentium recusandae aut quod accusamus quia fugiat. Nemo, natus, fuga sit suscipit animi, nulla sed ex aliquid accusamus unde quisquam? At quod enim atque illo voluptate!
+
+        <div id="viewDiv">
+            <h1>scrollIntoView()</h1>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic tempora sequi odit alias dolor ipsa, fugiat nemo asperiores, facere voluptatibus sed harum reprehenderit quos, porro officiis magnam corporis error. Tempore sit mollitia fuga nulla aspernatur eos, adipisci eveniet iusto deleniti tempora ipsum aliquid. Impedit vitae voluptas suscipit rerum eaque, eveniet accusamus mollitia fugit inventore aliquam explicabo possimus eius quibusdam quis assumenda cumque, voluptatem ipsa excepturi labore! Similique, animi quam a fugit autem eos ut praesentium ducimus, quos est provident illum vel consequatur. Sint quaerat, est voluptatum perspiciatis optio dolores esse omnis atque impedit sapiente ipsum, unde delectus, laboriosam consequatur a?</p>
+        </div>
+    </div>
+    <br><br>
+    <button id="btn">Scroll</button>
+</body>
+<script>
+    let target = document.querySelector("#box");
+    target.addEventListener("scroll", () => {
+        console.clear();
+        console.log(`scrollTop: ${target.scrollTop}`);
+        console.log(`scrollLeft: ${target.scrollLeft};`)
+        console.log(`scrollHeight: ${target.scrollHeight}`);
+        console.log(`scrollWidth: ${target.scrollWidth}`);
+    })
+
+
+    /* 
+        The scrollWidth and scrollHeight property returns the width and height of an element, including padding, excluding borders, scrollbars or margins.
+    */
+
+
+   /* 
+        The scrollTop property sets or returns the number of pixels an element's content is scrolled vertically.
+
+        The scrollLeft property sets or returns the number of pixels an element's content is scrolled horizontally.
+   */
+
+
+
+    let target2 = document.getElementById("viewDiv");
+
+    let button = document.getElementById("btn");
+
+    button.addEventListener("click", () => {
+        target2.scrollIntoView();
+    })
+
+  
+</script>
+</html>

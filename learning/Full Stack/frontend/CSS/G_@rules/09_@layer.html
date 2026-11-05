@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@layer</title>
+    <style>
+
+        @layer car2, car3, car1;
+        
+        @import url(style_for_@layer.css) layer(car1);
+
+        @layer car2{
+            #car{
+                color: brown;
+            }
+        }
+
+        @layer car3{
+            .luxury{
+                color: deepskyblue;
+            }
+        }
+
+        /* put the code with @import on top otherwise it will not work */
+
+
+
+
+
+
+        @layer three, two, one;
+
+        @layer one{
+            #heading{
+                color: red;
+            }
+        }
+
+        @layer two{
+            .heading1{
+                color: blue;
+            }
+        }
+
+        @layer three{
+            h1{
+                color: green;
+            }
+        } 
+
+
+        /* put the @layer sequence in top of the css code otherwise it will not work. The last value of layer sequence will work.*/
+
+
+        /* nested layer */
+        /* @layer p1{
+
+            @layer p3, p2;
+            @layer p2{ #paragraph{
+                color: crimson;
+            } }
+            @layer p3{ .para{
+                color: blue;
+            } }
+        } 
+
+        /* or */
+
+        @layer greet.greet3, greet.greet2;
+        @layer greet{
+
+            @layer greet2{ #hel{
+                color: rgb(20, 220, 37);
+            } }
+            @layer greet3{ .hello{
+                color: blue;
+            } }
+        } 
+
+
+
+
+        @layer welcome.wel2, welcome.wel1, welcome;
+        @layer welcome{
+
+                div{
+                    color: rgb(253, 146, 5);
+                }
+
+            @layer wel1{ #container{
+                color: rgb(20, 220, 37);
+            } }
+            @layer wel2{ .cont{
+                color: blue;
+            } }
+        } 
+
+
+
+
+        
+
+
+    </style>
+</head>
+<body>
+    <h1 id="heading" class="heading1">@layer</h1>
+    <p id="paragraph" class="para">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quisquam magnam quos porro perferendis nisi sunt, blanditiis facere corrupti, harum aliquid possimus sit eius, reiciendis labore suscipit eos id. Temporibus, commodi?</p>
+
+    <h2 id="hel" class="hello">Hello</h2><br>
+
+    <div id="container" class="cont">Welcome</div>
+
+    <span id="car" class="luxury">Lamborghini</span>
+</body>
+</html>

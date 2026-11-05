@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>History methods</title>
+</head>
+
+<body>
+    <h1>History methods</h1>
+    <p>pushState and replaceState use a state object and URL. Examples are printed but not run because they change this
+        lesson address/history.</p>
+    <p>Open Developer Tools → Console to follow the example output.</p>
+    <script>
+        const pageHistory = window.history; const sampleState = { page: "products", item: 12 };
+        console.group("History methods"); console.log("Methods:", { back: pageHistory.back, forward: pageHistory.forward, go: pageHistory.go, pushState: pageHistory.pushState, replaceState: pageHistory.replaceState });
+        console.log("Sample state:", sampleState); console.log('Add entry: history.pushState(sampleState, "", "?page=products")'); console.log('Replace current entry: history.replaceState(sampleState, "", "?page=products")'); console.log("back(), forward(), and go(-1) move through this tab's entries."); console.groupEnd();
+    </script>
+</body>
+
+</html>

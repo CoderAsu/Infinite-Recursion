@@ -1,0 +1,11 @@
+// Props Drilling
+Props drilling means passing data from a parent component to a deeply nested child component through intermediate components, even when those intermediate components don't need the data themselves.
+
+
+// State Lifting
+State lifting means moving state from a child component to its closest common parent component so that multiple child components can access and update the same state.
+
+
+// Shared State in React
+Shared state means state that is accessible to multiple components.
+Instead of each component maintaining its own independent copy, multiple components use the same state.

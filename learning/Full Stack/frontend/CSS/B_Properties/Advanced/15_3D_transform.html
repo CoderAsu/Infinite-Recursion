@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3D Transforms</title>
+    <style>
+        .container1 {
+            width: 350px;
+            height: 250px;
+            background-color: grey;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+        }
+
+        .a {
+            width: 350px;
+            height: 250px;
+            background-color: tomato;
+
+
+            &:hover {
+                transform: perspective(600px) rotateX(65deg);
+            }
+        }
+
+
+        .container2 {
+            width: 350px;
+            height: 250px;
+            background-color: grey;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+        }
+
+        .b {
+            width: 350px;
+            height: 250px;
+            background-color: rgb(71, 255, 71);
+
+
+            &:hover {
+                transform-origin: center;
+                transform: perspective(600px) rotateY(50deg);
+            }
+        }
+
+
+
+        .container3 {
+            width: 350px;
+            height: 250px;
+            background-color: grey;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+        }
+
+        .c {
+            width: 350px;
+            height: 250px;
+            background-color: rgb(250, 170, 79);
+
+
+            &:hover {
+                transform-origin: center center;
+                transform: perspective(600px) rotateZ(50deg);
+            }
+        }
+
+
+        .container4 {
+            width: 350px;
+            height: 250px;
+            background-color: grey;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+        }
+
+        .d {
+            width: 350px;
+            height: 250px;
+            background-color: rgb(95, 168, 236);
+
+
+            &:hover {
+                transform: perspective(800px) rotateY(60deg) translateZ(200px);
+            }
+        }
+
+
+
+        .container5 {
+            width: 350px;
+            height: 250px;
+            background-color: grey;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+        }
+
+        .e {
+            width: 350px;
+            height: 250px;
+            background-color: rgb(219, 95, 236);
+
+
+            &:hover {
+                transform: perspective(800px) rotateY(60deg) translate3d(50px, 100px, 200px);
+            }
+        }
+
+
+        .container6 {
+            width: 350px;
+            height: 250px;
+            background-color: grey;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+        }
+
+        .f {
+            width: 350px;
+            height: 250px;
+            background-color: rgb(128, 240, 240);
+
+
+            &:hover {
+                transform: perspective(800px) scaleZ(3) rotateX(60deg);
+            }
+        }
+
+
+
+        .container7 {
+            width: 350px;
+            height: 250px;
+            background-color: grey;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+        }
+
+        .g {
+            width: 350px;
+            height: 250px;
+            background-color: rgb(211, 245, 22);
+
+
+            &:hover {
+                transform: perspective(800px) scale3d(1, 1, 2) rotateX(60deg);
+            }
+        }
+
+
+
+        .container8 {
+            width: 350px;
+            height: 250px;
+            background-color: grey;
+            font-size: 18px;
+            text-align: center;
+            margin: 100px 0 0 100px;
+        }
+
+        .h {
+            width: 350px;
+            height: 250px;
+            background-color: rgb(236, 102, 13);
+
+
+            &:hover {
+                transform: none;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS Transform - 3D Values -->
+    <!-- 
+        rotate3d(x,y,z)
+        translate3d(x,y,z)
+        scale3d(x,y,z)
+        rotateX(angle)
+        rotateY(angle)
+        rotateZ(angle)
+        translateZ(px)
+        scaleZ(no)
+        perspective(n)
+        matrix3d(n,n,n,n,n,n)
+        none
+     -->
+
+    <h1>rotateX</h1>
+    <div class="container1">
+        <div class="a"></div>
+    </div>
+
+    <br><br>
+
+    <h1>rotateY</h1>
+    <div class="container2">
+        <div class="b"></div>
+    </div>
+
+    <br><br>
+
+    <h1>rotateZ</h1>
+    <div class="container3">
+        <div class="c"></div>
+    </div>
+
+    <br><br>
+
+    <h1>translateZ</h1>
+    <div class="container4">
+        <div class="d"></div>
+    </div>
+
+    <br><br>
+
+    <h1>translate3d</h1>
+    <div class="container5">
+        <div class="e"></div>
+    </div>
+
+    <br><br>
+
+    <h1>scaleZ</h1>
+    <div class="container6">
+        <div class="f"></div>
+    </div>
+
+    <br><br>
+
+    <h1>scale3d</h1>
+    <div class="container7">
+        <div class="g"></div>
+    </div>
+
+    <br><br>
+
+    <h1>none</h1>
+    <div class="container8">
+        <div class="h"></div>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>min(), max() and clamp()</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 30px;
+        }
+
+        div#parent1 {
+            width: 600px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+
+        #parent1 div {
+            width: min(50%, 350px);
+            background-color: aquamarine;
+
+        }
+
+        div#parent2 {
+            width: 600px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+
+        #parent2 div {
+            width: max(50%, 350px);
+            background-color: lightseagreen;
+
+        }
+
+        div#parent3 {
+            width: 600px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+
+        #parent3 div {
+            width: max(30%, min(50%, 650px));
+            background-color: lightskyblue;
+
+        }
+
+        /* clamp(min, val, max) */
+
+        /* The CSS clamp() function is used to set a value that will adjust responsively between a minimum value and a maximum value depending on the size of the viewport. */
+
+        div#parent4 {
+            width: 600px;
+            background-color: pink;
+            border: 1px solid black;
+        }
+
+        #parent4 div {
+            width: clamp(350px, 50%, 500px);
+            background-color: rgb(247, 213, 25);
+
+        }
+    </style>
+</head>
+
+<body>
+    <div id="parent1">
+        <div>Hello</div>
+    </div>
+    <br><br>
+
+    <div id="parent2">
+        <div>World</div>
+    </div>
+    <br><br>
+
+    <div id="parent3">
+        <div>welcome</div>
+    </div>
+    <br><br>
+
+    <div id="parent4">
+        <div>welcome</div>
+    </div>
+</body>
+
+</html>

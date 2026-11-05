@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>closest()</title>
+</head>
+<body>
+    <div class="parent" id="top-div">
+        <div class="child">
+            <div class="subChild"></div>
+        </div>
+    </div>
+</body>
+<script>
+
+    /* 
+    
+    The closest() method searches up the DOM tree for elements which matches a specified CSS selector.
+
+    The closest() method starts at the element itself, then the anchestors (parent, grandparent, ...) until a match is found.
+
+    The closest() method returns null() if no match is found.
+
+    */
+
+
+    let element = document.querySelector(".subChild");
+
+    console.log(element.closest(".subChild"));
+    console.log(element.closest(".child"));
+    console.log(element.closest("#top-div"));
+    
+    
+</script>
+</html>

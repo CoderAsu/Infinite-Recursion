@@ -1,0 +1,14 @@
+// useReducer() is a React Hook used to manage component state, especially when the state involves complex logic or multiple related state updates.
+
+
+
+
+const [state, dispatch] = useReducer(reducer, initialArg);
+
+There are three important things:
+
+Element	            Purpose
+state	            Current state
+dispatch	        Sends an action to the reducer
+reducer	            Function that decides how state changes
+initialState	    Initial value of the state must be Array and Object

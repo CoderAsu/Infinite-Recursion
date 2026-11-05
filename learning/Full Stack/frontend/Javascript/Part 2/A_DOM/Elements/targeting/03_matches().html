@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>matches()</title>
+</head>
+<body>
+    <div id="container" class="parent" title="cont">matches()</div>
+</body>
+<script>
+
+    // The matches() method returns true if an element matches a specific CSS selector(s).
+
+    let element = document.querySelector("#container");
+
+    console.log(element.matches(".parent"));
+    console.log(element.matches("[title=cont]"));
+</script>
+</html>

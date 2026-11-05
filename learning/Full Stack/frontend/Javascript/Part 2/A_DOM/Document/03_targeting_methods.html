@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>targeting methods</title>
+</head>
+<body>
+    <h1>Targeting methods</h1>
+    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam, officiis vitae velit minima ipsa fugit sit distinctio neque aliquid dolore?</p>
+    <br><br>
+
+    <ul class="abc" id="list">
+        <li class="items">item1</li>
+        <li class="items">item2</li>
+        <li class="items">item3</li>
+        <li class="items">item4</li>
+    </ul>
+
+    <br><br>
+
+    <ul id="links" class="xyz" name="lists">
+        <a href="">Home</a>
+        <a href="">Contact</a>
+        <a href="">Help</a>
+        <a href="">Business</a>
+    </ul>
+
+    <br><br>
+
+    <h1>Forms</h1>
+    <form action="">
+        <label for="fname">FirstName</label>
+        <input type="text" id="fname">
+        <br><br>
+        <label for="lname">LastName</label>
+        <input type="text" id="lname">
+    </form>
+    <br><br>
+
+    <form action="">
+        <label for="fname">FirstName</label>
+        <input type="text" id="fname">
+        <br><br>
+        <label for="lname">LastName</label>
+        <input type="text" id="lname">
+    </form>
+    <br><br>
+
+    <img src="images/paris.jpg" alt="paris"><br>
+    <img src="images/lion.jpg" alt="lion"><br>
+    <img src="images/img4.jpg" alt="nature">
+    <br><br>
+
+    <embed src="images/gradient resize.jpg" type="">
+    <embed src="images/lion.jpg" type="">
+</body>
+<script>
+    let list1 = document.getElementById("list");
+    console.log(list1);
+
+    let list2 = document.getElementsByClassName("xyz");
+    console.log(list2);    
+    console.log(list2[0]);
+
+    let heading = document.getElementsByTagName("h1");
+    console.log(heading);
+    console.log(heading[0]);
+
+    let list3 = document.getElementsByName("lists");
+    console.log(list3[0]);
+
+    let list4 = document.querySelector(".xyz");
+    console.log(list4);
+
+    let img = document.querySelector('img[alt= "paris"]');
+    console.log(img);
+
+    
+    let label = document.querySelector("form > [for=fname]");
+    console.log(label);
+
+    let link = document.querySelector(".abc :nth-child(2)");
+    console.log(link);
+
+
+    let lastheading = document.querySelector("h1:last-of-type");
+    console.log(lastheading);
+
+
+    let firstChild = document.querySelector("#links :first-child");
+    console.log(firstChild);
+
+
+    let lastChild = document.querySelector("#links :last-child");
+    console.log(lastChild);
+
+
+    let element = document.querySelector("h1");
+    console.log(element);
+
+
+    let list5 = document.querySelectorAll("h1");
+    console.log(list5);
+    console.log(list5[1]);
+</script>
+</html>

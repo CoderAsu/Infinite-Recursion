@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Enumerable</title>
+</head>
+<body>
+    <script>
+        // Enumerable means whether a property is visible when Javascript iterates (loops) over an object's properties.
+
+
+        // Enumerable property:
+
+        const obj = {
+            name: "Jinwoo",
+            age: 22
+        }
+
+        for(let key in obj){
+            console.log(key);
+        }
+
+        // So here both properties are enumerable, so they appear in the loop.
+
+
+
+
+        // Non-enumerable property:
+
+        const obj2 = {
+            name: "Asu"
+        }
+
+        Object.defineProperty(obj, "age", {
+            value: 22,
+            enumerable: false
+        })
+
+        for (let key in obj2){
+            console.log(key);
+        }
+
+        // age will not appear while looping because we set the enumerable as false.
+
+
+
+
+
+        // What if I want to set multple properties as enumerable or non-enumberable then,
+
+        const obj3 = {};
+
+        Object.defineProperties(obj3, {
+            name: {
+                value: "AB Devillers",
+                enumerable: true
+            },
+
+            age: {
+                value: 39,
+                enumerable: true
+            },
+
+            profession: {
+                value: "Cricketer",
+                enumberable: false
+            }
+        })
+
+        for(let key in obj3){
+            console.log(key);
+        }
+
+
+
+
+
+
+
+        // Where does enumerability matter?
+
+        /*
+            1. loops
+            2. Object.keys()
+            3. Object.values()
+            4. Object.entries()
+        */
+
+    </script>
+</body>
+</html>

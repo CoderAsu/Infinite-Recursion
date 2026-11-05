@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> list </title>
+    <style>
+        /* list-style-image */
+        .list1 {
+            list-style-image: url(dog.ico);
+        }
+
+        /* list-style-position */
+
+        /* "list-style-position: inside;" means that the bullet points will be inside the list item. As it is part of the list item, it will be part of the text and push the text at the start */
+        .a {
+            list-style-position: inside;
+        }
+
+
+        /* "list-style-position: outside;" means that the bullet points will be outside the list item. The start of each line of a list item will be aligned vertically. */
+        .b {
+            list-style-position: outside;
+        }
+
+
+        /* The list-style-type:none property can also be used to remove the markers/bullets. Note that the list also has default margin and padding. To remove this, add margin:0 and padding:0 to <ul> or <ol> */
+        .c {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+        }
+
+
+
+        /* list-shorthand */
+
+        /* When using the shorthand property, the order of the property values are:
+
+        list-style-type (if a list-style-image is specified, the value of this property will be displayed if the image for some reason cannot be displayed)
+        list-style-position (specifies whether the list-item markers should appear inside or outside the content flow)
+        list-style-image (specifies an image as the list item marker)
+        
+        If one of the property values above is missing, the default value for the missing property will be inserted, if any. */
+
+        .d {
+            list-style: circle inside url(dog.ico);
+        }
+
+
+        /* Styling with colors */
+        .e {
+            background-color: #ff9999;
+            padding: 20px;
+        }
+
+        .f {
+            background-color: #3399ff;
+            padding: 20px;
+        }
+
+        .tre {
+            background: #ffe5e5;
+            color: darkred;
+            padding: 5px;
+            margin-left: 35px;
+        }
+
+        .pre {
+            background: #cce5ff;
+            color: darkblue;
+            margin: 5px;
+        }
+
+        .g {
+            list-style-type: "test";
+        }
+    </style>
+
+
+</head>
+
+<body>
+    <!-- Unordered list -->
+    <ul style="list-style-type:disc;">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <ul style="list-style-type:circle;">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+    <ul style="list-style-type:square;">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+
+    <!-- Ordered list -->
+    <ol style="list-style-type: decimal;">
+        <li>coffee</li>
+        <li>milk</li>
+        <li>tea</li>
+    </ol>
+
+    <ol style="list-style-type: upper-alpha;">
+        <li>coffee</li>
+        <li>milk</li>
+        <li>tea</li>
+    </ol>
+
+    <ol style="list-style-type: lower-alpha;">
+        <li>coffee</li>
+        <li>milk</li>
+        <li>tea</li>
+    </ol>
+
+    <ol style="list-style-type: upper-roman;">
+        <li>coffee</li>
+        <li>milk</li>
+        <li>tea</li>
+    </ol>
+
+    <ol style="list-style-type: lower-roman;">
+        <li>coffee</li>
+        <li>milk</li>
+        <li>tea</li>
+    </ol>
+
+
+
+    <!-- add a image in list -->
+    <ul class="list1">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <!-- position of list -->
+    <ul class="a">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+    <ul class="b">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+
+    <!-- Remove default settings -->
+    <ul class="c">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+
+    <!-- list-shorthand -->
+    <ul class="d">
+        <li>Coffee</li>
+        <li>Tea</li>
+        <li>Coca Cola</li>
+    </ul>
+
+
+    <!-- styling with colors -->
+    <ul class="e">
+        <li class="tre">coffee</li>
+        <li class="tre">tea</li>
+        <li class="tre">milk</li>
+    </ul>
+
+    <ul class="f">
+        <li class="pre">coffee</li>
+        <li class="pre">tea</li>
+        <li class="pre">milk</li>
+    </ul>
+
+
+
+
+
+
+
+    <!-- list-style-type: "string" -->
+
+    <ul class="g">
+        <li>coffee</li>
+        <li>tea</li>
+        <li>milk</li>
+    </ul>
+
+</body>
+
+</html>

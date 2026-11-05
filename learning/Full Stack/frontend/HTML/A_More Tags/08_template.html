@@ -1,0 +1,18 @@
+<!-- The <template> tag in HTML is used to store reusable HTML fragments that are not rendered immediately but can be inserted into the document dynamically using JavaScript.
+ -->
+
+
+
+<template id="myTemplate">
+    <div class="box">Hello, this is a template!</div>
+  </template>
+  
+  <button onclick="insertTemplate()">Insert Template</button>
+  
+  <script>
+    function insertTemplate() {
+      let temp = document.getElementById("myTemplate");
+      let clone = temp.content.cloneNode(true);
+      document.body.appendChild(clone);
+    }
+  </script>

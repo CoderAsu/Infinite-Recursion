@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:not()</title>
+    <style>
+        ul:not(#list){
+            color: blue;
+        }
+
+        p:not(:first-of-type){
+            background-color: green;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <br><br>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <br><br>
+
+    <ul class="list2">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <br><br>
+
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat molestias sed.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat molestias sed.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat molestias sed.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat molestias sed.</p>
+    </div>
+</body>
+</html>

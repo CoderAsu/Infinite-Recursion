@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>border-image</title>
+    <style>
+        /* border-image-repeat has four values:
+        1. stretch
+        2. round
+        3. repeat
+        4. space
+        */
+
+        /* stretch */
+        #borderimg {
+            width: 250px;
+            height: 280px;
+            text-align: justify;
+            padding: 15px;
+            border: 30px solid black;
+            border-image-source: url(../Images/border-image-1.png);
+            border-image-slice: 28;
+            border-image-repeat: stretch;
+        }
+
+        /* round */
+        #borderimg2 {
+            width: 250px;
+            height: 280px;
+            text-align: justify;
+            padding: 15px;
+            border: 30px solid black;
+            border-image-source: url(../Images/border-image-1.png);
+            border-image-slice: 28;
+            border-image-repeat: round;
+        }
+
+        /* repeat */
+        #borderimg3 {
+            width: 250px;
+            height: 280px;
+            text-align: justify;
+            padding: 15px;
+            border: 30px solid black;
+            border-image-source: url(../Images/border-image-1.png);
+            border-image-slice: 28;
+            border-image-repeat: repeat;
+        }
+
+        /* space */
+        #borderimg4 {
+            width: 250px;
+            height: 280px;
+            text-align: justify;
+            padding: 15px;
+            border: 30px solid black;
+            border-image-source: url(../Images/border-image-1.png);
+            border-image-slice: 28;
+            border-image-repeat: space;
+        }
+
+
+        #borderimg5 {
+            width: 250px;
+            height: 280px;
+            text-align: justify;
+            padding: 15px;
+            background-color: aqua;
+            border: 30px solid black;
+            border-image-source: url(../Images/border-image-1.png);
+            border-image-slice: 28;
+            border-image-repeat: space;
+            border-image-outset: 30px;
+            border-image-width: 20px;
+            margin-top: 60px;
+            margin-left: 40px;
+        }
+
+
+
+        /* shorthand order*/
+        /* 
+        border-image-source
+        border-image-slice
+        border-image-width
+        border-image-outset
+        border-image-repeat 
+        */
+
+        /* / is used between the values in numerical order */
+
+        #borderimg6 {
+            width: 250px;
+            height: 280px;
+            text-align: justify;
+            padding: 15px;
+            background-color: rgb(235, 202, 14);
+            border: 30px solid transparent;
+            border-image: url(images/border-image-1.png) 28/10px/30px round;
+            margin-top: 80px;
+            margin-left: 40px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- The CSS border-image property allows you to specify an image to be used instead of the normal border around an element.
+     
+    The property has three parts:
+        1. The image to use as the border
+        2. where to slice the image
+        3. define whether the middle sections should be repeated or stretched-->
+
+    <p id="borderimg">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum exercitationem aut consectetur
+        recusandae accusamus earum ratione odit hic deleniti laudantium, assumenda, blanditiis vero voluptatum
+        consequuntur necessitatibus est, cum deserunt nemo! Incidunt itaque earum nemo corrupti cumque id blanditiis?
+        Vel soluta fugit nemo esse harum quae facere numquam hic illo excepturi. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Vel nemo sed ratione quia quasi. Adipisci totam iure officiis ea quisquam voluptatem
+        voluptates nobis sequi ullam!</p>
+
+    <p id="borderimg2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum exercitationem aut consectetur
+        recusandae accusamus earum ratione odit hic deleniti laudantium, assumenda, blanditiis vero voluptatum
+        consequuntur necessitatibus est, cum deserunt nemo! Incidunt itaque earum nemo corrupti cumque id blanditiis?
+        Vel soluta fugit nemo esse harum quae facere numquam hic illo excepturi. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Vel nemo sed ratione quia quasi. Adipisci totam iure officiis ea quisquam voluptatem
+        voluptates nobis sequi ullam!</p>
+
+    <p id="borderimg3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum exercitationem aut consectetur
+        recusandae accusamus earum ratione odit hic deleniti laudantium, assumenda, blanditiis vero voluptatum
+        consequuntur necessitatibus est, cum deserunt nemo! Incidunt itaque earum nemo corrupti cumque id blanditiis?
+        Vel soluta fugit nemo esse harum quae facere numquam hic illo excepturi. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Vel nemo sed ratione quia quasi. Adipisci totam iure officiis ea quisquam voluptatem
+        voluptates nobis sequi ullam!</p>
+
+    <p id="borderimg4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum exercitationem aut consectetur
+        recusandae accusamus earum ratione odit hic deleniti laudantium, assumenda, blanditiis vero voluptatum
+        consequuntur necessitatibus est, cum deserunt nemo! Incidunt itaque earum nemo corrupti cumque id blanditiis?
+        Vel soluta fugit nemo esse harum quae facere numquam hic illo excepturi. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Vel nemo sed ratione quia quasi. Adipisci totam iure officiis ea quisquam voluptatem
+        voluptates nobis sequi ullam!</p>
+
+    <p id="borderimg5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum exercitationem aut consectetur
+        recusandae accusamus earum ratione odit hic deleniti laudantium, assumenda, blanditiis vero voluptatum
+        consequuntur necessitatibus est, cum deserunt nemo! Incidunt itaque earum nemo corrupti cumque id blanditiis?
+        Vel soluta fugit nemo esse harum quae facere numquam hic illo excepturi. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Vel nemo sed ratione quia quasi. Adipisci totam iure officiis ea quisquam voluptatem
+        voluptates nobis sequi ullam!</p>
+
+    <p id="borderimg6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorum exercitationem aut consectetur
+        recusandae accusamus earum ratione odit hic deleniti laudantium, assumenda, blanditiis vero voluptatum
+        consequuntur necessitatibus est, cum deserunt nemo! Incidunt itaque earum nemo corrupti cumque id blanditiis?
+        Vel soluta fugit nemo esse harum quae facere numquam hic illo excepturi. Lorem ipsum dolor sit amet consectetur
+        adipisicing elit. Vel nemo sed ratione quia quasi. Adipisci totam iure officiis ea quisquam voluptatem
+        voluptates nobis sequi ullam!</p>
+</body>
+
+</html>

@@ -1,0 +1,17 @@
+BRANCHES AND MERGING
+
+Branches are movable names that point to commits.
+
+git branch <branch_name> --> create a branch at the current commit.
+git branch <branch_name> <commit_id> --> create a branch at a specific commit.
+git branch -m <new_name> --> rename the current branch.
+git branch -d <branch_name> --> delete a merged branch.
+git branch -D <branch_name> --> force-delete a branch; may discard unmerged work.
+git branch --> show local branches.
+git switch <branch_name> --> switch branches. (git checkout can also switch branches, but switch is clearer for this task.)
+git switch -c <branch_name> --> create and switch to a branch.
+git merge <branch_name> --> merge that branch into the currently checked-out branch.
+git cherry-pick <commit_id> --> copy one commit onto the current branch.
+git ls-files --> list files tracked in the current index; it does not count files in a branch that is not checked out.
+
+Merge conflicts can happen when Git cannot combine changes automatically, including overlapping edits or modify/delete situations. See 16_merge_conflicts.txt for the resolution steps.

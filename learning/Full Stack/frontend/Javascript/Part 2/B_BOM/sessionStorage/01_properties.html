@@ -1,0 +1,7 @@
+<!DOCTYPE html>
+<html lang="en">
+<head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>sessionStorage properties</title></head>
+<body><h1>sessionStorage properties</h1><p>sessionStorage keeps text values for this website in this browser tab. It is separate from localStorage.</p><p>Open Developer Tools → Console to follow the example output.</p><script>
+const tabData=window.sessionStorage;
+console.group("sessionStorage properties"); try{console.log("Storage object:",tabData); console.log("Saved key count (length):",tabData.length); console.log("length counts keys saved for this tab.")}catch(error){console.log("Storage unavailable:",error.message)} console.groupEnd();
+</script></body></html>

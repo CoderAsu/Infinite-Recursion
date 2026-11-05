@@ -1,0 +1,49 @@
+1. grid-template-rows
+2. grid-template-columns
+3. grid-template
+
+4. row-gap
+5. column-gap
+6. gap
+
+7. grid-row-start
+8. grid-row-end
+9. grid-row: start/end
+
+10. grid-column-start
+11. grid-column-end
+12. grid-column: start/end
+
+13. grid-area
+14. grid-template-areas
+
+15. align-items
+16. justify-items
+17. place-items
+
+18. align-self
+19. justify-self
+20. place-self
+
+21. align-content
+22. justify-content
+23. place-content
+
+24. order
+
+
+
+Functions:
+1. px
+2. repeat()
+3. fraction
+4. %
+5. auto
+6. min-content
+7. max-content
+8. Minmax()
+9. auto-fill
+10. auto-fit
+11. fit-content
+
+

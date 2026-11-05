@@ -1,0 +1,30 @@
+<!-- HTML <progress> tag -->
+<!-- HTML <progress> tag is used to display the progress of a task. It provides an easy way for web developers to create progress bar on the website. It is mostly used to show the progress of a file uploading on the web page.
+
+The HTML progress tag is new in HTML5 so you must use new browsers. -->
+
+<!DOCTYPE html>
+<html>
+
+<body>
+  <script>
+    var gvalue = 1;
+    function abc() {
+      var progressExample = document.getElementById('prog-bar');
+
+      setInterval(function () {
+        if (gvalue < 100) {
+          gvalue++;
+          progressExample.value = gvalue;
+        }
+        abc();
+      }, 1000);
+    }
+    
+  </script>
+  <progress id="prog-bar" min="1" max="100" style="accent-color: green;"></progress>
+  <br /><br />
+  <button onclick="abc()">Download</button>
+</body>
+
+</html>

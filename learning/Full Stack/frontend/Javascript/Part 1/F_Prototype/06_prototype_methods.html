@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    
+    // hasOwnProperty() returns true if the property exists directly on the object and false otherwise.
+
+    const obj = {
+        name: "subham",
+        age: 25
+    }
+
+    console.log(obj.hasOwnProperty("name"));
+    console.log(obj.hasOwnProperty("gender"));
+
+
+
+
+
+
+    // The isPrototypeOf() method in JavaScript checks whether an object exists in another object's prototype chain. It returns true if the calling object is in the prototype chain of the specified object
+
+
+    function Animal() {}
+    function Dog() {}
+
+    Dog.prototype = Object.create(Animal.prototype);
+
+    const myDog = new Dog();
+
+    console.log(Animal.prototype.isPrototypeOf(myDog)); 
+    console.log(Dog.prototype.isPrototypeOf(myDog)); 
+    console.log(Object.prototype.isPrototypeOf(myDog)); 
+
+    let myobj = {};
+
+    console.log(myobj);
+
+    console.log(myDog);
+    console.log(Animal.prototype);
+    console.log(Dog.prototype);
+
+
+
+
+
+    // The propertyIsEnumerable() method in JavaScript checks whether a specified property is enumerable and belongs directly to an object (not inherited). It returns true if the property is enumerable and false otherwise. Enumerable mean whether it can iterate or not, we can check this using loops.
+
+    const obj2 = { 
+        name: "Subham", 
+        age: 25,
+        __proto__: {
+            working: false
+        }
+    };
+
+    console.log(obj2.propertyIsEnumerable("name"));
+    console.log(obj2.propertyIsEnumerable("working")); 
+    console.log(obj2.propertyIsEnumerable("toString")); 
+
+    console.log(obj2);
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // Object.getPrototypeOf() method returns the prototype of a given object.
+
+    const obj3 = {};
+    console.log(Object.getPrototypeOf(obj3));
+    console.log(Object.getPrototypeOf(obj2));
+
+
+
+    // Object.setPrototypeOf() method sets the prototype of an object to another object or null.
+
+
+    const parent = { greeting: "Hello" };
+    const child = {};
+
+    Object.setPrototypeOf(child, parent);
+
+    console.log(child.greeting);
+
+</script>
+</html>

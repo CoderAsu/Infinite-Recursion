@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>column-count</title>
+    <style>
+        /* column-count */
+        .newspaper1 {
+            column-count: 3;
+            border: 1px solid black;
+            height: 100px;
+        }
+
+
+        /* column-gap */
+        .newspaper2 {
+            column-count: 3;
+            column-gap: 50px;
+            height: 100px;
+            border: 1px solid black;
+        }
+
+
+        /* column-rule */
+        .newspaper3 {
+            column-count: 3;
+            column-gap: 50px;
+            border: 1px solid black;
+            height: 100px;
+            column-rule: 10px dashed black;
+        }
+
+
+        /* column-width */
+        .newspaper4 {
+            column-width: 150px;
+            column-gap: 50px;
+            border: 1px solid black;
+            height: 100px;
+            column-rule: 10px double black;
+        }
+
+
+        /* column-span */
+        h2 {
+            column-span: all;
+        }
+
+        .newspaper5 {
+            column-width: 120px;
+            column-gap: 50px;
+            border: 1px solid black;
+            height: 200px;
+            column-rule: 5px solid black;
+        }
+
+
+        /* column-fill */
+        .newspaper6 {
+            border: 1px solid black;
+            height: 200px;
+            column-count: 3;
+            column-fill: balance;
+        }
+
+
+
+        /* columns (shorthand) */
+        .newspaper7 {
+            border: 1px solid black;
+            columns: 200px 4;
+        }
+
+        .newspaper8 {
+            border: 1px solid black;
+            columns: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS column-count properties -->
+    <!-- 
+        1. column-count
+        2. column-gap
+        3. column-rule
+        4. column-rule-width
+        5. column-rule-style
+        6. column-rule-color
+        7. column-width
+        8. column-fill
+        9. column-span
+        10. columns
+     -->
+
+
+    <!-- values of column-rule-style -->
+    <!-- 
+        1. dotted
+        2. dashed
+        3. solid
+        4. double
+        5. groove
+        6. ridge
+        7. none
+        8. hidden
+     -->
+
+
+
+    <!-- values of column-span -->
+    <!-- 
+        1. all
+        2. none
+     -->
+
+
+    <!-- values of column-fill -->
+    <!-- 
+        1. auto
+        2. balance
+     -->
+
+
+    <!-- column-rule (shorthand) -->
+    <!-- 
+        1. column-rule-width
+        2. column-rule-style (required)
+        3. column-rule-color
+     -->
+
+
+    <!-- columns (shorthand) -->
+    <!-- 
+        1. column-width
+        2. column-count
+     -->
+
+    <h1>column-count</h1>
+    <div>
+        <div class="newspaper1">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+            accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+            mazim placerat facer possim assum.
+        </div>
+    </div>
+
+    <br><br>
+
+    <h1>column-gap</h1>
+    <div>
+        <div class="newspaper2">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+            accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+            mazim placerat facer possim assum.
+        </div>
+    </div>
+
+    <br><br>
+
+    <h1>column-rule</h1>
+    <div>
+        <div class="newspaper3">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+            accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+            mazim placerat facer possim assum.
+        </div>
+    </div>
+
+    <br><br>
+
+    <h1>column-width</h1>
+    <div>
+        <div class="newspaper4">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+            accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+            mazim placerat facer possim assum.
+        </div>
+    </div>
+
+    <br><br>
+
+    <h1>column-span</h1>
+    <div>
+        <div class="newspaper5">
+            <h2>sub heading goes here</h2>
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+            accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+            mazim placerat facer possim assum.
+        </div>
+    </div>
+
+    <br><br>
+
+    <h1>column-fill</h1>
+    <div>
+        <div class="newspaper6">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+            accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+            mazim placerat facer possim assum.
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Qui quae eveniet temporibus earum, nostrum unde
+            voluptatum magni eius possimus magnam?
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. A perferendis eius pariatur, enim repudiandae
+            neque? Distinctio minus quisquam ipsa, aliquid consequuntur ea dicta in corrupti, id ad, quibusdam at
+            perspiciatis.
+        </div>
+    </div>
+
+    <br><br>
+
+    <h1>columns (shorthand)</h1>
+    <div>
+        <div class="newspaper7">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+            accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+            mazim placerat facer possim assum.
+        </div>
+        <br><br>
+        <div class="newspaper8">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
+            dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper
+            suscipit lobortis nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure dolor in hendrerit in
+            vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et
+            accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait
+            nulla facilisi. Nam liber tempor cum soluta nobis eleifend option congue nihil imperdiet doming id quod
+            mazim placerat facer possim assum.
+        </div>
+    </div>
+</body>
+
+</html>

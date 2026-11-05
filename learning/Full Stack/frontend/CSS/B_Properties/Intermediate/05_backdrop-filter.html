@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>backdrop-filter</title>
+    <style>
+        #container {
+            width: 500px;
+            height: 280px;
+            border: 5px solid black;
+            background: url(../Images/snoopy.jpg) no-repeat;
+            background-size: cover;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .none {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            backdrop-filter: none;
+        }
+
+        .blur {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            backdrop-filter: blur(5px);
+        }
+
+        .brightness {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            backdrop-filter: brightness(1.4);
+        }
+
+        .contrast {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            backdrop-filter: contrast(1.4);
+        }
+
+        .drop-shadow {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            backdrop-filter: drop-shadow(5px 5px 5px #000);
+        }
+
+        .grayscale {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            backdrop-filter: grayscale(80%);
+        }
+
+        .hue-rotate {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            backdrop-filter: hue-rotate(90deg);
+        }
+
+        .invert {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            backdrop-filter: invert(90%);
+        }
+
+        .opacity {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            backdrop-filter: opacity(60%);
+        }
+
+        .saturate {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            backdrop-filter: saturate(2);
+        }
+
+        .sepia {
+            width: 200px;
+            height: 150px;
+            border-radius: 5px;
+            border: 2px solid #fff;
+            backdrop-filter: sepia(100%);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>none</h1>
+    <div id="container">
+        <div class="none"></div>
+    </div>
+    <br><br>
+
+    <h1>blur</h1>
+    <div id="container">
+        <div class="blur"></div>
+    </div>
+    <br><br>
+
+    <h1>brightness</h1>
+    <div id="container">
+        <div class="brightness"></div>
+    </div>
+    <br><br>
+
+    <h1>contrast</h1>
+    <div id="container">
+        <div class="contrast"></div>
+    </div>
+    <br><br>
+
+    <h1>drop-shadow</h1>
+    <div id="container">
+        <div class="drop-shadow"></div>
+    </div>
+    <br><br>
+
+    <h1>grayscale</h1>
+    <div id="container">
+        <div class="grayscale"></div>
+    </div>
+    <br><br>
+
+    <h1>hue-rotate</h1>
+    <div id="container">
+        <div class="hue-rotate"></div>
+    </div>
+    <br><br>
+
+    <h1>invert</h1>
+    <div id="container">
+        <div class="invert"></div>
+    </div>
+    <br><br>
+
+    <h1>opacity</h1>
+    <div id="container">
+        <div class="opacity"></div>
+    </div>
+    <br><br>
+
+    <h1>saturate</h1>
+    <div id="container">
+        <div class="saturate"></div>
+    </div>
+    <br><br>
+
+    <h1>sepia</h1>
+    <div id="container">
+        <div class="sepia"></div>
+    </div>
+
+</body>
+
+</html>

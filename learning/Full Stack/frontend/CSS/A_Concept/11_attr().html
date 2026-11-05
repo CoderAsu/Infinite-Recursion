@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>attr()</title>
+    <style>
+        p:hover::after {
+            content: attr(data-car);
+        }
+
+        /* data-name is used for creating attribute */
+    </style>
+</head>
+
+<body>
+    <h1>attr()</h1>
+    <p class="test" data-car="Buggati">Lorem ipsum dolor sit amet.</p>
+</body>
+
+</html>

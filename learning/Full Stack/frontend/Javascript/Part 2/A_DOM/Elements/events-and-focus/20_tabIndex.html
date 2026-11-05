@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>tabIndex</title>
+</head>
+<body>
+    <h2>The tabIndex Property</h2>
+
+    <p>Navigate the links below by using the "Tab" button on you keyboard.</p>
+
+    <p><a id="myAnchor1" href="">Link 1</a></p>
+    <p><a id="myAnchor2" href="">Link 2</a></p>
+    <p><a id="myAnchor3" href="">Link 3</a></p>
+    <p><a id="myAnchor4" href="">Link 4</a></p>
+    <p><a id="myAnchor5" href="">Link 5</a></p>
+    <p><a id="myAnchor6" href="">Link 6</a></p>
+
+</body>
+<script>
+
+document.getElementById("myAnchor1").tabIndex = "4";
+document.getElementById("myAnchor2").tabIndex = "2";
+document.getElementById("myAnchor3").tabIndex = "1";
+document.getElementById("myAnchor4").tabIndex = "3";
+document.getElementById("myAnchor5").tabIndex = "6";
+document.getElementById("myAnchor6").tabIndex = "5";
+document.getElementById("myAnchor3").focus();
+
+
+// The tabindex attribute specifies the tab order of an element, when the "tab" button is used for navigating.
+
+</script>
+</html>

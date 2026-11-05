@@ -1,0 +1,12 @@
+STASH
+
+A stash temporarily saves changes from the index and working tree so you can get back to a clean working tree. By default, untracked files are not included.
+
+git stash push -m "work in progress" --> save tracked changes with a helpful label.
+git stash push -u -m "work in progress" --> also include untracked files.
+git stash list --> list stash entries (not individual files).
+git stash show -p stash@{0} --> inspect the newest stash as a patch.
+git stash apply stash@{0} --> restore a stash and keep it in the stash list.
+git stash pop stash@{0} --> restore a stash and remove it from the list if the apply succeeds.
+git stash drop stash@{0} --> remove one stash entry.
+git stash clear --> remove all stash entries; this can make their changes difficult or impossible to recover. Use with care.

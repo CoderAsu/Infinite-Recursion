@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>open(), close(), write()</title>
+</head>
+<body>
+    <h1>The open() Method</h1>
+
+    <p>Open a document deletes existing content.</p>
+    <p>Open this document and write some text to it:</p>
+
+    <button onclick="myFunction()">Try it</button>
+</body>
+<script>
+
+    // The open() method opens a document for writing.
+    // All existing document content will be cleared.
+
+    function myFunction() {
+        document.open();
+        document.writeln("<h1>Hello World</h1>");
+        document.write("<p>I am using JavaScript</p>")
+        document.close();
+    }
+</script>
+</html>

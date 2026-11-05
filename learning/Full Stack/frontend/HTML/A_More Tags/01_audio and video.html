@@ -1,0 +1,140 @@
+<!-- HTML Audio -->
+<!-- The HTML <audio> element is used to play an audio file on a web page. -->
+
+
+<!-- To play an audio file in HTML, use the <audio> element. -->
+<audio controls>
+    <source src="Tu Hai.mp3" type="audio/mp3">
+</audio><br><br>
+
+
+
+
+
+
+<!-- How it works? -->
+<!-- 
+The controls attribute adds audio controls, like play, pause, and volume.
+
+The <source> element allows you to specify alternative audio files which the browser may choose from. The browser will use the first recognized format.
+
+The text between the <audio> and </audio> tags will only be displayed in browsers that do not support the <audio> element.
+-->
+
+
+
+
+
+
+<!-- HTML <audio> autoplay -->
+<!-- To start an audio file automatically, use the autoplay attribute.-->
+<audio controls autoplay>
+    <source src="Khayaal.mp3" type="audio/mp3">
+</audio><br><br>
+
+<!-- Note: Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed. -->
+
+
+
+
+
+
+<!-- Add muted after autoplay to let your audio file start playing automatically (but muted) -->
+
+<audio controls autoplay muted>
+    <source src="Khayaal.mp3" type="audio/mp3">
+</audio>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- HTML Video -->
+<!-- The HTML <video> element is used to show a video on a web page. -->
+
+<!-- To show a video in HTML, use the <video> element. -->
+<video width="320" height="240" controls>
+    <source src="birds.mp4" type="video/mp4">
+Your browser does not support the video tag.
+</video>
+<br> <br>
+
+
+<!-- How it works -->
+<!-- The controls attribute adds video controls, like play, pause, and volume.
+ 
+It is a good idea to always include width and height attributes. If height and width are not set, the page might flicker while the video loads.
+
+The <source> element allows you to specify alternate video files which the browser may choose from. The browser will use the first recognized format.
+
+The text between the <video> and </video> tags will only be displayed in browsers that do not support the <video> element. -->
+
+
+
+
+
+<!-- HTML <video> autoplay -->
+<!-- To start a video automatically, use the autoplay attribute.-->
+
+<video height="240" width="320" autoplay controls>
+    <source src="bunnies.mp4" type="video/mp4">
+</video> <br><br>
+
+<!-- Note: Chromium browsers do not allow autoplay in most cases. However, muted autoplay is always allowed. -->
+
+
+
+
+
+
+<!-- Add muted after autoplay to let your video start playing automatically (but muted) -->
+ <video height="240" width="320" autoplay muted controls>
+    <source src="dogs.mp4" type="video/mp4">
+ </video>
+
+
+
+
+ <!-- HTML <track> tag -->
+<!-- HTML <track> tag is used to define time-based text tracks for a media file. The <track> tag must use as child element of <audio> and <video> elements.
+
+The <track> tag is used to add subtitle, caption, or any other form of text which displayed when a media file plays.
+
+HTML <track> is new tag in HTML5. -->
+
+<video controls>
+    <source src="tu hai.mp4" type="video/mp4">
+    <track src="eng.vtt" kind="subtitles" srclang="en" label="English">
+    Your browser does not support the video tag.
+</video>
+
+
+

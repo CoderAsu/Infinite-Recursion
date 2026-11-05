@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>font</title>
+    <style>
+        /* font-family */
+        .num1 {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif
+        }
+
+
+
+
+        /* font-style */
+        p.normal {
+            font-style: normal;
+        }
+
+        p.italic {
+            font-style: italic;
+        }
+
+        p.oblique {
+            font-style: oblique;
+            /* oblique is used when there is no italic of certain font-family and we want to change the font to italic then we use oblique that mean forcefully italic. */
+        }
+
+
+
+
+        /* font-variant */
+        p.ex1 {
+            font-variant: normal;
+        }
+
+        p.ex2 {
+            font-variant: small-caps;
+        }
+
+
+
+
+
+        /* font-weight */
+        p.a {
+            font-weight: normal;
+        }
+
+        p.b {
+            font-weight: bold;
+        }
+
+        p.c {
+            font-weight: bolder;
+        }
+
+        p.d {
+            font-weight: lighter;
+        }
+
+
+
+
+        /* font-size */
+        .asize {
+            font-size: 25px;
+        }
+
+        .rsize {
+            font-size: 5em;
+        }
+
+        .s1 {
+            font-size: xx-small;
+        }
+
+        .s2 {
+            font-size: x-small;
+        }
+
+        .s3 {
+            font-size: small;
+        }
+
+        .s4 {
+            font-size: smaller;
+        }
+
+        .s5 {
+            font-size: medium;
+        }
+
+        .s6 {
+            font-size: large;
+        }
+
+        .s7 {
+            font-size: larger;
+        }
+
+        .s8 {
+            font-size: x-large;
+        }
+
+        .s9 {
+            font-size: xx-large;
+        }
+
+
+
+        /* line-height */
+        p.small {
+            line-height: 0.8;
+        }
+
+        p.big {
+            line-height: 1.8;
+        }
+
+
+
+
+        /* font-shorthand */
+        p.sh1 {
+            font: 20px Arial, sans-serif;
+        }
+
+        p.sh2 {
+            font: italic small-caps bold 12px/30px Georgia, serif;
+        }
+
+
+        /* Best Web Safe Fonts for HTML and CSS
+        The following list are the best web safe fonts for HTML and CSS:
+        Arial (sans-serif)
+        Verdana (sans-serif)
+        Tahoma (sans-serif)
+        Trebuchet MS (sans-serif)
+        Times New Roman (serif)
+        Georgia (serif)
+        Garamond (serif)
+        Courier New (monospace)
+        Brush Script MT (cursive) */
+    </style>
+</head>
+
+<body>
+    <!-- CSS Font Properties and shorthand -->
+    <!-- 
+        To shorten the code, it is also possible to specify all the individual font properties in one property.
+
+        The font property is a shorthand property for:
+        1. font-style
+        2. font-variant
+        3. font-weight
+        4. font-size/line-height
+        5. font-family
+        Note: The font-size and font-family values are required. If one of the other values is missing, their default value are used.
+     -->
+
+
+    <!-- font-size Predefined values -->
+    <!-- 
+        1. xx-small
+        2. x-small
+        3. small
+        4. smaller
+        5. medium
+        6. large
+        7. larger
+        8. x-large
+        9. xx-large
+     -->
+
+    <!-- font-style values -->
+    <!-- 
+        1. normal
+        2. italic
+        3. oblique
+     -->
+
+
+    <!-- font-weight values -->
+    <!-- 
+        1. normal
+        2. bold
+        3. bolder
+        4. lighter
+        5. 100 to 900: Numeric scale for more precise control. 400 is normal, 700 is bold, with increments of 100.
+     -->
+
+
+    <!-- font-variant values -->
+    <!-- 
+        1. normal
+        2. small-caps
+      -->
+
+
+
+    <h1>font-family</h1>
+    <div>
+        <p>Choosing the right font has a huge impact on how the readers experience a website. The right font can create
+            a strong identity for your brand. Using a font that is easy to read is important. The font adds value to
+            your text. It is also important to choose the correct color and text size for the font.</p>
+
+        <pre>
+            In CSS there are five generic font families:
+
+            1. Serif fonts have a small stroke at the edges of each letter. They create a sense of formality and elegance.
+            2. Sans-serif fonts have clean lines (no small strokes attached). They create a modern and minimalistic look.
+            3. Monospace fonts - here all the letters have the same fixed width. They create a mechanical look. 
+            4. Cursive fonts imitate human handwriting.
+            Fantasy fonts are decorative/playful fonts.
+        </pre>
+
+        <p>Note: If the font name is more than one word, it must be in quotation marks, like: "Times New Roman".</p>
+
+        <p class="num1">The font-family property should hold several font names as a "fallback" system, to ensure
+            maximum compatibility between browsers/operating systems. Start with the font you want, and end with a
+            generic family (to let the browser pick a similar font in the generic family, if no other fonts are
+            available).</p>
+    </div>
+
+    <br><br><br>
+
+    <h1>font-style</h1>
+    <div>
+        <p class="normal">normal</p>
+        <p class="italic">italic</p>
+        <p class="oblique">oblique</p>
+    </div>
+
+    <br><br><br>
+
+    <h1>font-variant</h1>
+    <div>
+        <p class="ex1">normal</p>
+        <p class="ex2">small-caps</p>
+    </div>
+
+    <br><br><br>
+
+    <h1>font-weight</h1>
+    <div>
+        <p class="a">normal</p>
+        <p class="b">bold</p>
+        <p class="c">bolder</p>
+        <p class="d">lighter</p>
+    </div>
+
+
+    <h1>font-size</h1>
+    <div>
+        <p>The font size property sets the size of the text.
+
+            The font-size value can be an absolute, or relative size.
+
+            Absolute size:
+            Sets the text to a specified size
+            Does not allow a user to change the text size in all browsers
+            Absolute size is useful when the physical size of the output is known.
+
+            Relative size:
+            Sets the size relative to surrounding elements
+            Allows a user to change the text size in browsers
+
+            Note: If you do not specify a font size, the default size for normal text, like paragraphs, is 16px (16px =
+            1em).
+        </p>
+
+        <p class="asize">This sentence is in absolute size.</p>
+
+        <p class="rsize">This sentence is in relative size.</p>
+
+        <p class="s1">font-size</p>
+        <p class="s2">font-size</p>
+        <p class="s3">font-size</p>
+        <p class="s4">font-size</p>
+        <p class="s5">font-size</p>
+        <p class="s6">font-size</p>
+        <p class="s7">font-size</p>
+        <p class="s8">font-size</p>
+        <p class="s9">font-size</p>
+    </div>
+
+    <br><br><br>
+
+    <h1>line-height</h1>
+    <div>
+        <p class="small">
+            This is a paragraph with a smaller line-height.<br>
+            This is a paragraph with a smaller line-height.<br>
+        </p>
+
+        <p class="big">
+            This is a paragraph with a bigger line-height.<br>
+            This is a paragraph with a bigger line-height.<br>
+        </p>
+    </div>
+
+    <br><br><br>
+
+
+    <h1>font-shorthand</h1>
+    <div>
+        <p class="sh1">This is a paragraph. The font size is set to 20 pixels, and the font family is Arial.</p>
+
+        <p class="sh2">This is a paragraph. The font is set to italic, small-caps and bold, the font size is set to 12
+            pixels, the line height is set to 30 pixels, and the font family is Georgia.</p>
+    </div>
+</body>
+
+</html>

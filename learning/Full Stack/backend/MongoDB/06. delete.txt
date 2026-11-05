@@ -1,0 +1,10 @@
+db.collection_name.deleteOne({field1: "value"})
+
+
+db.collection_name.deleteMany({field1: "value"})
+
+
+db.collection_name.deleteMany({}) -> to delete all records
+
+
+

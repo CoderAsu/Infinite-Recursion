@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>selecting_elements</title>
+    <style>
+        #list:first-child {
+            color: rgb(255, 0, 242);
+        }
+
+        #list :last-child {
+            background-color: rgb(127, 140, 255);
+        }
+
+        #list :nth-child(3) {
+            background-color: lightpink;
+        }
+
+        .list2 :nth-child(2n) {
+            background-color: lightblue;
+        }
+
+        .list2 :nth-child(2n+1) {
+            background-color: lightcoral;
+        }
+
+
+        #list :nth-last-child(2) {
+            color: crimson;
+        }
+
+
+        .list3 :nth-last-child(2n) {
+            background-color: lightgray;
+        }
+
+        .list3 :nth-last-child(2n+1) {
+            background-color: lightsalmon;
+        }
+
+
+        p:nth-of-type(2) {
+            font-size: 25px;
+        }
+
+        p:nth-last-child(2) {
+            font-size: 10px;
+            color: green;
+        }
+
+
+
+        li:only-child {
+            color: blueviolet;
+        }
+
+
+        span:only-of-type {
+            color: limegreen;
+        }
+
+        h2:only-of-type {
+            color: brown;
+        }
+
+
+        p:first-of-type {
+            background-color: lightseagreen;
+        }
+
+        P:last-of-type {
+            background-color: lightgoldenrodyellow;
+        }
+
+        li:first-of-type {
+            color: white;
+        }
+
+        li:last-of-type {
+            color: white;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Pseudo Classes</h1>
+
+    <ul id="list">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <br><br>
+
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing.</p>
+    <br><br>
+
+    <ul class="list2">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <br><br>
+
+    <div>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat molestias sed.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat molestias sed.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat molestias sed.</p>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Totam repellat molestias sed.</p>
+    </div>
+    <br><br>
+
+    <ul class="list3">
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <br><br>
+
+    <ul class="list4">
+        <li>Lorem ipsum dolor sit amet.</li>
+    </ul>
+    <br><br>
+
+    <span>hello</span>
+
+    <div>
+        <h2>It is a inline-block</h2>
+    </div>
+
+</body>
+
+</html>

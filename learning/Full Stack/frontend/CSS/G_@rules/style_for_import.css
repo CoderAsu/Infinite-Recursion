@@ -1,0 +1,7 @@
+div{
+    width: 300px;
+    aspect-ratio: 1;
+    background-color: coral;
+    border: 2px solid black;
+    border-radius: 5px;
+}

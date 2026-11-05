@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Transitions</title>
+    <style>
+        div.a {
+            width: 100px;
+            height: 100px;
+            background: red;
+            transition-property: all;
+            transition-duration: 2s;
+            transition-timing-function: ease-in-out;
+            transition-delay: 0.3s;
+
+
+            &:hover {
+                width: 300px;
+                height: 300px;
+                transform: rotate(180deg);
+                color: white;
+                text-align: center;
+                font-size: xx-larger;
+            }
+        }
+
+
+        div.b {
+            width: 100px;
+            height: 100px;
+            background: rgb(18, 247, 10);
+            /* transition: property duration timing-function delay; */
+            transition: width 2s linear 0.7s;
+
+            &:hover {
+                width: 300px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Transition + Transform</h1>
+
+    <p>Hover over the div element below:</p>
+
+    <div class="a">Box1</div>
+
+    <br><br>
+
+    <h1>Using The transition Shorthand Property</h1>
+
+    <p>Hover over the div element below, to see the transition effect:</p>
+
+    <div class="b">Box2</div>
+
+    <p><b>Note:</b> The transition effect has a 0.7 second delay before starting.</p>
+
+    <!-- values of transition-timing-function -->
+    <!-- 
+        The transition-timing-function property can have the following values:
+
+        1. ease - specifies a transition effect with a slow start, then fast, then end slowly (this is default)
+        2. linear - specifies a transition effect with the same speed from start to end
+        3. ease-in - specifies a transition effect with a slow start
+        4. ease-out - specifies a transition effect with a slow end
+        5. ease-in-out - specifies a transition effect with a slow start and end
+        6. cubic-bezier(n,n,n,n) - lets you define your own values in a cubic-bezier function
+     -->
+</body>
+
+</html>

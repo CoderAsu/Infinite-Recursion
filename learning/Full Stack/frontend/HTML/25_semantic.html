@@ -1,0 +1,464 @@
+<!-- HTML Semantic Elements -->
+<!-- 
+Semantic elements = elements with a meaning. 
+
+A semantic element clearly describes its meaning to both the browser and the developer.
+
+Examples of non-semantic elements: <div> and <span> - Tells nothing about its content.
+
+Examples of semantic elements: <form>, <table>, and <article> - Clearly defines its content.
+-->
+
+
+<!-- Semantic Elements in HTML -->
+<!-- Many web sites contain HTML code like: <div id="nav"> <div class="header"> <div id="footer"> to indicate navigation,header, and footer. 
+    
+In HTML there are some semantic elements that can be used to define different parts of a web page>
+<article>
+<aside>
+<section>
+
+<details>
+<summary>
+
+<figure>
+<figcaption>
+
+<header>
+<main>
+<footer>
+<nav>
+
+<time>
+<search>
+  
+<abbr>
+<dfn>
+<kbd>
+<samp>
+<var>
+<code>
+<address>
+<cite>
+-->
+
+
+<!-- HTML <section> Element -->
+<!-- The <section> element defines a section in a document.
+Examples of where a <section> element can be used:
+Chapters
+Introduction
+News items
+Contact information -->
+
+<section>
+    <h1>WWF</h1>
+    <p>The World Wide Fund for Nature (WWF) is an international organization working on issues regarding the conservation, research and restoration of the environment, formerly named the World Wildlife Fund. WWF was founded in 1961.</p>
+</section>
+  
+<section>
+    <h1>WWF's Panda symbol</h1>
+    <p>The Panda has become the symbol of WWF. The well-known panda logo of WWF originated from a panda named Chi Chi that was transferred from the Beijing Zoo to the London Zoo in the same year of the establishment of WWF.</p>
+</section>
+<br><br><br><br>
+
+
+
+
+
+
+<!-- HTML <article> Element -->
+<!-- The <article> element specifies independent, self-contained content.
+
+An article should make sense on its own, and it should be possible to distribute it independently from the rest of the website.
+
+Examples of where the <article> element can be used:
+Forum posts
+Blog posts
+User Comments
+Product cards
+Newspaper articles
+-->
+
+
+
+
+<style>
+    .all-browsers {
+      margin: 0;
+      padding: 5px;
+      background-color: lightgray;
+    }
+    
+    .all-browsers > h1, .browser {
+      margin: 10px;
+      padding: 5px;
+    }
+    
+    .browser {
+      background: white;
+    }
+    
+    .browser > h2, p {
+      margin: 4px;
+      font-size: 90%;
+    }
+</style>
+
+<article class="all-browsers">
+    <h1>Most Popular Browsers</h1>
+    <article class="browser">
+      <h2>Google Chrome</h2>
+      <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+    </article>
+    <article class="browser">
+      <h2>Mozilla Firefox</h2>
+      <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+    </article>
+    <article class="browser">
+      <h2>Microsoft Edge</h2>
+      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+    </article>
+</article>
+<br><br><br>
+
+
+
+
+<!-- HTML <header> Element -->
+<!-- The <header> element represents a container for introductory content or a set of navigational links.
+
+The <header> element typically contains:
+one or more heading elements (<h1> - <h6>)
+logo or icon
+authorship information
+
+Note: You can have several <header> elements in one HTML document. However, <header> cannot be placed within a <footer>, <address> or another <header> element.
+-->
+
+
+<article>
+    <header>
+      <h1>What Does WWF Do?</h1>
+      <p>WWF's mission:</p>
+    </header>
+    <p>WWF's mission is to stop the degradation of our planet's natural environment, and build a future in which humans live in harmony with nature.</p>
+</article>
+<br>
+
+
+
+
+<!-- HTML <main> tag -->
+<!-- The <main> tag specifies the main content of a document.
+
+The content inside the <main> element should be unique to the document. It should not contain any content that is repeated across documents such as sidebars, navigation links, copyright information, site logos, and search forms.
+
+Note: There must not be more than one <main> element in a document. The <main> element must NOT be a descendant of an <article>, <aside>, <footer>, <header>, or <nav> element. -->
+
+
+  <main>
+    <h1>Most Popular Browsers</h1>
+    <p>Chrome, Firefox, and Edge are the most used browsers today.</p>
+  
+    <article>
+      <h2>Google Chrome</h2>
+      <p>Google Chrome is a web browser developed by Google, released in 2008. Chrome is the world's most popular web browser today!</p>
+    </article>
+  
+    <article>
+      <h2>Mozilla Firefox</h2>
+      <p>Mozilla Firefox is an open-source web browser developed by Mozilla. Firefox has been the second most popular web browser since January, 2018.</p>
+    </article>
+  
+    <article>
+      <h2>Microsoft Edge</h2>
+      <p>Microsoft Edge is a web browser developed by Microsoft, released in 2015. Microsoft Edge replaced Internet Explorer.</p>
+    </article>
+  </main>
+  <br><br>
+
+
+
+
+
+<!-- HTML <footer> Element -->
+<!-- The <footer> element defines a footer for a document or section.
+A <footer> element typically contains:
+authorship information
+copyright information
+contact information
+sitemap
+back to top links
+realted documents    
+
+You can have several <footer> elements in one document.
+-->
+
+
+<footer>
+    <p>Author: Hege Refsnes</p>
+    <p><a href="mailto:hege@example.com">hege@example.com</a></p>
+</footer>
+<br><br><br>
+
+
+
+<!-- HTML <nav> Element -->
+<!-- The <nav> element defines a set of navigation links.
+
+Notice that NOT all links of a document should be inside a <nav> element. The <nav> element is intended only for major blocks of navigation links.
+
+Browsers, such as screen readers for disabled users, can use this element to determine whether to omit the initial rendering of this content.
+-->
+
+
+
+<nav>
+    <a href="/html/">HTML</a> |
+    <a href="/css/">CSS</a> |
+    <a href="/js/">JavaScript</a> |
+    <a href="/jquery/">jQuery</a>
+</nav>
+<br><br><br>
+
+
+
+
+
+<!-- HTML <aside> Element -->
+<!-- The <aside> element defines some content aside from the content it is placed in (like a sidebar).
+    
+The <aside> content should be indirectly related to the surrounding content.
+-->
+
+
+<style>
+    aside {
+      width: 30%;
+      padding-left: 15px;
+      margin-left: 15px;
+      float: right;
+      font-style: italic;
+      background-color: lightgray;
+    }
+</style>
+
+<aside>
+  <p>The Epcot center is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</aside>
+
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+<p>My family and I visited The Epcot center this summer. The weather was nice, and Epcot was amazing! I had a great summer together with my family!</p>
+<br><br><br>
+
+
+
+
+
+
+
+
+<!-- HTML <figure> and <figcaption> Elements -->
+<!-- The <figure> tag specifies self-contained content, like illustrations, diagrams, photos, code listings, etc.
+
+The <figcaption> tag defines a caption for a <figure> element. The <figcaption> element can be placed as the first or as the last child of a <figure> element.
+  
+The <img> element defines the actual image/illustration.
+-->
+
+
+<figure>
+  <img src="https://www.w3schools.com/html/pic_trulli.jpg" alt="Trulli" style="width:100%">
+  <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+</figure>
+<br><br>
+
+
+
+
+
+
+
+
+
+<!-- HTML <details> Tag -->
+<!-- The <details> tag specifies additional details that the user can open and close on demand.
+
+The <details> tag is often used to create an interactive widget that the user can open and close. By default, the widget is closed. When open, it expands, and display the content within.
+
+Any sort of content can be put inside the <details> tag.
+
+Tip: The <summary> tag is used in conjunction with <details> to specify a visible heading for the details.
+-->
+
+<!-- HTML <summary> Tag -->
+<!-- The <summary> tag defines a visible heading for the <details> element. The heading can be clicked to view/hide the details.
+
+Note: The <summary> element should be the first child element of the <details> element. -->
+
+
+<details>
+  <summary>Epcot Center</summary>
+  <p>Epcot is a theme park at Walt Disney World Resort featuring exciting attractions, international pavilions, award-winning fireworks and seasonal special events.</p>
+</details>
+<br><br><br><br>
+
+
+
+
+
+<!-- HTML <time> tag -->
+<!-- The <time> tag defines a specific time (or datetime).
+
+The datetime attribute of this element is used translate the time into a machine-readable format so that browsers can offer to add date reminders through the user's calendar, and search engines can produce smarter search results.
+
+The time element does not render as anything special in any of the major browsers.
+-->
+
+
+<p>Open from <time>10:00</time> to <time>21:00</time> every weekday.</p>
+
+<p>I have a date on <time datetime="2008-02-14 20:00">Valentines day</time>.</p>
+
+<br><br><br>
+
+
+
+
+
+
+
+
+
+
+
+
+<!-- HTML <search> tag -->
+<!-- 
+    The <search> tag in HTML is used to group search-related elements, typically a search form or input field. It helps improve semantics but does not have any special rendering effects by default
+  
+-->
+
+<search>
+  <form action="/search">
+    <input type="search" name="query" placeholder="Search...">
+    <button type="submit">Go</button>
+  </form>
+</search>
+
+
+
+<!-- The HTML <abbr> tag defines an abbreviation or an acronym, like "HTML", "CSS", "Mr.", "Dr.", "ASAP", "ATM".
+Marking abbreviations can give useful information to browsers, translation systems and search engines.-->
+
+<p>The <abbr title="World Health Organization">WHO</abbr> was founded in 1948.</p>
+
+
+
+<!-- HTML <dfn> Tag -->
+<!-- The <dfn> tag stands for the "definition element", and it specifies a term that is going to be defined within the content. -->
+
+<p><dfn>HTML</dfn> is the standard markup language for creating web pages.</p>
+
+
+
+
+<!-- HTML Computer Code Elements -->
+<!-- HTML contains several elements for defining user input and computer code. -->
+
+<!-- HTML <kbd> for Keyboard Input -->
+<!-- The HTML <kbd> element is used to define input. The content inside is displayed in the browser's default monospace font. -->
+
+    <h2>The kbd Element</h2>
+
+    <p>The kbd element is used to define keyboard input:</p>
+    
+    <p>Save the document by pressing <kbd>Ctrl + S</kbd></p></p> <br><br><br>
+
+
+
+
+
+<!-- HTML <samp> for Program Output -->
+<!-- The HTML <samp> element is used to define sample output from a computer program. The content inside a displayed in the browser's default monospace font. -->
+
+<h2>The samp Element</h2>
+
+<p>The samp element is used to define sample output from a computer program.</p>
+    
+<p>Message from my computer:</p>
+<p><samp>File not found.<br>Press F1 to continue</samp></p> <br><br>
+
+
+
+
+
+
+
+<!-- HTML <code> for Computer Code -->
+<!-- The HTML <code> element is used to define a piece of computer code. The content inside is displayed in the browser's default monospace font. -->
+
+<h2>The code Element</h2>
+<p>Programming code example:</p>
+    
+<code>
+    x = 5;
+    y = 6;
+    z = x + y;
+</code>
+
+
+<!-- Notice that the <code> element does not preserve extra whitespace and line-breaks.
+    
+To fix this, you can put the <code> element inside a <pre> element.
+-->
+
+<pre>
+    <code>
+        x = 5;
+        y = 6;
+        z = x + y;
+    </code>
+</pre> <br><br><br>
+
+
+
+
+
+
+
+<!-- HTML <var> for Variables -->
+<!-- The HMTL <var> element is used to define a variable in programming or in a mathematical expression. The content inside is typically displayed in italic. -->
+
+<h2>The var Element</h2>
+
+<p>The area of a triangle is: 1/2 x <var>b</var> x <var>h</var>, where <var>b</var> is the base, and <var>h</var> is the vertical height.</p>
+
+
+
+
+
+
+
+<!-- The HTML <address> tag defines the contact information for the author/owner of a document or an article.
+The contact information can be an email address, URL, physical address,phone number, social media handle, etc.
+The text in the <address> element usually renders in italic, and browsers will always add a line break before and after the <address> element. -->
+    <address>
+        Written by John Doe. <br>
+        Visit us at: <br>
+        Example.com <br>
+        Box 564, Disneyland <br>
+        USA
+    </address>
+
+
+
+
+
+<!-- The HTML <cite> tag defines the title of a creative work (e.g. a book, a poem, a song, a movie, a painting, a sculpture, etc.) 
+Note: A person's name is not the title of a work.
+The text in the <cite> element usually renders in italic.-->
+    <p><cite>The Scream</cite> by Edvard Munch. Painted in 1893.</p>

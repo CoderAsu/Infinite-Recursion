@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>links</title>
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+
+        ul{
+            width: 100vh;
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+        }
+
+        ul li{
+            background-color: black;
+            border-radius: 5px;
+            border: 1px solid black;
+            padding: 10px;
+        }
+
+        ul a:link{
+            text-decoration: none;
+            color: blue;
+        }
+
+        ul a:visited{
+            color: white;
+        }
+
+        ul a:hover{
+            color: gold;
+        }
+
+        ul a:active{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <ul id="list">
+        <li><a href="#">Home</a></li>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Gallery</a></li>
+        <li><a href="#">Contact Us</a></li>
+    </ul>
+</body>
+</html>

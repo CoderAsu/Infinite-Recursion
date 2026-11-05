@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>block-size and inline-size</title>
+    <style>
+        .box1 {
+            block-size: 300px;
+            inline-size: 200px;
+            background-color: deeppink;
+            writing-mode: vertical-lr;
+        }
+
+        /* in case of height and width property, when we set in writing-mode: vertical-lr then the height and width of the box takes original height and width */
+
+        .box2 {
+            height: 300px;
+            width: 200px;
+            background-color: aqua;
+            writing-mode: vertical-rl;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- block-size and inline-size properties -->
+    <!-- 
+        1. block-size (height)
+        2. min-block-size
+        3. max-block-size
+        4. inline-size (width)
+        5. min-inline-size
+        6. max-inline-size
+     -->
+    <h1>understanding block-size and inline-size</h1>
+    <div class="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque porro modi incidunt
+        placeat natus reprehenderit, repellendus sapiente officiis aspernatur molestias voluptatum explicabo non
+        perferendis, dignissimos ullam veniam dolore provident.</div>
+
+    <br><br>
+
+    <div class="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempora cumque porro modi incidunt
+        placeat natus reprehenderit, repellendus sapiente officiis aspernatur molestias voluptatum explicabo non
+        perferendis, dignissimos ullam veniam dolore provident.</div>
+</body>
+
+</html>

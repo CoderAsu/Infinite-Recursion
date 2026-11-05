@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contains()</title>
+    <style>
+        .outer{
+            height: 300px;
+            width: 500px;
+            border: 2px solid black;
+            padding: 20px;
+            background-color: antiquewhite;
+        }
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <h1>Contain method</h1>
+            <p class="para">Lorem ipsum dolor sit amet consectetur adipisicing elit. In corporis distinctio porro officia perferendis voluptatum ducimus voluptates numquam nostrum debitis.</p>
+
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Fuga tempora veniam tenetur? Nobis repudiandae soluta itaque deleniti quasi laborum aperiam!</p>
+        </div>
+    </div>
+</body>
+<script>
+
+    let parentElement = document.querySelector(".outer");
+
+    let target = document.querySelector(".abc");
+    let target2 = document.querySelector(".para");
+
+    let find = parentElement.contains(target);
+    let find2 = parentElement.contains(target2);
+
+    console.log(find);
+    console.log(find2);
+    
+
+</script>
+</html>

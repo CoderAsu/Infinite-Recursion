@@ -1,0 +1,82 @@
+/* CSS Colors */
+/* Colors are specified using predefined color names, or RGB, HEX, HSL, RGBA, HSLA values. */
+
+
+/* CSS Color Names */
+/* In CSS, a color can be specified by using a predefined color name:
+Tomato
+Orange
+DodgerBlue
+MediumSeaGreen
+Gray
+SlateBlue
+Violet
+LightGray etc
+*/
+
+
+/* CSS Background Color */
+/* You can set the background color for HTML elements. */
+
+h1 {
+    background-color: dodgerblue;
+}
+
+p {
+    background-color: tomato;
+}
+
+
+
+
+/* CSS Text Color */
+/* You can set the color of text. */
+
+h1 {
+    color: tomato;
+}
+
+p {
+    color: mediumseagreen;
+}
+
+
+
+
+/* CSS Border Color */
+/* You can set the color of borders. */
+
+h1 {
+    border: 2px solid tomato;
+}
+
+h1 {
+    border: 2px solid violet;
+}
+
+
+
+
+/* CSS Color values */
+/* In CSS, colors can also be specified using RGB values, HEX values, HSL values, RGBA values, and HSLA values. */
+
+
+h1 {
+    background-color: rgb(255, 99, 71);
+}
+
+h1 {
+    background-color: #ff6347;
+}
+
+h1 {
+    background-color: hsl(9, 100%, 64%);
+}
+
+h1 {
+    background-color: rgba(255, 99, 71, 0.5);
+}
+
+h1 {
+    background-color: hsla(9, 100%, 64%, 0.5);
+}

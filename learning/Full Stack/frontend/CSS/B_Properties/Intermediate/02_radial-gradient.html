@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>radial-gradient</title>
+    <style>
+        .rgrad1 {
+            background-image: radial-gradient(red, yellow, green);
+            height: 40vh;
+        }
+
+        .rgrad2 {
+            background-image: radial-gradient(red 5%, yellow 15%, green 60%);
+            height: 40vh;
+        }
+
+        .rgrad3 {
+            background-image: radial-gradient(circle, red, yellow, green);
+            height: 140vh;
+        }
+
+        .rgrad4 {
+            background-image: radial-gradient(circle at top, red, yellow, green);
+            height: 140vh;
+        }
+
+        .rgrad5 {
+            background-image: radial-gradient(circle at bottom, red, yellow, green);
+            height: 140vh;
+        }
+
+        .rgrad6 {
+            background-image: radial-gradient(circle at left, red, yellow, green);
+            height: 140vh;
+        }
+
+        .rgrad7 {
+            background-image: radial-gradient(circle at right, red, yellow, green);
+            height: 140vh;
+        }
+
+        .rgrad8 {
+            background-image: radial-gradient(circle at top left, red, yellow, green);
+            height: 140vh;
+        }
+
+        .rgrad9 {
+            background-image: radial-gradient(circle at top right, red, yellow, green);
+            height: 140vh;
+        }
+
+        .rgrad10 {
+            background-image: radial-gradient(circle at bottom left, red, yellow, green);
+            height: 140vh;
+        }
+
+        .rgrad11 {
+            background-image: radial-gradient(circle at bottom right, red, yellow, green);
+            height: 140vh;
+        }
+
+        .rgrad12 {
+            background-image: radial-gradient(circle at 0%, red 30%, yellow 40%, green 50%);
+            height: 140vh;
+            margin: 150px auto 0 auto;
+        }
+
+        .rgrad13 {
+            background-image: radial-gradient(circle at 25%, red 30%, yellow 40%, green 50%);
+            height: 140vh;
+            margin: 150px auto 0 auto;
+        }
+
+        .rgrad14 {
+            background-image: radial-gradient(circle at 30% 60%, red 10%, yellow 20%, green 50%);
+            height: 140vh;
+            margin: 150px auto 0 auto;
+        }
+
+        .rgrad15 {
+            background-image: radial-gradient(ellipse at top, red 10%, transparent);
+            height: 140vh;
+            margin: 150px auto 0 auto;
+        }
+
+        .rgrad16 {
+            background-image: radial-gradient(ellipse at top, red 10%, transparent), radial-gradient(ellipse at bottom, yellow, blue);
+            height: 140vh;
+            margin: 150px auto 0 auto;
+        }
+
+        .rgrad17 {
+            background-image: radial-gradient(ellipse at top, red, transparent),
+                radial-gradient(ellipse at bottom, yellow, transparent),
+                radial-gradient(ellipse at left, green, transparent),
+                radial-gradient(ellipse at right, blue, transparent);
+            height: 80vh;
+            margin: 150px auto 0 auto;
+        }
+
+        .rgrad18 {
+            background-image: radial-gradient(closest-side at 30% 40%, red, yellow, rgb(0, 0, 0));
+            height: 140vh;
+            margin: 150px auto 0 auto;
+            color: white;
+        }
+
+        .rgrad19 {
+            background-image: radial-gradient(farthest-side at 30% 40%, red, yellow, rgb(0, 0, 0));
+            height: 140vh;
+            margin: 150px auto 0 auto;
+            color: white;
+        }
+
+        .rgrad20 {
+            background-image: radial-gradient(closest-corner at 30% 40%, red, yellow, rgb(0, 0, 0));
+            height: 140vh;
+            margin: 150px auto 0 auto;
+            color: white;
+        }
+
+        .rgrad21 {
+            background-image: radial-gradient(farthest-corner at 30% 40%, red, yellow, rgb(0, 0, 0));
+            height: 140vh;
+            margin: 150px auto 0 auto;
+        }
+
+        .rgrad22 {
+            background-image: repeating-radial-gradient(circle, red, yellow 10%, rgb(0, 0, 0) 15%);
+            height: 160vh;
+            margin: 150px auto 0 auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <!-- A radial gradient is defined by its center. 
+    To create a radial gradient you must also define at least two color stops.-->
+
+        <!-- Syntax -->
+        <!-- background-image: radial-gradient(shape size at position, start-color, ..., last-color); -->
+
+
+        <!-- Default radial-gradient - Evenly spaced color stops and default shape is ellipse.-->
+
+        <div class="rgrad1">
+            Evenly spaced color stops
+        </div>
+
+        <br><br>
+
+        <!-- Differently spaced color stops -->
+
+        <div class="rgrad2">
+            Differently spaced color stops
+        </div>
+
+        <br><br>
+
+        <!-- Set shape -->
+
+        <div class="rgrad3">
+            circle
+        </div> <br><br>
+
+        <!-- set position -->
+        <div class="rgrad4">
+            circle at top
+        </div> <br><br>
+
+        <div class="rgrad5">
+            circle at bottom
+        </div> <br><br>
+
+        <div class="rgrad6">
+            circle at left
+        </div> <br><br>
+
+        <div class="rgrad7">
+            circle at right
+        </div> <br><br>
+
+        <div class="rgrad8">
+            circle at top left
+        </div> <br><br>
+
+        <div class="rgrad9">
+            circle at top right
+        </div> <br><br>
+
+        <div class="rgrad10">
+            circle at bottom left
+        </div> <br><br>
+
+        <div class="rgrad11">
+            circle at bottom right
+        </div> <br><br>
+
+        <!-- set with axis -->
+
+        <div class="rgrad12">
+            circle at 0% at x-axis
+        </div> <br><br>
+
+        <div class="rgrad13">
+            circle at 25% at x-axis
+        </div> <br><br>
+
+        <div class="rgrad14">
+            circle at 30% 60% (at x and y axis)
+        </div> <br><br>
+
+        <!-- at transparent -->
+        <div class="rgrad15">
+            ellipse at transparent
+        </div> <br><br>
+
+        <!-- more than one radial gradient -->
+        <div class="rgrad16">
+            more than one radial gradient
+        </div> <br><br>
+
+        <div class="rgrad17">
+            4 radial gradient
+        </div> <br><br>
+
+
+        <!-- Use of Different size keywords -->
+        <!-- The size parameter defines the size of the gradient. It can take four values:
+           1. closest-side
+           2. farthest-side (default)
+           3. closest-corner
+           4. farthest-corner
+          -->
+        <div class="rgrad18">
+            closest-side
+        </div> <br><br>
+
+        <div class="rgrad19">
+            farthest-side
+        </div> <br><br>
+
+        <div class="rgrad20">
+            closest-corner
+        </div> <br><br>
+
+        <div class="rgrad21">
+            farthest-corner
+        </div> <br><br>
+
+        <!-- repeating-radial-gradient -->
+        <div class="rgrad22">
+            repeating-radial-gradient
+        </div>
+    </div>
+</body>
+
+</html>

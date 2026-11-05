@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>linear-gradient</title>
+    <style>
+        .lgrad1 {
+            background-image: linear-gradient(red, yellow);
+            height: 30vh;
+        }
+
+        .lgrad2 {
+            background-image: linear-gradient(to right, red, yellow);
+            height: 30vh;
+        }
+
+        .lgrad3 {
+            background-image: linear-gradient(to left, red, yellow);
+            height: 30vh;
+        }
+
+        .lgrad4 {
+            background-image: linear-gradient(to Top, red, yellow);
+            height: 30vh;
+        }
+
+        .lgrad5 {
+            background-image: linear-gradient(to bottom right, red, yellow);
+            height: 30vh;
+        }
+
+        .lgrad6 {
+            background-image: linear-gradient(to bottom left, red, yellow);
+            height: 30vh;
+        }
+
+        .lgrad7 {
+            background-image: linear-gradient(to top left, red, yellow);
+            height: 30vh;
+        }
+
+        .lgrad8 {
+            background-image: linear-gradient(to top right, red, yellow);
+            height: 30vh;
+        }
+
+        .lgrad9 {
+            background-image: linear-gradient(220deg, red, yellow);
+            height: 30vh;
+        }
+
+        .lgrad10 {
+            background-image: linear-gradient(to right, red, orange, yellow, green, blue, indigo, violet);
+            height: 60vh;
+        }
+
+        .lgrad11 {
+            background-image: linear-gradient(to right, rgba(255, 0, 0, 0), rgba(255, 0, 0, 1));
+            height: 30vh;
+        }
+
+        .lgrad12 {
+            background-image: repeating-linear-gradient(red, blue 10%, green 20%);
+            height: 50vh;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS defines three types of gradients:
+        1. Linear Gradients (goes down/up/left/right/diagonally)
+        2. Radial Gradients (defined by their center)
+        3. Conic Gradients (rotated around a center point) 
+    -->
+
+    <div>
+        <h2>CSS Linear Gradient</h2>
+        <!-- To create a linear gradient you must define at least two color stops. Color stops are the colors you want to render smooth transitions among. You can also set a starting point and a direction (or an angle) along with the gradient effect. -->
+
+        <!-- Syntax -->
+        <!-- background-image: linear-gradient(direction, color-stop1, color-stop2, ...); -->
+
+
+        <!-- Direction - Top to Bottom (this is default) -->
+        <div class="lgrad1">
+            Top to Bottom
+        </div>
+        <br><br>
+
+
+        <!-- Direction - Left to Right -->
+        <div class="lgrad2">
+            Left to Right
+        </div>
+
+        <br><br>
+
+        <!-- Direction - Right to Left -->
+        <div class="lgrad3">
+            Right to Left
+        </div>
+
+        <br><br>
+
+        <!-- Direction - Bottom to Top -->
+        <div class="lgrad4">
+            Bottom to Top
+        </div>
+
+        <br><br>
+
+        <!-- Direction - Diagonal (top left to bottom right)-->
+
+        <div class="lgrad5">
+            Top left to Bottom right
+        </div>
+
+        <br><br>
+
+        <!-- Direction - Diagonal (top right to bottom left) -->
+        <div class="lgrad6">
+            Top right to Bottom left
+        </div>
+
+        <br><br>
+
+        <!-- Direction - Diagonal (bottom right to top left) -->
+        <div class="lgrad7">
+            Bottom right to Top left
+        </div>
+
+        <br><br>
+
+        <!-- Direction - Diagonal (bottom left to top right) -->
+        <div class="lgrad8">
+            Bottom left to Top right
+        </div>
+        <br><br>
+
+        <!-- Using Angles -->
+        <!-- If you want more control over the direction of the gradient, you can define an angle, instead of the predefined directions (to bottom, to top, to right, to left, to bottom right, etc.). A value of 0deg is equivalent to "to top". A value of 90deg is equivalent to "to right". A value of 180deg is equivalent to "to bottom". -->
+
+        <!-- Syntax -->
+        <!-- background-image: linear-gradient(angle, color-stop1, color-stop2); -->
+
+        <div class="lgrad9">
+            220 degree
+        </div>
+
+        <br><br>
+
+        <div class="lgrad10">
+            Rainbow Background
+        </div>
+        <br><br>
+
+        <div class="lgrad11">
+            Transparency
+        </div>
+        <br><br>
+
+        <div class="lgrad12">
+            Repeating linear-gradient
+        </div>
+    </div>
+</body>
+
+</html>

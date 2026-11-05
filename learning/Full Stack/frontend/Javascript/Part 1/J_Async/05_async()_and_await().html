@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>async-await</title>
+</head>
+<body>
+    
+</body>
+<script>
+    /* 
+        async function always returns a promise.
+
+        await pauses the execution of its surrounding async function until the promise is settled.
+    */
+
+
+    // callback function >> promise chain >> async-await 
+
+    // async-wait is simple and easy to understand otherthan promise chain and callback function.
+
+
+    function getData(dataId){
+        return new Promise((resolve, reject) => {
+            setTimeout(() => {
+                console.log("data:", dataId);
+                resolve("success");
+            }, 2000);
+        })
+    }
+
+
+    (async function getAllData(){
+        console.log("Fetching Data...");
+        console.log("getting data1");
+        await getData(1);
+        console.log("getting data2");
+        await getData(2);
+        console.log("getting data3");
+        await getData(3);
+        console.log("getting data4");
+        await getData(4).then((result) => {
+            console.log(result);
+        })
+    }) ();
+
+
+
+</script>
+</html>

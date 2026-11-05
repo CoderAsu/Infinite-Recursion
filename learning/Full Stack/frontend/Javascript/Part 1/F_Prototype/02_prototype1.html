@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>How prototype works</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    function multipleBy5(num) {
+        return num * 5;
+    }
+
+    multipleBy5.power = 2; // function is also an object
+
+    console.log(multipleBy5(5));
+    console.log(multipleBy5.power);
+    console.log(multipleBy5.prototype);
+    console.log(multipleBy5.__proto__);
+    console.log(multipleBy5.__proto__.__proto__);
+    
+    
+
+
+
+    function createUser(username, score) {
+        this.username = username;
+        this.score = score;
+    }
+
+    createUser.prototype.increment = function() {
+        console.log(++this.score);
+    }
+
+
+    createUser.prototype.printMe = function() {
+        console.log(`price is ${this.score}`);
+        
+    }
+
+    const tea = new createUser("tea", 10);
+    const coffee = createUser("coffee", 20)
+
+
+    tea.printMe();
+    tea.increment();
+
+    // without new keyword it can't read the properties.
+
+
+    /*
+        Here's what happens behind the scenes when the new keyword is used:
+
+        A new object is created: the new keyword initiates the creation of a new Javascript object.
+
+        A prototype is linked: the newly created object gets linked to the prototype property of the constructor function. This means that it has access to properties and methods defined on the constructor's prototype.
+
+        The constructor is called: the constructor function is called with the specified arguments and this is bound to the newly created object. If no explicit return value is specified from the constructor. Javascript assumes this, the newly created object, to be the intended return value.
+
+        The new object is returned: After the constructor function has been called, if it doesn't return a non-primitive value, the newly created object is returned.
+    */
+
+</script>
+</html>

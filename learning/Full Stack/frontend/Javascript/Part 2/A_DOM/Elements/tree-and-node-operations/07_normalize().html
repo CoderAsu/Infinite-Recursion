@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>normalize()</title>
+</head>
+<body>
+    <div class="container">
+
+    </div>
+</body>
+<script>
+    // The normalize() method removes empty text nodes, and joins adjacent text nodes.
+
+    let targetNode = document.querySelector(".container");
+
+    targetNode.appendChild(document.createTextNode("Hello"));
+
+    targetNode.appendChild(document.createTextNode(" I am"));
+
+    targetNode.appendChild(document.createTextNode(" using JavaScript"));
+
+
+    targetNode.normalize();
+
+    console.log(targetNode.childNodes);
+</script>
+</html>

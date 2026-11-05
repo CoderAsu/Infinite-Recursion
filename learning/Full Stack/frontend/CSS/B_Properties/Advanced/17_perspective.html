@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>perspective</title>
+    <style>
+        .container1 {
+            width: 350px;
+            height: 250px;
+            background-color: grey;
+            margin: 100px 0 0 100px;
+            perspective: 800px;
+        }
+
+        .a {
+            width: 350px;
+            height: 250px;
+            background-color: tomato;
+            transform: rotateX(60deg);
+        }
+
+
+        .container2 {
+            width: 350px;
+            height: 250px;
+            background-color: grey;
+            margin: 100px 0 0 100px;
+            perspective: 800px;
+            perspective-origin: right top;
+        }
+
+        .b {
+            width: 350px;
+            height: 250px;
+            background-color: tomato;
+            transform: rotateX(60deg);
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- perspective-origin values -->
+    <!-- 
+        1. left top
+        2. left center
+        3. left bottom
+        4. right top
+        5. right center
+        6. right bottom
+        7. center top
+        8. center center
+        9. center bottom
+        10. x% y%
+        11. xpx ypx
+      -->
+
+    <h1>perspective</h1>
+    <div class="container1">
+        <div class="a"></div>
+    </div>
+
+    <br><br>
+
+    <h1>perspective-origin</h1>
+    <div class="container2">
+        <div class="b"></div>
+    </div>
+</body>
+
+</html>

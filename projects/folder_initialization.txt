@@ -1,0 +1,27 @@
+If we want to create a project using react + typescript, tailwindcss, with vite
+
+
+npm create vite@latest project-name -- --template react-ts
+cd project-name
+npm install -D typescript@~5.9.3
+npm install -D @types/node
+npm install
+npm install -D tailwindcss @tailwindcss/vite
+
+
+// configure vite
+
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import tailwindcss from '@tailwindcss/vite'
+
+export default defineConfig({
+  plugins: [
+    react(),
+    tailwindcss(),
+  ],
+})
+
+
+// configure tailwindcss
+@import "tailwindcss";

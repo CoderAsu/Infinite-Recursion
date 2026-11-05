@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-self</title>
+    <style>
+        .container{
+            background-color: beige;
+            width: 600px;
+            height: 400px;
+            margin: 50px auto 0;
+            padding: 10px;
+            border: 3px solid #000;
+
+            display: flex;
+            align-items: flex-start;
+        }
+
+        .one{
+            background-color: orangered;
+            align-self: center;
+        }
+        .two{
+            background-color: yellowgreen;
+        }
+        .three{
+            background-color: mediumpurple;
+        }
+        .four{
+            background-color: hotpink;
+        }
+
+        .items{
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Values of align-self -->
+     <!-- 
+        1. auto
+        2. flex-start
+        3. flex-end
+        4. center
+        5. stretch
+        6. baseline
+     -->
+
+    <div class="container">
+        <div class="one items">One</div>
+        <div class="two items">Two</div>
+        <div class="three items">Three</div>
+        <div class="four items">Four</div>
+    </div>
+</body>
+</html>

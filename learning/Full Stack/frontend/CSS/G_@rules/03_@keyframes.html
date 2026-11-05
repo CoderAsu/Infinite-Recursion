@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Animations</title>
+    <style>
+
+
+
+        @keyframes sample {
+            0%{background-color: yellow; width: 250px;}
+            50%{background-color: green; width: 350px;}
+            100%{background-color: red; width: 450px;}
+        }
+
+        .container1{
+            width: 150px;
+            height: 150px;
+            background-color: chartreuse;
+            margin-left: 20px;
+            animation: sample 2s 1s 4 alternate none;
+            &:hover{
+                animation-play-state: paused;
+            }
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container1"></div>
+
+</body>
+</html>

@@ -1,0 +1,6 @@
+DELETE DATA
+
+d. DELETE
+	1. Delete one row: DELETE FROM employee WHERE employee_id = 1;
+	2. Delete multiple rows: DELETE FROM employee WHERE salary < 3000;
+	3. Delete all rows: DELETE FROM employee;

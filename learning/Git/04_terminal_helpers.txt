@@ -1,0 +1,4 @@
+TERMINAL HELPERS
+
+find . -name "file_name" --> to get the filepath
+echo "Hello Everyone I am using Git" >> a1.txt --> writing some lines through terminal for a1.txt

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>counter</title>
+    <style>
+        body {
+            font: 19px/25px arial;
+            padding: 10px 0 0 20px;
+            counter-reset: section;
+        }
+
+        div{
+            counter-reset: my-counter 5;
+        }
+
+        .big {
+            font-size: 32px;
+            margin-bottom: 35px;
+            color: green;
+        }
+
+        .one::before {
+            content: "Chapter " counter(my-counter, upper-roman) " : ";
+            counter-increment: my-counter 1;
+            color: white;
+            background: crimson;
+            display: inline-block;
+            padding: 4px;
+        }
+
+        .heading{
+            background-color: chartreuse;
+            padding: 10px;
+            color: red;
+            counter-reset: subsection;
+        }
+
+
+        .heading::before{
+            content: "Section" counter(section) " : ";
+            counter-increment: section;
+        }
+
+        h2.a::before, h2.b::before, h2.c::before {
+            content: counter(section) "." counter(subsection) " : ";
+            counter-increment: subsection;
+        }
+        
+        
+        
+        
+        
+        
+        
+        
+        
+        /* counter-set */
+        .container{
+            counter-reset: my-counter 5;
+        }
+
+        .container h2::before{
+            content: counter(my-counter) ". ";
+            counter-increment: my-counter 1;
+        }
+
+        .container h2:first-of-type::before{
+            counter-set: my-counter 0;
+            /* here counter-set override counter-reset */
+        }
+
+
+
+
+        /* counter-set (exact value) works on an child element and counter-reset (value + 1)works on parent element */
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1 class="big">CSS Counter-Increment</h1>
+        <h2 class="one">Lorem ipsum dolor sit</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, doloribus ipsum possimus adipisci hic nulla
+            earum cumque quisquam perspiciatis repudiandae.</p>
+
+
+        <h2 class="one">Lorem ipsum dolor sit</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, doloribus ipsum possimus adipisci hic nulla
+            earum cumque quisquam perspiciatis repudiandae.</p>
+
+
+        <h2 class="one">Lorem ipsum dolor sit</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, doloribus ipsum possimus adipisci hic nulla
+            earum cumque quisquam perspiciatis repudiandae.</p>
+
+
+        <h2 class="one">Lorem ipsum dolor sit</h2>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis, doloribus ipsum possimus adipisci hic nulla
+            earum cumque quisquam perspiciatis repudiandae.</p>
+    </div>
+
+    <br><br><br>
+
+
+    <h1 class="heading">HTML and CSS</h1>
+    <h2 class="a">HTML Tutorial</h2>
+    <h2 class="a">CSS Tutorial</h2>
+    <h2 class="a">Bootstrap Tutorial</h2>
+    <hr>
+
+    <h1 class="heading">JavaScript</h1>
+    <h2 class="b">JavaScript Tutorial</h2>
+    <h2 class="b">jQuery Tutorial</h2>
+    <h2 class="b">JSON Tutorial</h2>
+    <hr>
+
+    <h1 class="heading">Server Side</h1>
+    <h2 class="c">SQL Tutorial</h2>
+    <h2 class="c">PHP Tutorial</h2>
+
+
+    <br><br><br>
+
+    <div class="container">
+        <h2>HTML</h2>
+        <h2>CSS</h2>
+        <h2>JavaScript</h2>
+    </div>
+</body>
+
+</html>

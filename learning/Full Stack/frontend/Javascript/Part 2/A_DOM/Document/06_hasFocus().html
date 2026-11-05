@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hasFocus()</title>
+</head>
+<body>
+    <h2>The hasFocus() Method</h2>
+
+    <p>Click inside this document to get focus.<br>
+    Click outside this document to lose focus.</p>
+</body>
+<script>
+
+    setInterval(func, 1000);
+
+    function func(params) {
+    if (document.hasFocus()) {
+        console.clear();
+        console.log("The document has focus.");
+    } else {
+        console.clear();
+        console.log("The document does NOT have focus.");
+    }
+}
+
+</script>
+</html>

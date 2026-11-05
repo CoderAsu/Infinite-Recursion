@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>align-content</title>
+    <style>
+        .container{
+            background-color: beige;
+            width: 320px;
+            margin: 50px auto 0;
+            padding: 10px;
+            border: 3px solid #000;
+            height: 450px;
+
+            display: flex;
+            flex-wrap: wrap;
+            align-content: space-evenly;
+        }
+
+        .one{background-color: orangered;}
+        .two{background-color: yellowgreen;}
+        .three{background-color: mediumpurple;}
+        .four{background-color: hotpink;}
+        .five{background-color: crimson;}
+        .six{background-color: rgb(50, 188, 235);}
+        .seven{background-color: rgb(24, 236, 24);}
+        .eight{background-color: lightseagreen;}
+        .nine{background-color: orange;}
+        .ten{background-color: blue;}
+        .eleven{background-color: coral;}
+        .twelve{background-color: black;}
+
+        .items{
+            color: #ffffff;
+            font-size: 20px;
+            font-weight: bold;
+            text-align: center;
+            padding: 10px;
+            margin: 5px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Values of align-content -->
+     <!-- 
+        1. flex-start
+        2. flex-end
+        3. center
+        4. stretch
+        5. space-around
+        6. space-between
+        7. space-evenly
+     -->
+
+    <div class="container">
+        <div class="one items">One</div>
+        <div class="two items">Two</div>
+        <div class="three items">Three</div>
+        <div class="four items">Four</div>
+        <div class="five items">Five</div>
+        <div class="six items">Six</div>
+        <div class="seven items">Seven</div>
+        <div class="eight items">Eight</div>
+        <div class="nine items">Nine</div>
+        <div class="ten items">Ten</div>
+        <div class="eleven items">Eleven</div>
+        <div class="twelve items">Twelve</div>
+
+    </div>
+</body>
+</html>

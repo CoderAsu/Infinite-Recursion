@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin</title>
+    <style>
+        /* Margins are used to create space around elements, outside of any defined borders. */
+        .one {
+            border: 2px solid red;
+            margin: 25px;
+            /* 25px on all sides */
+        }
+
+        .two {
+            border: 2px solid blue;
+            margin: 50px 100px;
+            /* 50px top and bottom, 100px on the sides */
+        }
+
+        .three {
+            border: 2px solid green;
+            margin: 25px 50px 75px;
+            /* 25px top, 50px both sides, 75px bottom */
+        }
+
+        .four {
+            border: 2px solid pink;
+            margin: 25px 50px 75px 100px;
+            /* 25px top, 50px right, 75px bottom and 100px left */
+        }
+
+        .sep {
+            border: 2px solid brown;
+            margin-top: 25px;
+            margin-right: 50px;
+            margin-bottom: 75px;
+            margin-left: 100px;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="one">single</p>
+    <p class="two">double</p>
+    <p class="three">triple</p>
+    <p class="four">quadriple</p>
+    <p class="sep">separate</p>
+</body>
+
+</html>

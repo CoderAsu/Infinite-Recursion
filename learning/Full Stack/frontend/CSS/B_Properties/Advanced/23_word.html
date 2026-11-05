@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>word-wrap and word-break</title>
+  <style>
+    /* word-wrap */
+    p.test1 {
+      width: 11em;
+      border: 1px solid #000000;
+      word-wrap: normal;
+    }
+
+    p.test2 {
+      width: 11em;
+      border: 1px solid #000000;
+      word-wrap: break-word;
+    }
+
+
+    /* word-break */
+    p.test3 {
+      width: 140px;
+      border: 1px solid #000000;
+      word-break: keep-all;
+    }
+
+    p.test4 {
+      width: 140px;
+      border: 1px solid #000000;
+      word-break: break-all;
+    }
+  </style>
+</head>
+
+<body>
+
+  <h1>The word-wrap Property</h1>
+  <div>
+    <p class="test1">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word
+      will break and wrap to the next line.</p>
+
+    <p class="test2">This paragraph contains a very long word: thisisaveryveryveryveryveryverylongword. The long word
+      will break and wrap to the next line.</p>
+  </div>
+
+  <br><br>
+
+  <h1>The word-break Property</h1>
+  <div>
+    <p class="test3">This paragraph contains some text. This line will-break-at-hyphens.</p>
+
+    <p class="test4">This paragraph contains some text. This line will-break-at-hyphens.</p>
+  </div>
+</body>
+
+</html>

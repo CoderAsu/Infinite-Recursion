@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>remove()</title>
+</head>
+<body>
+    <div id="container">
+        <h1>The remove() method</h1>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Consectetur fugit officia, esse aspernatur saepe sapiente animi blanditiis hic excepturi aperiam, eos reprehenderit nobis accusantium officiis aliquam nisi eveniet id. Quia!</p>
+    </div>
+</body>
+<script>
+
+
+    let element = document.querySelector("p");
+    element.remove();
+
+
+
+
+
+    let cont = document.querySelector("#container");
+    let newElement = document.createElement("div");
+
+    newElement.innerHTML = "<h1>Earth</h1>"
+    cont.appendChild(newElement);
+
+    console.log(newElement.remove());
+    
+
+
+    
+    // The remove() method removes an element (or node) from the document.
+
+</script>
+</html>

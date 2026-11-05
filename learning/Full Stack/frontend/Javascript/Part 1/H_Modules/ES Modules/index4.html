@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script type="module">
+        import {default as subtract} from "./library.js"
+        console.log(subtract(9, 5));
+
+
+
+
+        import * as component from "./library2.js"
+
+        console.log(component.message);
+        console.log(component.sum(5, 7));
+        
+        let user = new component.test();
+
+
+
+
+        import sqr from "./library3.js"
+        sqr(6);
+        
+    </script>
+</head>
+<body>
+    
+</body>
+</html>

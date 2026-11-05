@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>API</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+    // The Fetch API provides an interface for fetching(sending/receiving) resources.
+
+    // It uses Request and Response objects.
+
+    // The fetch() method is used to fetch a resource (data).
+
+
+    // In JavaScript, an API (Application Programming Interface) allows you to interact with external data, services, or system functionalities. APIs can be browser-based (like the Fetch API for making HTTP requests), built-in (like the DOM API for manipulating elements), or third-party (like REST APIs for retrieving data from web services).
+
+
+
+    // HTTP status codes the server can generate in response to an HTTP POST or HTTP GET request:
+
+    // 200 OK: Successful request.
+    // 400 Bad Request: Invalid argument (invalid request payload).
+    // 403 Forbidden: Permission denied (e.g. invalid API key).
+    // 429 Resource Exhausted: Either out of resource quota or reaching rate limiting.
+    // 500 Internal Server Error: Internal server error (retry your request).
+    // 503 Service Unavailable: Unavailable.
+    // 504 Gateway Timeout: Deadline exceeded (retry your request).
+
+
+
+
+    // with async and await
+    // Fetching data from the API
+
+    async function getData(){
+        let url = await fetch("https://jsonplaceholder.typicode.com/posts");
+        console.log(url);
+
+        let data = await url.json();
+        console.log(data);
+    }
+   
+    getData();
+
+
+
+    //or 
+
+
+
+    // without async and await
+    // Fetching data from the API
+
+    let url2 = fetch("https://jsonplaceholder.typicode.com/posts");
+
+
+    url2.then((response) => {
+        return response.json();
+    }).then((data) => {
+        console.log(data);
+    }).catch((error) => {
+        console.log("Error:", error);
+    });
+</script>
+</html>

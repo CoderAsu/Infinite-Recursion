@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get and set values</title>
+</head>
+<body>
+    <div class="container" id="parent" name="cont" style="border: 1px solid red;" onclick="abc">
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nobis, odit.</p>
+        <div>Hello</div>
+        <br>
+        <span>JavaScript</span>
+    </div>
+    <br>
+
+    <div id="container2"></div>
+
+    <div id="container3" class="parent3" name="cont3"></div>
+
+</body>
+<script>
+    // Dom Get Methods:
+    /* 
+        1. innerText
+        2. innerHTML
+        3. getAttribute()
+        4. getAttributeNode()
+        5. attributes
+    */
+
+    let element = document.getElementsByClassName("container")[0];
+
+    console.log(element);
+    console.log(element.innerText);
+    console.log(element.innerHTML);
+    console.log(element.getAttribute("class"));
+    console.log(element.getAttribute("id"));
+    console.log(element.getAttribute("style"));
+    console.log(element.getAttribute("onclick"));
+    console.log(element.getAttributeNode("class"));
+    console.log(element.getAttributeNode("id"));
+    console.log(element.getAttributeNode("style"));
+    console.log(element.getAttributeNode("onclick"));
+    console.log(element.attributes);
+    console.log(element.attributes[1]);
+    console.log(element.attributes[1].value);
+    console.log(element.attributes[1].name);
+
+
+
+
+
+    // Dom Set Methods:
+    /* 
+        1. innerText
+        2. innerHTML
+        3. setAttribute()
+        4. attributes
+        5. removeAttribute()
+    */
+
+
+
+    let cont1 = document.getElementById("container2");
+    console.log(cont1.innerText = "<h1> Ironman </h1>");
+
+
+    let cont2 = document.getElementById("container3");
+    console.log(cont2.innerHTML = "<h1> Ironman </h1>");
+
+
+    console.log(cont1.setAttribute("class", "parent"));
+    console.log(cont1.setAttribute("style", "border: 2px solid blue"));
+
+
+    console.log(cont2.attributes[1].value= "abc");
+
+    
+    console.log(cont2.removeAttribute("name"));
+
+
+
+
+
+
+
+
+    // Node methods:
+    /* 
+        1. setAttributeNode()
+        2. getAttributeNode()
+        3. removeAttributeNode()
+    */
+
+
+
+
+    let mydiv = document.createElement("div");
+
+    const attr = document.createAttribute("id");
+    attr.value = "container4";
+
+    console.log(mydiv.setAttributeNode(attr));
+
+    const attr2 = document.createAttribute("name");
+    attr2.value = "cont4";
+    
+    mydiv.setAttributeNode(attr2);
+
+
+    const attr3 = document.createAttribute("class");
+    attr3.value = "mydiv";
+
+    mydiv.setAttributeNode(attr3);
+
+
+    const bgcol = document.createAttribute("style");
+    bgcol.value = "background-color: cyan";
+
+    mydiv.setAttributeNode(bgcol);
+
+
+
+
+
+
+
+
+    let remove = mydiv.removeAttributeNode(attr2);
+
+
+    let remove2 = mydiv.getAttributeNode("class");
+    mydiv.removeAttributeNode(remove2);
+
+    mydiv.innerText = "Captain America";
+    
+    console.log(mydiv);
+
+    document.body.appendChild(mydiv);
+
+    console.log(document.documentElement);
+    
+
+
+    
+</script>
+</html>

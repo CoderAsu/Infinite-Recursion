@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>box-shadow</title>
+    <style>
+        /* for bottom and right side */
+        #box1 {
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            background-color: pink;
+            box-shadow: 2px 6px 10px 5px black;
+            /* 2px is for h-offset, 2px for v-offset, 3px is for blur effect, 2px is for spread, and black is the color */
+        }
+
+
+        /* for top and left side */
+        #box2 {
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            background-color: lightgreen;
+            box-shadow: -2px -2px 3px 5px black;
+        }
+
+        /* shadow inside box in bottom and right*/
+        #box3 {
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            background-color: lightskyblue;
+            box-shadow: -2px -2px 3px 5px black inset;
+        }
+
+
+        /* shadow inside box in top and left*/
+        #box4 {
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            background-color: pink;
+            box-shadow: 2px 2px 3px 5px black inset;
+        }
+
+
+        /* more than one value */
+        img {
+            width: 100%;
+        }
+
+        #box5 {
+            width: 250px;
+            height: 220px;
+            border: 2px solid black;
+            background-color: rgb(255, 255, 255);
+            box-shadow: 0 4px 8px 1px rgba(0, 0, 0, 0.2), 2px 6px 20px 0 rgba(0, 0, 0, 0.19);
+            text-align: center;
+        }
+
+
+
+        /* multiple shadows */
+        #box6 {
+            width: 250px;
+            height: 250px;
+            border: 2px solid black;
+            background-color: bisque;
+            box-shadow: 2px 2px black, 4px 4px red, 6px 6px blue, 8px 8px green;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box1">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veniam tempora officiis ipsam! Veniam
+        amet numquam praesentium exercitationem alias quae, asperiores quibusdam fugiat incidunt, dolorem accusamus
+        consequatur, in ea illo vero laborum. Fugiat repudiandae molestias veniam ipsum velit nemo rerum sapiente sint
+        laboriosam nobis illum id, odio quasi! </div> <br><br>
+
+    <div id="box2">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veniam tempora officiis ipsam! Veniam
+        amet numquam praesentium exercitationem alias quae, asperiores quibusdam fugiat incidunt, dolorem accusamus
+        consequatur, in ea illo vero laborum. Fugiat repudiandae molestias veniam ipsum velit nemo rerum sapiente sint
+        laboriosam nobis illum id, odio quasi! </div> <br><br>
+
+    <div id="box3">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veniam tempora officiis ipsam! Veniam
+        amet numquam praesentium exercitationem alias quae, asperiores quibusdam fugiat incidunt, dolorem accusamus
+        consequatur, in ea illo vero laborum. Fugiat repudiandae molestias veniam ipsum velit nemo rerum sapiente sint
+        laboriosam nobis illum id, odio quasi! </div> <br><br>
+
+    <div id="box4">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veniam tempora officiis ipsam! Veniam
+        amet numquam praesentium exercitationem alias quae, asperiores quibusdam fugiat incidunt, dolorem accusamus
+        consequatur, in ea illo vero laborum. Fugiat repudiandae molestias veniam ipsum velit nemo rerum sapiente sint
+        laboriosam nobis illum id, odio quasi! </div> <br><br>
+
+    <div id="box5"><img src="../images/img1.jpg" alt="place"> <br><br>Place</div> <br><br>
+
+    <div id="box6">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Atque veniam tempora officiis ipsam! Veniam
+        amet numquam praesentium exercitationem alias quae, asperiores quibusdam fugiat incidunt, dolorem accusamus
+        consequatur, in ea illo vero laborum. Fugiat repudiandae molestias veniam ipsum velit nemo rerum sapiente sint
+        laboriosam nobis illum id, odio quasi! </div>
+</body>
+
+</html>

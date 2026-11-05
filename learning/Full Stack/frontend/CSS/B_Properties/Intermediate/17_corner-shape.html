@@ -1,0 +1,134 @@
+<DOCTYPE html>
+    <html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Corner Shape</title>
+        <style>
+            .container {
+                display: flex;
+                flex-direction: row;
+                margin: 20px;
+                align-items: center;
+                justify-content: center;
+                width: 100%;
+                height: 100vh;
+                flex-wrap: wrap;
+            }
+
+            .shape {
+                margin: 20px;
+            }
+
+            .corner {
+                width: 100px;
+                height: 100px;
+                background-color: blue;
+                corner-shape: round;
+                border-radius: 20px;
+            }
+
+            .corner1 {
+                width: 100px;
+                height: 100px;
+                background-color: red;
+                corner-shape: bevel;
+                border-radius: 20px;
+            }
+
+            .corner2 {
+                width: 100px;
+                height: 100px;
+                background-color: green;
+                corner-shape: scoop;
+                border-radius: 20px;
+            }
+
+            .corner3 {
+                width: 100px;
+                height: 100px;
+                background-color: purple;
+                corner-shape: notch;
+                border-radius: 20px;
+            }
+
+            .corner4 {
+                width: 100px;
+                height: 100px;
+                background-color: orange;
+                corner-shape: squircle;
+                border-radius: 20px;
+            }
+
+            .corner5 {
+                width: 100px;
+                height: 100px;
+                background-color: rgb(8, 151, 132);
+                corner-shape: square;
+                border-radius: 20px;
+            }
+
+            .corner6 {
+                width: 200px;
+                height: 100px;
+                background-color: rgb(230, 0, 255);
+                corner-shape: superellipse(-2.7);
+                border-radius: 40px;
+            }
+        </style>
+    </head>
+
+    <body>
+
+        <div class="container">
+            <div class="corner shape"></div>
+            <br>
+            <div class="corner1 shape"></div>
+            <br>
+            <div class="corner2 shape"></div>
+            <br>
+            <div class="corner3 shape"></div>
+            <br>
+            <div class="corner4 shape"></div>
+            <br>
+            <div class="corner5 shape"></div>
+            <br>
+            <div class="corner6 shape"></div>
+        </div>
+    </body>
+
+    </html>
+
+    <!-- 
+    values of corner-shape property:
+    1. round
+    2. bevel
+    3. scoop
+    4. notch
+    5. square
+    6. squircle
+    7. superellipse()
+
+
+    shorthand of corner-shape property:
+    1. corner-top-shape
+    2. corner-right-shape
+    3. corner-bottom-shape
+    4. corner-left-shape
+    5. corner-start-start-shape
+    6. corner-start-end-shape
+    7. corner-end-start-shape
+    8. corner-end-end-shape 
+    9. corner-block-start-shape
+    10. corner-block-end-shape
+    11. corner-inline-start-shape
+    12. corner-inline-end-shape
+    13. corner-top-left-shape
+    14. corner-top-right-shape
+    13. corner-bottom-right-shape
+    14. corner-bottom-left-shape
+
+
+    also border-radius property is mandatory to use corner-shape property otherwise it will not work.
+-->

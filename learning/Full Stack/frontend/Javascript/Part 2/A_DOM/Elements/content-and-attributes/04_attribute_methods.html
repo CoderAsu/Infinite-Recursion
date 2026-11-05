@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>basic methods</title>
+</head>
+<body>
+    <div class="outer" id="parent" title="container" name=""></div>
+</body>
+<script>
+    let element = document.getElementById("parent");
+
+    console.log(element.attributes);
+    console.log(element.attributes[2]);
+    console.log(element.attributes[2].name);
+    console.log(element.attributes[2].value);
+    console.log(element.attributes[1].specified);
+    console.log(element.attributes[3].specified);
+
+    // specified returns an error if the attribute is not specified.
+
+
+
+
+
+    const nodeMap = element.attributes;
+
+    let value = nodeMap.getNamedItem("class").value;
+    console.log(value);
+
+    // The getNamedItem() method returns an attribute node from a NamedNodeMap object.
+
+
+
+
+
+
+
+    console.log(nodeMap.item(2));
+
+    // The item() method returns an attribute (by index) from a NamedNodeMap.
+
+
+
+
+
+
+    console.log(nodeMap.length);
+
+    // The length property returns the number of nodes in a NamedNodeMap.
+
+
+
+
+
+
+    let remove = nodeMap.removeNamedItem("name");
+    console.log(remove);
+
+    // The removeNamedItem() method removes a node (by name) in a NamedNodeMap.
+
+
+
+
+
+
+    let newAttr = document.createAttribute("lang");
+    newAttr.value = "en";
+
+    nodeMap.setNamedItem(newAttr);
+
+    console.log(nodeMap);
+
+
+    // The setNamedItem() method adds an attribute node to a NamedNodeMap.
+
+
+</script>
+</html>

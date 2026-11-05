@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>nodelist</title>
+</head>
+<body>
+    <div class="entries">
+        
+        <!-- This is a comment node! -->
+
+        <h1>The Element Object</h1>
+        <h2>The entries() Method</h2>
+        <p>Whitespace between elements are text nodes. Comments are also nodes.</p>
+
+    </div>
+
+
+
+    <br>
+
+
+
+    <div class="forEach">
+        
+        <!-- This is a comment node! -->
+
+        <h1>The Element Object</h1>
+        <h2>The forEach() Method</h2>
+        <p>Whitespace between elements are text nodes. Comments are also nodes.</p>
+
+    </div>
+
+
+    <br>
+
+
+
+    <div class="keys">
+        
+        <!-- This is a comment node! -->
+
+        <h1>The Element Object</h1>
+        <h2>The keys() Method</h2>
+        <p>Whitespace between elements are text nodes. Comments are also nodes.</p>
+
+    </div>
+
+
+    <br>
+
+
+    <div class="values">
+        
+        <!-- This is a comment node! -->
+
+        <h1>The Element Object</h1>
+        <h2>The values() Method</h2>
+        <p>Whitespace between elements are text nodes. Comments are also nodes.</p>
+
+    </div>
+</body>
+<script>
+
+    // A NodeList is an array-like collection (list) of Node Objects.
+
+    // Methods that returns NodeList:
+    /* 
+        1. querySelectorAll
+        2. getElementsByName()
+        3. childNodes()
+    */
+
+
+    /* 
+        NodeList has following methods:
+        1. entries()
+        2. forEach()
+        3. item()
+        4. keys()
+        5. length
+        6. values()
+    */
+
+
+
+
+    // entries
+
+    const list1 = document.querySelector(".entries").childNodes;
+
+    let text1 = "";
+    for (let x of list1.entries()){
+        text1 += x[0] + " " + x[1] + "\n";
+    }
+
+    console.log(text1)
+
+
+
+
+
+
+    // forEach()
+
+    const list2 = document.querySelector(".forEach").childNodes;
+
+    let text2 = "";
+    list2.forEach(function(node, index){
+        text2 += index + " " + node + "\n";
+    })
+
+    console.log(text2);
+
+
+
+
+
+
+    // item()
+
+    const itemName = list1.item(2).nodeName;
+    console.log(itemName);
+
+
+
+
+
+
+    // length
+
+    const length = list1.length;
+    console.log(length);
+
+
+
+
+
+
+    // keys
+
+    let list3 = document.querySelector(".keys").childNodes;
+
+    let text3 = "";
+
+    for(let x of list3.keys()){
+        text3 += x + "\n";
+    }
+
+    console.log(text3);
+
+
+
+
+
+
+    // values
+
+    let list4 = document.querySelector(".values").childNodes;
+
+    let text4 = "";
+
+    for(let x of list4.values()){
+        text4 += x + "\n";
+    }
+
+    console.log(text4);
+
+</script>
+</html>

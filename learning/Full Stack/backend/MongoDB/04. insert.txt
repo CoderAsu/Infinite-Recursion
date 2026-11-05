@@ -1,0 +1,4 @@
+db.<collection_name>.insertOne({field1: value, field2: value}) -> to insert exactly one document into a collection
+
+db.<collection_name>.insertMany([{field1: value, field2: value}, {field1: value, field2: value}, {field1: value, field2: value}]) --> to insert multiple document into a collection
+

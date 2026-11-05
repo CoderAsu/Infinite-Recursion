@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // The prototype property exists on constructor functions.
+
+    // prototype is used only by constructor functions (function used with new) to define inherited properties and methods.
+
+
+    function Person(name) {
+        this.name = name;
+    }
+  
+    Person.prototype.greet = function() {
+        console.log("Hello, I'm " + this.name);
+    };
+    
+    let user = new Person("Subham");
+    user.greet(); // Inherits from Person.prototype
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    // __proto__ is a property of individual objects, pointing to the prototype of their constructor.
+
+    // It establishes the prototype chain, linking objects to their parent prototypes.
+
+
+    let obj = {};
+    console.log(obj.__proto__ === Object.prototype); // true
+    console.log(obj);
+
+
+
+
+
+    function Animal(type) {
+
+        __proto__: {
+            this.type = type;
+        }
+    }
+
+    let dog = new Animal("Dog");
+    console.log(dog.__proto__ === Animal.prototype); // true
+    console.log(dog);
+    console.log(dog.__proto__);
+    console.log(Animal.prototype);
+
+    // we only use prototype to access [[prototype]] using function name and Object.
+
+    // ex: Animal.prototype, Object.prototype
+
+
+    // prototype (link to) and constructor (original object)
+</script>
+</html>
+
+
+

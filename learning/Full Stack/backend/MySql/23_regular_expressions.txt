@@ -1,0 +1,7 @@
+REGULAR EXPRESSIONS
+
+Regular Expression:
+
+SELECT column1, column2, ... FROM table_name WHERE column_name REGEXP pattern;
+
+symbols: ^, $, ., *, +, ?, [abc], [^abc], [0-9], [A-Za-z], `

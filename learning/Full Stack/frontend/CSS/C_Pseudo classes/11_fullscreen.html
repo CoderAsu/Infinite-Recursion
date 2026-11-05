@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:fullscreen</title>
+    <style>
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 16px;
+        }
+
+        .box{
+            background-color: lightblue;
+            width: 300px;
+            height: 200px;
+        }
+
+        .box:fullscreen{
+            background-color: lightgreen;
+            font-size: 70px;
+        }
+
+        .box:fullscreen p{
+            color: rgb(233, 138, 14);
+        }
+
+        .box:not(:fullscreen) p{
+            color: blueviolet;
+        }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <p>I'm in fullscreen mode!</p>
+    </div><br>
+
+    <button onclick="document.querySelector('.box').requestFullscreen();">Click here</button>
+</body>
+</html>

@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aligning grid items</title>
+    <style>
+        .container1{
+            background: #eee;
+            width: 650px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 120px);
+            gap: 15px;
+
+            grid-auto-rows: 70px;
+
+
+        }
+
+        .container2{
+            background: #eee;
+            width: 650px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 120px);
+            gap: 15px;
+
+            grid-auto-rows: 70px;
+
+
+        }
+
+
+        .container3{
+            background: #eee;
+            width: 650px;
+            margin: 45px auto 0;
+
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            grid-template-rows: repeat(2, 120px);
+            gap: 15px;
+
+            grid-auto-rows: 70px;
+
+
+        }
+
+        .item1{
+            background-color: coral;
+            align-self: center;
+        }
+        .item2{
+            background-color: hotpink;
+            justify-self: center;
+        }
+        .item3{
+            background-color: rgb(211, 243, 93);
+            grid-row: span 3;
+        }
+        .item4{
+            background-color: rgb(199, 97, 230);
+            place-self: center center;
+        }
+        .item5{
+            background-color: rgb(241, 94, 114);
+        }
+        .item6{
+            background-color: rgb(71, 187, 255);
+        }
+        .item7{
+            background-color: crimson;
+            grid-column: span 2;
+        }
+        .item8{
+            background-color: rgb(57, 44, 240);
+        }
+        .item9{
+            background-color: rgb(206, 15, 212);
+        }
+
+
+        /* 
+            values of align-self:
+            1. start
+            2. center
+            3. end
+            4. stretch (default)
+            5. baseline
+        */
+
+
+        /* 
+            values of justify-self:
+            1. start
+            2. center
+            3. end
+            4. stretch
+        */
+
+
+        /* place-self: <align-self> <justify-self> */
+
+    </style>
+</head>
+<body>
+    <div class="container1">
+        <div class="items item1">first</div>
+        <div class="items item2">second</div>
+        <div class="items item3">third</div>
+        <div class="items item4">fourth</div>
+        <div class="items item5">fifth</div>
+        <div class="items item6">sixth</div>
+        <div class="items item7">seventh</div>
+        <div class="items item8">eighth</div>
+    </div>
+    <br><br>
+    <div class="container2">
+        <div class="items item1">first</div>
+        <div class="items item2">second</div>
+        <div class="items item3">third</div>
+        <div class="items item4">fourth</div>
+        <div class="items item5">fifth</div>
+        <div class="items item6">sixth</div>
+        <div class="items item7">seventh</div>
+        <div class="items item8">eighth</div>
+    </div>
+    <br><br>
+    <div class="container3">
+        <div class="items item1">first</div>
+        <div class="items item2">second</div>
+        <div class="items item3">third</div>
+        <div class="items item4">fourth</div>
+        <div class="items item5">fifth</div>
+        <div class="items item6">sixth</div>
+        <div class="items item7">seventh</div>
+        <div class="items item8">eighth</div>
+    </div>
+</body>
+</html>

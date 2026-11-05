@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Text Box Trim</title>
+    <style>
+        h1 {
+            border-top: 2px solid red;
+            border-bottom: 2px solid red;
+            display: inline-block;
+        }
+
+        h1:nth-of-type(1) {
+            text-box-trim: none;
+        }
+
+        h1:nth-of-type(2) {
+            text-box-trim: trim-start;
+        }
+
+        h1:nth-of-type(3) {
+            text-box-trim: trim-end;
+        }
+
+        h1:nth-of-type(4) {
+            text-box-trim: trim-both;
+        }
+
+        h1:nth-of-type(5) {
+            text-box-trim: trim-both;
+            text-box-edge: cap alphabetic;
+        }
+
+        h1:nth-of-type(6) {
+            text-box-trim: trim-both;
+            text-box-edge: ex alphabetic;
+        }
+
+        h1:nth-of-type(7) {
+            text-box-trim: trim-both;
+            text-box-edge: text alphabetic;
+        }
+
+        h1:nth-of-type(8) {
+            text-box-trim: trim-both;
+            text-box-edge: ex text;
+        }
+
+
+        /*
+            values of text-box-trim property are:
+            1. none
+            2. trim-start
+            3. trim-end
+            4. trim-both
+
+
+            values of text-box-edge property are:
+            1. cap alphabetic
+            2. ex alphabetic
+            3. text alphabetic
+            4. ex text
+        
+        */
+    </style>
+</head>
+
+<body>
+    <h1>Text Box Trim</h1>
+    <br>
+    <h1>Text Box Trim</h1>
+    <br>
+    <h1>Text Box Trim</h1>
+    <br>
+    <h1>Text Box Trim</h1>
+    <br>
+    <h1>Text Box Trim</h1>
+    <br>
+    <h1>Text Box Trim</h1>
+    <br>
+    <h1>Text Box Trim</h1>
+    <br>
+    <h1>Text Box Trim</h1>
+</body>
+
+</html>

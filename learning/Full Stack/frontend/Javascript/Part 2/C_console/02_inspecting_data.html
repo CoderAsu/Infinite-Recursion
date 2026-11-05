@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inspecting Data</title>
+</head>
+<body>
+    
+</body>
+<script>
+
+
+/*
+    console.dir()	Displays an object's properties in an interactive listing
+
+    console.table()	Displays arrays or objects in a table
+    
+    console.assert()	Logs a message if a condition is false
+*/
+
+    const student = {
+        name: "Asu",
+        age: 22,
+        course: "MCA"
+    };
+
+    console.dir(student);
+
+
+    const students = [
+        { name: "Asu", marks: 85 },
+        { name: "Rahul", marks: 90 },
+        { name: "Priya", marks: 88 }
+    ];
+
+    console.table(students);
+
+
+
+
+    let age = 15;
+
+    console.assert(age >= 18, "Age must be at least 18");
+
+</script>
+</html>
+

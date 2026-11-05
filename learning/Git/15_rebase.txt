@@ -1,0 +1,45 @@
+REBASE
+
+git rebase <branch> --> Reapply commits on top of another branch.
+
+
+INTERACTIVE REBASE
+
+Interactive rebase lets you review and edit a series of commits before replaying them. It is useful for reordering commits, changing commit messages, editing a commit, combining related commits, or removing an unwanted commit.
+
+Start an interactive rebase from a base commit:
+git rebase -i <base-commit>
+
+For example, to review the last three commits:
+git rebase -i HEAD~3
+
+Git opens a todo list with one line per commit. The list runs from top to bottom. You can reorder lines to change the order in which commits are replayed.
+
+Common todo-list commands:
+pick   - keep and apply the commit as-is
+reword - keep the commit, but edit its commit message
+edit   - stop after applying it so you can change files or amend the commit
+squash - combine this commit with the previous one and edit the combined message
+fixup  - combine this commit with the previous one and discard this commit's message
+drop   - remove this commit from the rebased history
+
+To edit a commit, mark it as edit in the todo list. When Git stops, make your changes, stage them, amend the commit, then continue:
+git add <file>
+git commit --amend
+git rebase --continue
+
+If a conflict happens, resolve the files, stage the resolutions, and continue:
+git add <resolved-file>
+git rebase --continue
+
+Other recovery commands:
+git rebase --skip   - skip the commit that is currently being replayed
+git rebase --abort  - stop the rebase and return to the branch state from before it began
+
+To create a fixup commit and have Git place it next to the commit it fixes:
+git commit --fixup=<commit-id>
+git rebase -i --autosquash <base-commit>
+
+A rebase rewrites commit history, so the rewritten commits get new IDs. Avoid rebasing commits that others already use unless the team has agreed how to handle the rewritten history.
+
+Official documentation: https://git-scm.com/docs/git-rebase

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@supports</title>
+    <style>
+        @supports(display: grid){
+            html{
+                color-scheme: light dark;
+            }
+        }
+
+
+        @supports not (print-color-adjust: exact){
+            h1, p{
+                font-family: 'Times New Roman', Times, serif;
+            }
+        }
+
+
+        @supports (display:flex) and (print-color-adjust: exact){
+            p{
+                color: red;
+            }
+        }
+
+
+        @supports (display:flex) or (print-color-adjust: exact){
+            p{
+                font-size: 20px;
+            }
+        }
+
+
+        :root{
+            --clr: crimson;
+        }
+
+        @supports(--clr: crimson){
+            div{
+                width: 300px;
+                aspect-ratio: 1;
+                background-color: lightgreen;
+                border: 2px solid black;
+                border-radius: 5px;
+            }
+        }
+
+    </style>
+</head>
+<body>
+    <h1>@support</h1>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error rem rerum, odio nobis accusamus numquam sequi, voluptatum, modi veritatis assumenda labore aperiam sapiente quas sunt? Eum doloremque et ducimus iste ratione totam veniam, expedita vitae amet repellat. Atque eligendi consectetur vel similique fugiat quasi, recusandae molestias? Velit, impedit alias officiis culpa fuga quaerat laborum, nulla eos quae dignissimos architecto. Nobis, labore rerum officia in magnam nostrum porro, praesentium autem quo doloremque corrupti error sapiente, at iusto? Necessitatibus nihil aperiam odio recusandae corrupti voluptate sequi quibusdam. Eum sunt vel omnis facilis laboriosam nisi reiciendis quos illum sequi molestias. Illo cumque qui excepturi voluptas, esse eum sequi cum, reprehenderit voluptates vitae quasi culpa adipisci laborum temporibus. Doloremque recusandae eligendi maxime commodi, molestiae, fugit enim blanditiis in autem ipsa placeat laudantium minima repellat temporibus asperiores molestias, dolores nemo numquam sequi voluptatum ipsam perspiciatis aut. Aliquam odit expedita iste pariatur accusantium sunt ratione, delectus, ipsa voluptatem ipsum laudantium alias sed explicabo ducimus minima, iure eligendi facere excepturi illum non. Dignissimos ea laudantium possimus reprehenderit, tenetur quaerat sunt ipsam, modi debitis reiciendis blanditiis inventore doloribus voluptatem. Soluta assumenda expedita quas perspiciatis! Fugiat quo laborum incidunt optio quam at nostrum voluptate explicabo consequuntur voluptatum repudiandae facere, dolore rerum hic, esse et labore molestias nemo ad assumenda numquam aliquam, libero non! Sit, eveniet? Ducimus, minima accusantium? Molestiae magni impedit sed ratione a officia ducimus consequatur debitis. Sunt distinctio quia illo, reprehenderit ipsa consequatur asperiores culpa itaque ullam aliquam quod voluptates, placeat cum ut pariatur deserunt architecto nemo! Obcaecati, facilis fugit, natus dicta ipsa quis quasi aperiam aliquam debitis placeat consequuntur assumenda neque iste veritatis recusandae nihil nam eligendi eaque cumque, tempore nulla cupiditate ducimus vitae adipisci! Ad quasi dolores ullam beatae! Quia repellendus dignissimos, possimus error vel sed quos ullam magnam quidem eaque doloribus excepturi? Doloremque, quae.</p>
+
+    <div></div>
+</body>
+</html>

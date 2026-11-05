@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>margin-block and margin-inline</title>
+    <style>
+        .container1 {
+            border: 3px solid black;
+            display: flex;
+        }
+
+        .container1 div {
+            background-color: lightgreen;
+            border: 3px solid green;
+        }
+
+        #box1 {
+            background-color: lightblue;
+            border: 3px solid blue;
+            margin-inline: 20px;
+            writing-mode: vertical-lr;
+            height: 200px;
+        }
+
+
+
+
+        .container2 {
+            border: 3px solid black;
+            display: flex;
+        }
+
+        .container2 div {
+            background-color: lightgreen;
+            border: 3px solid green;
+        }
+
+        #box2 {
+            background-color: lightblue;
+            border: 3px solid blue;
+            margin-inline: 20px 50px;
+            height: 200px;
+        }
+
+
+        .container3 {
+            border: 3px solid black;
+            display: flex;
+        }
+
+        .container3 div {
+            background-color: lightgreen;
+            border: 3px solid green;
+        }
+
+        #box3 {
+            background-color: lightblue;
+            border: 3px solid blue;
+            margin-inline-start: 20px;
+            height: 200px;
+        }
+
+
+
+        .container4 {
+            border: 3px solid black;
+            display: flex;
+        }
+
+        .container4 div {
+            background-color: lightgreen;
+            border: 3px solid green;
+        }
+
+        #box4 {
+            background-color: lightblue;
+            border: 3px solid blue;
+            margin-inline-end: 20px;
+            height: 200px;
+        }
+
+
+
+
+        .container5 {
+            border: 3px solid black;
+            display: flex;
+        }
+
+        .container5 div {
+            background-color: lightgreen;
+            border: 3px solid green;
+        }
+
+        #box5 {
+            background-color: lightblue;
+            border: 3px solid blue;
+            margin-block: 20px;
+            height: 200px;
+        }
+
+
+
+
+        .container6 {
+            border: 3px solid black;
+            display: flex;
+        }
+
+        .container6 div {
+            background-color: lightgreen;
+            border: 3px solid green;
+        }
+
+        #box6 {
+            background-color: lightblue;
+            border: 3px solid blue;
+            margin-block-start: 20px;
+            height: 200px;
+        }
+
+
+
+
+        .container7 {
+            border: 3px solid black;
+            display: flex;
+        }
+
+        .container7 div {
+            background-color: lightgreen;
+            border: 3px solid green;
+        }
+
+        #box7 {
+            background-color: lightblue;
+            border: 3px solid blue;
+            margin-block-end: 20px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- properties of margin-block and margin-inline -->
+    <!-- 
+        1. margin-block
+        2. margin-block-end
+        3. margin-block-start
+        4. margin-inline
+        5. margin-inline-end
+        6. margin-inline-start
+     -->
+    <h1>understanding margin-block and margin-inline</h1>
+    <div class="container1">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae beatae ducimus, iure eveniet id
+            doloremque nostrum rem delectus, libero ipsam possimus, saepe dolorum quis ullam praesentium nulla
+            distinctio perspiciatis rerum.</div>
+        <div id="box1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, officia expedita temporibus
+            iusto sit harum inventore nam voluptas magni, commodi id laborum. Minima fuga expedita eligendi mollitia
+            asperiores quis amet?</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem debitis dolorem sint iste
+            recusandae nam atque veritatis, doloribus sequi quos quis magnam odio suscipit, adipisci, iure labore
+            commodi distinctio! Nam!</div>
+    </div>
+
+
+    <br><br>
+
+    <h1>margin-inline</h1>
+    <div class="container2">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae beatae ducimus, iure eveniet id
+            doloremque nostrum rem delectus, libero ipsam possimus, saepe dolorum quis ullam praesentium nulla
+            distinctio perspiciatis rerum.</div>
+        <div id="box2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, officia expedita temporibus
+            iusto sit harum inventore nam voluptas magni, commodi id laborum. Minima fuga expedita eligendi mollitia
+            asperiores quis amet?</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem debitis dolorem sint iste
+            recusandae nam atque veritatis, doloribus sequi quos quis magnam odio suscipit, adipisci, iure labore
+            commodi distinctio! Nam!</div>
+    </div>
+
+    <br><br>
+
+    <h1>margin-inline-start</h1>
+    <div class="container3">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae beatae ducimus, iure eveniet id
+            doloremque nostrum rem delectus, libero ipsam possimus, saepe dolorum quis ullam praesentium nulla
+            distinctio perspiciatis rerum.</div>
+        <div id="box3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, officia expedita temporibus
+            iusto sit harum inventore nam voluptas magni, commodi id laborum. Minima fuga expedita eligendi mollitia
+            asperiores quis amet?</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem debitis dolorem sint iste
+            recusandae nam atque veritatis, doloribus sequi quos quis magnam odio suscipit, adipisci, iure labore
+            commodi distinctio! Nam!</div>
+    </div>
+
+    <br><br>
+
+
+    <h1>margin-inline-end</h1>
+    <div class="container4">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae beatae ducimus, iure eveniet id
+            doloremque nostrum rem delectus, libero ipsam possimus, saepe dolorum quis ullam praesentium nulla
+            distinctio perspiciatis rerum.</div>
+        <div id="box4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, officia expedita temporibus
+            iusto sit harum inventore nam voluptas magni, commodi id laborum. Minima fuga expedita eligendi mollitia
+            asperiores quis amet?</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem debitis dolorem sint iste
+            recusandae nam atque veritatis, doloribus sequi quos quis magnam odio suscipit, adipisci, iure labore
+            commodi distinctio! Nam!</div>
+    </div>
+
+    <br><br>
+
+
+    <h1>margin-block</h1>
+    <div class="container5">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae beatae ducimus, iure eveniet id
+            doloremque nostrum rem delectus, libero ipsam possimus, saepe dolorum quis ullam praesentium nulla
+            distinctio perspiciatis rerum.</div>
+        <div id="box5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, officia expedita temporibus
+            iusto sit harum inventore nam voluptas magni, commodi id laborum. Minima fuga expedita eligendi mollitia
+            asperiores quis amet?</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem debitis dolorem sint iste
+            recusandae nam atque veritatis, doloribus sequi quos quis magnam odio suscipit, adipisci, iure labore
+            commodi distinctio! Nam!</div>
+    </div>
+
+    <br><br>
+
+    <h1>margin-block-start</h1>
+    <div class="container6">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae beatae ducimus, iure eveniet id
+            doloremque nostrum rem delectus, libero ipsam possimus, saepe dolorum quis ullam praesentium nulla
+            distinctio perspiciatis rerum.</div>
+        <div id="box6">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, officia expedita temporibus
+            iusto sit harum inventore nam voluptas magni, commodi id laborum. Minima fuga expedita eligendi mollitia
+            asperiores quis amet?</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem debitis dolorem sint iste
+            recusandae nam atque veritatis, doloribus sequi quos quis magnam odio suscipit, adipisci, iure labore
+            commodi distinctio! Nam!</div>
+    </div>
+
+    <br><br>
+
+    <h1>margin-block-end</h1>
+    <div class="container7">
+        <div>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae beatae ducimus, iure eveniet id
+            doloremque nostrum rem delectus, libero ipsam possimus, saepe dolorum quis ullam praesentium nulla
+            distinctio perspiciatis rerum.</div>
+        <div id="box7">Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur, officia expedita temporibus
+            iusto sit harum inventore nam voluptas magni, commodi id laborum. Minima fuga expedita eligendi mollitia
+            asperiores quis amet?</div>
+        <div>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Exercitationem debitis dolorem sint iste
+            recusandae nam atque veritatis, doloribus sequi quos quis magnam odio suscipit, adipisci, iure labore
+            commodi distinctio! Nam!</div>
+    </div>
+
+</body>
+
+</html>

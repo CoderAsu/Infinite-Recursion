@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>:has()</title>
+    <style>
+        div{
+            border: 1px solid black;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        div:has(h2, h3, h4, p){
+            background-color: lightpink;
+        }
+
+        div:has(h2+p){
+            background-color: lightgoldenrodyellow;
+        }
+
+        h2:has(+p){
+            color: red;
+        }
+
+        div:not(:has(h2)){
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <section>
+            <h2>I love CSS</h2>
+        </section>
+    </div>
+
+    <div>
+        <h2>Just Testing</h2>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut aliquam facere inventore animi harum perferendis eum magni id ratione quasi fugiat ducimus neque modi beatae excepturi facilis, dolore repellendus quis?</p>
+    </div>
+
+    <div>
+        <h3>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus magnam sed sapiente aliquid dicta aperiam suscipit architecto voluptates, eveniet totam porro? Quas explicabo minima aperiam aut autem mollitia suscipit velit?</h3>
+    </div>
+</body>
+</html>

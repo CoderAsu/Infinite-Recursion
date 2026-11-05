@@ -1,0 +1,33 @@
+FOREIGN KEYS
+
+3. FOREIGN KEY:
+
+	a. Adding FK when creating a table:
+
+	CREATE TABLE Orders (
+    		OrderID int PRIMARY KEY,
+    		OrderNumber int NOT NULL,
+    		PersonID int,
+		FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+	);
+
+	b. Naming a FK constraint:
+
+	CREATE TABLE Orders (
+    		OrderID int PRIMARY KEY,
+    		OrderNumber int NOT NULL,
+    		PersonID int,
+    		CONSTRAINT fk_Person FOREIGN KEY (PersonID) REFERENCES Persons(PersonID)
+	);
+
+	c. Adding FK when altering
+
+	ALTER TABLE Orders ADD CONSTRAINT fk_Person FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
+
+	d. Naming a FK when altering
+
+	ALTER TABLE Orders ADD CONSTRAINT fk_Person FOREIGN KEY (PersonID) REFERENCES Persons(PersonID);
+
+	e. Drop a FK
+
+	ALTER TABLE Orders DROP FOREIGN KEY fk_Person;

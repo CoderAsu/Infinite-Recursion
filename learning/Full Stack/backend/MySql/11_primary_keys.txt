@@ -1,0 +1,53 @@
+PRIMARY KEYS
+
+2. Primary Key:
+
+	a. Adding PK when creating a table:
+
+	CREATE TABLE Persons (
+    		ID int PRIMARY KEY,
+    		LastName varchar(255) NOT NULL,
+    		FirstName varchar(255),
+    		Age int
+	);
+
+	b. Adding PK for multiple columns
+
+	CREATE TABLE Persons (
+    		ID int,
+    		LastName varchar(255),
+    		FirstName varchar(255),
+    		Age int,
+    		PRIMARY KEY (ID, LastName)
+	);
+
+	Here PK is made up of two columns (ID + LastName)
+
+	c. Naming a PK constraint
+
+	CREATE TABLE Persons (
+    		ID int,
+    		LastName varchar(255),
+    		FirstName varchar(255),
+    		Age int,
+    		CONSTRAINT PK_Person PRIMARY KEY (ID, LastName)
+	);
+
+	d. Adding PK when altering
+
+	ALTER TABLE Persons ADD PRIMARY KEY (ID);
+
+	e. Naming a PK when altering
+
+	ALTER TABLE Persons ADD CONSTRAINT PK_Person PRIMARY KEY (ID, LastName);
+
+	f. Drop a PK
+
+	ALTER TABLE Persons DROP PRIMARY KEY;
+
+Primary Key
+-> The primary key constraint uniquely identifies record in a table.
+-> Primary keys must contain unique values and cannot contain null values.
+-> A table can have only one primary key.
+
+create table employee(id int primary key, name varchar(50) not null, acc_type varchar(50) not null default 'Savings');

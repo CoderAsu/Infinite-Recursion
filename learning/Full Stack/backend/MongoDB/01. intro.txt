@@ -1,0 +1,11 @@
+use <database_name> --> to create or switch to a database
+
+db.createCollection("<collection_name>")
+
+show dbs / show databases --> to see all the databases
+show collections --> to see all the collections
+
+db.<old_collection_name>.renameCollection("<new_collection_name>")
+
+db.dropDatabase() --> to delete a database
+db.<collection_name>.drop() --> to delete a collection

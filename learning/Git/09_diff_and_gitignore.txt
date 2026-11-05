@@ -1,0 +1,8 @@
+DIFF AND GITIGNORE
+
+git diff --> show unstaged changes (working tree compared with the index).
+git diff --staged --> show staged changes (index compared with HEAD).
+git diff main..feature --> compare the two commit tips.
+git diff main...feature --> show changes on feature since it diverged from main.
+
+.gitignore tells Git which untracked files or folders to ignore. It does not stop tracking files that are already tracked; remove those from the index with git rm --cached <file> if needed.

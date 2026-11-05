@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>user-select</title>
+    <style>
+        body {
+            background: lightgrey;
+        }
+
+        div {
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            margin: 20px;
+        }
+
+        div.container1 {
+            height: 25vh;
+            width: 50vw;
+            border: 2px solid black;
+            background-color: aqua;
+            overflow: hidden;
+
+            & p {
+                user-select: auto;
+            }
+
+        }
+
+        div.container2 {
+            height: 25vh;
+            width: 50vw;
+            border: 2px solid black;
+            background-color: lightpink;
+            overflow: hidden;
+
+            & p {
+                user-select: none;
+            }
+        }
+
+        div.container3 {
+            height: 25vh;
+            width: 50vw;
+            border: 2px solid black;
+            background-color: lightgreen;
+            overflow: hidden;
+
+            & p {
+                user-select: all;
+            }
+        }
+
+        div.container4 {
+            height: 25vh;
+            width: 50vw;
+            border: 2px solid black;
+            background-color: lightsalmon;
+            overflow: hidden;
+
+            & p {
+                user-select: text;
+            }
+
+        }
+
+
+        /* 
+        Values of user-select property:
+        1. auto
+        2. none
+        3. text
+        4. all
+        */
+    </style>
+</head>
+
+<body>
+    <h1>auto</h1>
+    <div class="container1">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis praesentium dolorum iste tenetur
+            corporis deleniti fuga neque, consequatur ullam quae libero harum asperiores deserunt vel architecto, modi
+            reprehenderit earum facilis.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dolorum id, dolores commodi rerum labore!
+            Maiores iusto, esse nulla ratione odio alias molestias, itaque saepe voluptate dignissimos tenetur, rerum
+            rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum dignissimos at. Distinctio
+            soluta dolorem sunt praesentium maiores. Repudiandae magnam sed fuga molestias quae incidunt? Perspiciatis,
+            odio autem. Nostrum, laboriosam?
+        </p>
+    </div>
+
+    <h1>none</h1>
+    <div class="container2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis praesentium dolorum iste tenetur
+            corporis deleniti fuga neque, consequatur ullam quae libero harum asperiores deserunt vel architecto, modi
+            reprehenderit earum facilis.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dolorum id, dolores commodi rerum labore!
+            Maiores iusto, esse nulla ratione odio alias molestias, itaque saepe voluptate dignissimos tenetur, rerum
+            rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum dignissimos at. Distinctio
+            soluta dolorem sunt praesentium maiores. Repudiandae magnam sed fuga molestias quae incidunt? Perspiciatis,
+            odio autem. Nostrum, laboriosam?
+        </p>
+    </div>
+
+    <h1>all</h1>
+    <div class="container3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis praesentium dolorum iste tenetur
+            corporis deleniti fuga neque, consequatur ullam quae libero harum asperiores deserunt vel architecto, modi
+            reprehenderit earum facilis.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dolorum id, dolores commodi rerum labore!
+            Maiores iusto, esse nulla ratione odio alias molestias, itaque saepe voluptate dignissimos tenetur, rerum
+            rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum dignissimos at. Distinctio
+            soluta dolorem sunt praesentium maiores. Repudiandae magnam sed fuga molestias quae incidunt? Perspiciatis,
+            odio autem. Nostrum, laboriosam?
+        </p>
+    </div>
+
+    <h1>text</h1>
+    <div class="container4">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Perspiciatis praesentium dolorum iste tenetur
+            corporis deleniti fuga neque, consequatur ullam quae libero harum asperiores deserunt vel architecto, modi
+            reprehenderit earum facilis.
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iure dolorum id, dolores commodi rerum labore!
+            Maiores iusto, esse nulla ratione odio alias molestias, itaque saepe voluptate dignissimos tenetur, rerum
+            rem. Lorem ipsum dolor sit amet consectetur adipisicing elit. Deleniti harum dignissimos at. Distinctio
+            soluta dolorem sunt praesentium maiores. Repudiandae magnam sed fuga molestias quae incidunt? Perspiciatis,
+            odio autem. Nostrum, laboriosam?
+        </p>
+    </div>
+
+</body>
+
+</html>

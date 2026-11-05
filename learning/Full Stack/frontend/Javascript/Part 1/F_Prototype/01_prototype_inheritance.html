@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype inheritance</title>
+</head>
+<body>
+    
+</body>
+<script>
+    const p1 = {
+        fname: "Tony",
+        lname: "Stark",
+        getFullName: function(){
+            return (`${this.fname} ${this.lname}`);
+        }
+    }
+
+    console.log(p1.lname);
+    console.log(p1.getFullName());
+
+
+    /* 
+        p1 = {
+            fname: "Tony",
+            lname: "Stark",
+            __proto__: {}
+        }
+
+        p1.<property>
+
+        if I search for fname first it search upon p1, that fname is there if not it search inside the __proto__ of p1 and returns the value.
+    */
+
+
+    const p2 = Object.create(p1);
+
+    console.log(p1);
+    console.log(p2);
+    console.log(p2.fname);
+
+    p2.__proto__.fname = "hack";
+
+    console.log(p2.fname);
+    
+
+    const p3 ={
+        __proto__ : p1
+    }
+
+    console.log(p3);
+
+    // p2 and p3 are same
+
+    console.log(p3.lname);
+    console.log(p3.hasOwnProperty("fname"));
+    console.log(p1.hasOwnProperty("fname"));
+
+
+
+
+
+    let name1 = "Doctor Strange";
+    console.log(name1);
+    console.log(name1.__proto__);
+
+    // name1 String class ka object hai
+
+    /* 
+        fname{
+            __proto__: String
+        }
+    */
+
+    let num1 = 34;
+    console.log(num1);
+    console.log(num1.__proto__);
+
+
+    let bool = true;
+    console.log(bool);
+    console.log(bool.__proto__);
+    
+
+    /* 
+        Wrapper Classes
+        => String
+        => Number
+        => Boolean
+    */
+    
+    class Student {
+        constructor() {
+            this.player = "AB Devillers";
+        }
+
+        getName() {
+            return this.player;
+        }
+    }
+
+
+
+
+
+
+
+    const h1 = {
+        xh1: "I am inside h1",
+    };
+
+    const h2 = {
+        xh2: "I am inside h2",
+        __proto__: h1,
+    };
+
+    const h3 = {
+        xh3: "I am inside h3",
+        __proto__: h2
+    };
+
+    console.log(h3.xh1);
+    console.log(h3.xh2);
+
+    console.log(h3.__proto__);
+    console.log(h3.__proto__.__proto__);
+    
+
+
+
+</script>
+</html>

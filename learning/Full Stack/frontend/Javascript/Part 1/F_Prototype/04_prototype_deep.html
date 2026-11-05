@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>prototype deep concept</title>
+</head>
+<body>
+    <script>
+        // 1. Object Literal ({})
+
+        const obj = {
+            name: "Jinwoo"
+        }
+
+        // This object doesn't have a prototype property. But it does have __proto__.
+
+        console.log(obj.prototype); // undefined
+        console.log(obj.__proto__);
+
+        // It points to Object.prototype.
+        console.log(obj.__proto__ === Object.prototype);
+
+
+
+
+        // 2. Object created from a Class
+
+        class User {
+            constructor(name){
+                this.name = name;
+            }
+        }
+
+        const user1 = new User("Jinwoo");
+
+        // Again, the instance (user1) does not have a prototype property.
+
+        console.log(user1.prototype);
+
+        // But it does have __proto__.
+
+        console.log(user1.__proto__ === User.prototype); // true
+
+
+
+        
+        // Where is prototype then?
+
+        // It belongs to the constructor, not the object.
+
+        class Person{}
+        console.log(Person.prototype);
+        console.log(Person.__proto__);
+
+
+        function UserConstructor(){}
+        console.log(UserConstructor.prototype);
+
+
+
+
+
+
+
+
+        // Can object literals also use prototypes?
+        // Yes!
+
+        const person = {
+            greet(){
+                console.log("Hello!");
+            }
+        };
+
+        const student = {
+            name: "John"
+        };
+
+        student.__proto__ = person;
+
+        student.greet();
+
+
+
+
+
+
+
+
+        // A simple rule to remember
+        /*
+            -> Every object has a internal [[Prototype]] which is accessible via __proto__.
+
+            -> Functions, classes, (constructor of Array, Date, Map...) have a prototype property.
+
+            -> Object instance ({}), array instance([]), (new Date(), new Map()...) do not have a prototype property.
+
+        */
+        
+
+    </script>
+</body>
+</html>

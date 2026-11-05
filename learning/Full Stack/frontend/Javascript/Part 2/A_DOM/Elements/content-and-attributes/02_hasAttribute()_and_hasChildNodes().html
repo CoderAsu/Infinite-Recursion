@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hasAttribute() and hasChildNodes()</title>
+    <style>
+        .abc{
+            height: 300px;
+            width: 500px;
+            border: 2px solid black;
+            padding: 20px;
+            background-color: khaki;
+        }
+    </style>
+</head>
+<body>
+    <div id="test" class="abc">
+        <h1>JavaScript</h1>
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Blanditiis, deleniti fuga sint assumenda excepturi ipsa vero soluta reiciendis quam aut!</p>
+        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Necessitatibus laborum tenetur debitis mollitia consequatur nostrum corporis dolorem magnam veritatis! Neque praesentium omnis aut delectus molestias magnam consequuntur nemo dolor explicabo.
+        </p>
+    </div>
+    <br><br>
+
+    <div id="test2"></div>
+    
+    <div id="test3"> </div>
+</body>
+<script>
+    let element = document.querySelector("#test");
+
+    let find = element.hasAttribute("class");
+
+    console.log(find);
+
+    console.log(element.hasAttributes());
+    console.log(document.body.hasAttributes());
+
+
+
+    /* 
+    
+    hasAttributes() returns a boolean value: true if the element has one or more attributes, otherwise false.
+
+    hasAttribute() Returns a boolean value: true if the specified attribute exists, otherwise false.
+
+    */
+
+
+
+   console.log(element.hasChildNodes());
+
+
+   let element2 = document.querySelector("#test2");
+
+   console.log(element2.hasChildNodes());
+
+
+   let element3 = document.querySelector("#test3"); 
+   console.log(element3.hasChildNodes());
+
+</script>
+</html>

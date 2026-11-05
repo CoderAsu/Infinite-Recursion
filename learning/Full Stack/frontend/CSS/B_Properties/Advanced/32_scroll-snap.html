@@ -1,0 +1,214 @@
+<html>
+
+<head>
+    <title>scroll-snap</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap');
+
+        * {
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+            scroll-padding: 100px;
+        }
+
+        body {
+            background-color: #cccccc;
+            font-family: 'Bree Serif', serif;
+            line-height: 1.4;
+            color: #000;
+            letter-spacing: 0.8px;
+        }
+
+        header {
+            background-color: #fecb00;
+            padding: 1.5em;
+            position: sticky;
+            top: 0px;
+            box-shadow: 0 1px 16px 3px rgba(0, 0, 0, 0.08)
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+        }
+
+        nav .item {
+            flex: 0 1 20%;
+            text-align: center;
+            color: #023299;
+        }
+
+        main {
+            padding: 2em;
+            display: grid;
+            grid-template-columns: 2.4fr 1fr;
+            grid-gap: 1.2em;
+        }
+
+        section.parent {
+            overflow: auto;
+        }
+
+        aside {
+            border-left: 1px dotted #ccc;
+            padding-left: 1.5em;
+        }
+
+        .sidebar {
+            position: sticky;
+            top: 7.4em;
+        }
+
+        .sidebar ul li {
+            padding: 0.2em 0;
+        }
+
+        /* scroll snap */
+
+        .scroll-snap-parent {
+            width: 100%;
+            height: 400px;
+            overflow: auto;
+            border: 1px solid rgba(255, 255, 255, 0.2);
+            border-radius: 1em;
+            display: grid;
+            grid-template-columns: repeat(5, 380px);
+            grid-template-rows: repeat(3, 340px);
+            scroll-snap-type: both mandatory;
+            scroll-padding: 0px;
+        }
+
+        .scroll-snap-parent .scroll-snap-item {
+            text-align: center;
+            padding-top: 10em;
+            scroll-snap-align: end;
+        }
+
+        .scroll-snap-parent .scroll-snap-item:nth-child(even) {
+            background-color: rgba(255, 255, 255, 0.2);
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="item">Item 1</div>
+            <div class="item">Item 2</div>
+            <div class="item">Item 3</div>
+            <div class="item">Item 4</div>
+        </nav>
+    </header>
+
+    <main>
+
+        <section class="parent">
+            <h2 id="SuperGalaxy">Super hero galaxy</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore?</p>
+
+            <br>
+
+            <h2 id="MarvelUniverse">Marvel Universe</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore? </p>
+
+            <br>
+
+            <h2 id="DCUniverse">DC Universe</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore? </p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore?</p>
+            <br>
+
+            <h2 id="Xmen">DC Xmen</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore? </p>
+
+            <br>
+            <h2 id="ScrollSnap">Scroll Snap Example</h2>
+            <div class="scroll-snap-parent">
+                <div class="scroll-snap-item">Item one</div>
+                <div class="scroll-snap-item">Item two</div>
+                <div class="scroll-snap-item">Item three</div>
+                <div class="scroll-snap-item">Item four</div>
+                <div class="scroll-snap-item">Item five</div>
+                <div class="scroll-snap-item">Item six</div>
+                <div class="scroll-snap-item">Item seven</div>
+                <div class="scroll-snap-item">Item eight</div>
+                <div class="scroll-snap-item">Item nine</div>
+                <div class="scroll-snap-item">Item ten</div>
+                <div class="scroll-snap-item">Item eleven</div>
+                <div class="scroll-snap-item">Item twelve</div>
+                <div class="scroll-snap-item">Item thirteen</div>
+                <div class="scroll-snap-item">Item fourteen</div>
+                <div class="scroll-snap-item">Item fifteen</div>
+            </div>
+
+            <br>
+            <h2 id="SuperHeroMiniSeries">Super hero mini series</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore?</p>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore? </p>
+
+            <br>
+            <h2 id="TheBoys">The Boys</h2>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolorum sit, perspiciatis accusantium,
+                repellendus neque possimus cumque reprehenderit a, quisquam tempore. Mollitia cupiditate iste
+                voluptates, repudiandae corrupti quidem necessitatibus tempore?</p>
+
+
+        </section>
+
+
+        <aside>
+            <section class="sidebar">
+                <h3>Table of contents</h3>
+                <ul>
+                    <li><a href="#SuperGalaxy">Super hero galaxy</a></li>
+                    <li><a href="#MarvelUniverse">Marvel Universe</a></li>
+                    <li><a href="#DCUniverse">DC universe</a></li>
+                    <li><a href="#Xmen">Xmen</a></li>
+                </ul>
+            </section>
+        </aside>
+    </main>
+</body>
+
+</html>

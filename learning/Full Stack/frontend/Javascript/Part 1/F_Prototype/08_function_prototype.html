@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Function Prototype</title>
+</head>
+<body>
+    <script>
+        // 1. Every function has a .prototype object
+
+        function User(name){
+            this.name = name;
+        }
+
+        console.log(User.prototype);
+
+        /*
+            you might ask:
+
+            "Why does it only contain constructor?"
+
+            Because when js creates a function, it automatically creates an empty prototype object for it.
+
+            Conceptually, it's like Js does this:
+
+            function User(name) {
+                this.name = name;
+            }
+
+            User.prototype = {
+                constructor: User
+            };
+
+
+            So before you add anything, the prototype object only has one property:
+
+            constructor -> User
+        
+        */
+
+
+
+
+
+
+
+        // 2. What happens when you create an object?
+
+        const user1 = new User("Jinwoo");
+
+        /*
+            Js internally does something like:
+
+            const obj = {};
+            obj.__proto__ = User.prototype;
+            User.call(obj, "Jinwoo");
+        
+        
+        */
+
+        // Now:
+        console.log(user1.__proto__ === User.prototype);
+
+
+
+
+
+
+
+
+
+        // 3. Why is there a constructor property?
+
+        // Because every object created with new should know which constructor function created it.
+
+        console.log(user1.constructor);
+
+        // here user1 doesn't have its own constructor, so it finds it on User.prototype.
+
+
+
+
+
+
+
+
+
+        // 4. Add your own methods
+
+        User.prototype.sayHello = function () {
+            console.log("Hello");
+        };
+
+        console.log(User.prototype);
+
+
+        // The constructor property is still there because Js put it ther when it created the prototype object.
+
+
+
+        /* 
+            Remember these key points:
+
+            * ✅ Every function has a .prototype object (except arrow functions).
+            * ✅ A class is essentially syntactic sugar over constructor functions and prototypes.
+            * ✅ Methods written inside a class are stored on ClassName.prototype.
+            * ✅ The constructor method runs only when you create an object with new.
+            * ✅ Objects don’t get copies of the methods; they access them through the prototype chain (__proto__).  
+        
+        */
+
+
+
+
+
+
+    </script>
+</body>
+</html>

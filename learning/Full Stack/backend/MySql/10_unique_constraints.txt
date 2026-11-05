@@ -1,0 +1,36 @@
+UNIQUE CONSTRAINTS
+
+Unique:
+
+	a. Adding a constraint when creating a table:
+
+	CREATE TABLE Persons (
+		SR_No int UNIQUE,
+    		ID int NOT NULL,
+    		LastName varchar(255) NOT NULL,
+    		FirstName varchar(255),
+    		Age int,
+    		UNIQUE (ID)
+	);
+
+	b. Naming a Unique Constraint:
+
+	CREATE TABLE Persons (
+    		ID int NOT NULL,
+    		LastName varchar(255) NOT NULL,
+    		FirstName varchar(255),
+    		Age int,
+    		CONSTRAINT UC_Person UNIQUE (ID,LastName)
+	);
+
+	c. Adding unique constraint with altering
+
+	ALTER TABLE Persons ADD UNIQUE (ID);
+
+	d. Naming a unique constraint with altering
+
+	ALTER TABLE Persons ADD CONSTRAINT UC_Person UNIQUE (ID,LastName);
+
+	e. Drop a unique constraint
+
+	ALTER TABLE Persons DROP INDEX UC_Person;

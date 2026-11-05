@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>isEqualNode() and isSameNode()</title>
+</head>
+<body>
+    <ul id="list1">
+        <li class="abc">orange</li>
+        <li>banana</li>
+        <li>strawberry</li>
+        <li>apple</li>
+    </ul>
+    <br>
+    <ul id="list2">
+        <li class="abc">orange</li>
+        <li>guava</li>
+        <li>pineapple</li>
+    </ul>
+
+    <div></div>
+</body>
+<script>
+
+   let target1 = document.getElementById("list1").firstElementChild;
+
+   let target2 = document.getElementById("list2").firstElementChild;
+
+    console.log(target1.isEqualNode(target2));
+
+
+    console.log(target1.isSameNode(target2));
+
+
+    let newElement = document.createElement("div");
+    let anotherNewElement = newElement;
+
+    console.log(anotherNewElement.isSameNode(newElement));
+
+
+    /* 
+        isEqualNode() returns true if the nodes have the same type, attributes, and child nodes (including their content).
+
+        isSameNode() Returns true only if both variables point to the same node (i.e they reference the dame object in memory).
+
+    */
+
+</script>
+</html>

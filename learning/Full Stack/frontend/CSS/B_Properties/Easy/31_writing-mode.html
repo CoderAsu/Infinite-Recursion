@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>writing-mode</title>
+    <style>
+        p.test1 {
+            writing-mode: horizontal-tb;
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+        }
+
+
+        p.test2 {
+            writing-mode: vertical-rl;
+            border: 1px solid black;
+            width: 300px;
+            height: 200px;
+        }
+
+        p.test3 {
+            writing-mode: vertical-lr;
+            border: 1px solid black;
+            height: 200px;
+            width: 300px;
+        }
+
+        /* valus of writing-mode:
+            1. horizontal-tb
+            2. vertical-rl
+            3. vertical-lr
+            4. sideways-rl
+            5. sideways-lr
+        */
+
+        /* sideways-rl and sideways-lr is not working properly in most browsers. */
+    </style>
+</head>
+
+<body>
+    <h1>The writing-mode Property</h1>
+
+    <p class="test1">Some text with default writing-mode. Lorem ipsum dolor, sit amet consectetur adipisicing elit. Fuga
+        quae ut harum accusantium consequuntur amet impedit vel assumenda temporibus! Modi fugiat blanditiis officiis
+        ratione labore quam, earum pariatur optio iste.</p>
+    <br><br>
+
+    <p class="test2">Some text with writing-mode: vertical-rl. Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+        Voluptate nesciunt sed maxime quasi eius assumenda enim, reiciendis excepturi? Temporibus earum, nostrum nemo
+        minima quis similique quasi labore quidem animi voluptatem.</p>
+    <br><br>
+
+    <p class="test3">some text with writing-mode: vertical-lr Lorem, ipsum dolor sit amet consectetur adipisicing elit.
+        Temporibus earum repellendus ea beatae nulla cupiditate ipsam ipsum aliquid quasi, ad dolorum explicabo. Vitae
+        officia blanditiis modi quibusdam dolorem incidunt obcaecati.</p>
+    <br><br>
+
+</body>
+
+</html>

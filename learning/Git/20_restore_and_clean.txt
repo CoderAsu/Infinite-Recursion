@@ -1,0 +1,14 @@
+RESTORE AND CLEANUP
+
+Use git restore to restore file contents or undo staging:
+git restore --staged <file> --> unstage changes and keep the working file as-is.
+git restore <file> --> discard unstaged changes by restoring the file from the index. This loses those edits.
+git restore --source=HEAD --staged --worktree <file> --> restore both the staged and working copies from the current commit.
+
+Use git clean only after previewing. It removes untracked files, which are not saved in commits:
+git clean -n --> preview untracked files that would be removed.
+git clean -nd --> preview untracked files and directories.
+git clean -fd --> delete untracked files and directories.
+git clean -fdX --> also delete ignored files; this can remove local configuration or build output.
+
+Be cautious: there is no simple undo for files removed by git clean. Check the preview carefully and make sure important work is saved elsewhere first.

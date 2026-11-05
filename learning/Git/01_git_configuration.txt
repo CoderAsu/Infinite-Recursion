@@ -1,0 +1,15 @@
+GIT CONFIGURATION
+
+To know who we are: git config
+
+git config user.name --> current repository only
+git config --global user.name --> all repositories for your user account
+git config --system user.name --> all users on the computer
+
+To remove the name we have to use --unset
+for example: git config --global --unset user.name
+
+To check whether we have added a name/email or not --> simply write the commands given above without "name"
+
+git config --global user.name "name"
+git config --global user.email "abc@gmail.com"

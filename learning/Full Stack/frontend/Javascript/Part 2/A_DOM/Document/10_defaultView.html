@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>defaultView</title>
+</head>
+<body>
+    <h2>The defaultView Property</h2>
+
+    <p>The defaultView property returns the current window object.</p>
+
+    <p>Window's width and height is:</p>
+
+    <p id="demo"></p>
+</body>
+<script>
+    const view = document.defaultView;
+    let width = view.innerWidth;
+    let height = view.innerHeight;
+  
+    document.getElementById("demo").innerHTML = `${width}x${height} `;
+
+
+    console.log(document.defaultView);
+
+
+</script>
+
+</html>

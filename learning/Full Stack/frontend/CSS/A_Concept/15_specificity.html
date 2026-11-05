@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>specificity</title>
+    <style>
+        /* Inline style (1000) > Id selectors (100) > Attributes, Classes and pseudo-classes (10) > Elements and pseudo-elements(1) */
+
+
+        div {
+            background-color: hotpink;
+        }
+
+        #container {
+            background-color: lightgreen;
+        }
+
+        .cont {
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="cont" id="container">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Labore perspiciatis dolorem porro dolorum quisquam,
+        deserunt possimus aliquam quam? Recusandae itaque reprehenderit a, soluta esse ea odit nulla eaque atque
+        mollitia!
+    </div>
+</body>
+
+</html>

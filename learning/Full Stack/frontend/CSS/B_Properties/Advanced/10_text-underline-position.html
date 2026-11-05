@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>text-underline-position</title>
+    <style>
+        .a {
+            text-decoration: underline;
+            text-underline-position: auto;
+        }
+
+        .b {
+            text-decoration: underline;
+            text-underline-position: under;
+        }
+
+        .c {
+            text-decoration: underline;
+            text-underline-position: left;
+            writing-mode: vertical-rl;
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+            background-color: antiquewhite;
+
+        }
+
+        .d {
+            text-decoration: underline;
+            text-underline-position: right;
+            writing-mode: vertical-rl;
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+        }
+
+        .e {
+            text-decoration: underline;
+            text-underline-position: right;
+            writing-mode: vertical-lr;
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+        }
+
+        .f {
+            text-decoration: underline;
+            text-underline-position: left;
+            writing-mode: vertical-lr;
+            height: 200px;
+            width: 200px;
+            border: 2px solid red;
+        }
+
+        .g {
+            text-decoration: underline;
+            text-underline-position: from-font;
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- values of text-underline-position property -->
+    <!-- 
+        1. auto
+        2. under
+        3. from-font: If the font file includes information about underline position, use that value. If not, use auto
+        4. left
+        5. right
+     -->
+    <div class="a">Text with underline and position auto: C<sub>6</sub>H<sub>12</sub>O<sub>16</sub> (glucose).</div>
+    <br>
+
+    <div class="b">Text with underline and position under: C<sub>6</sub>H<sub>12</sub>O<sub>16</sub> (glucose).</div>
+
+    <br>
+
+    <div class="c">Text with underline and position under: C<sub>6</sub>H<sub>12</sub>O<sub>16</sub> (glucose).</div>
+
+    <br><br>
+
+    <div class="d">Text with underline and position under: C<sub>6</sub>H<sub>12</sub>O<sub>16</sub> (glucose).</div>
+
+    <br><br>
+
+    <div class="e">Text with underline and position under: C<sub>6</sub>H<sub>12</sub>O<sub>16</sub> (glucose).</div>
+
+    <br><br>
+
+    <div class="f">Text with underline and position under: C<sub>6</sub>H<sub>12</sub>O<sub>16</sub> (glucose).</div>
+
+    <br><br>
+
+    <div class="g">Text with underline and position under: C<sub>6</sub>H<sub>12</sub>O<sub>16</sub> (glucose).</div>
+
+    <br>
+</body>
+
+</html>

@@ -1,0 +1,68 @@
+
+useEffect is a Hook used to perform side effects in functional components.
+
+
+
+There are three important parts:
+1. Effect function: Contains the side effect.
+2. Cleanup function: Cleans up the previous effect when necessary.
+3. Dependency array: Determines when the effect should run again.
+
+
+
+Why we use useEffect()?
+
+-> Fetching data from an API
+-> Updating the DOM manually
+-> Subscribing/unsubscribing to events
+-> Setting up timers (e.g., setInterval, setTimeout)
+
+
+
+
+
+
+
+syntax
+
+useEffect(setup, dependencies?)
+
+1. Run after every Render
+
+useEffect(() => {
+    console.log("Hello")
+})
+
+
+
+
+2. Run Once
+
+useEffect(() => {
+    console.log("Hello")
+}, [])
+
+
+
+
+3. Run with Dependendy
+
+useEffect(() => {
+    console.log("Hello")
+}, [count, name])
+
+
+
+
+
+
+
+
+
+use of StrictMode
+
+-> Detect unsafe lifecycles = Finds problematic old patterns
+-> Double-run effects = Expose side effects that aren't changed
+-> Warn deprecated APIs = Alerts you about outdated React code
+-> Prepares for future React Versions = Ensures you app will stay compatible
+-> Development-only = No effect in production build

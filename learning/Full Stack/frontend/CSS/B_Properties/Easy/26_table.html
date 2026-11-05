@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>table</title>
+    <style>
+        table,
+        tr,
+        th,
+        td {
+            border: 1px solid black;
+        }
+
+        .table1 {
+            border-spacing: 10px 20px;
+        }
+
+
+
+
+        .table2 {
+            border-collapse: collapse;
+        }
+
+
+
+
+        .table3 {
+            height: 300px;
+            vertical-align: bottom;
+        }
+
+        .table3 td {
+            vertical-align: top;
+        }
+
+
+
+
+        .table4 {
+            caption-side: bottom;
+        }
+
+
+
+
+        .table5 {
+            empty-cells: hide;
+        }
+
+
+
+
+        .table6 {
+            table-layout: fixed;
+            width: 300px;
+        }
+
+        /* table properties:
+        1. border-spacing
+        2. border-collapse
+        3. vertical-align
+        4. caption-side
+        5. empty-cells
+        6. table-layout
+        */
+
+        /* we can also use padding property in table */
+
+        /* 
+        1. values of border-collapse:
+            a. separate
+            b. collapse
+        
+        2. values of vertical-align:
+            a. top
+            b. middle
+            c. bottom
+        
+        3. values of caption-side:
+            a. top
+            b. bottom
+        
+        4. values of empty-cells:
+            a. show
+            b. hide
+
+        5. values of table-layout:
+            a. auto
+            b. fixed
+        */
+    </style>
+</head>
+
+<body>
+    <h1>Table properties</h1>
+
+    <h2>border-spacing</h2>
+    <table class="table1">
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Mohan</td>
+            <td>Kumar</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Ravi</td>
+            <td>Sharma</td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td>Ajay</td>
+            <td>Singh</td>
+            <td>$300</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h2>border-collapse</h2>
+    <table class="table2">
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Mohan</td>
+            <td>Kumar</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Ravi</td>
+            <td>Sharma</td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td>Ajay</td>
+            <td>Singh</td>
+            <td>$300</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h2>vertical-align</h2>
+    <table class="table3">
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Mohan</td>
+            <td>Kumar</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Ravi</td>
+            <td>Sharma</td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td>Ajay</td>
+            <td>Singh</td>
+            <td>$300</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h2>caption-side</h2>
+    <table class="table4">
+        <caption>Students Info</caption>
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Mohan</td>
+            <td>Kumar</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Ravi</td>
+            <td>Sharma</td>
+            <td>$200</td>
+        </tr>
+        <tr>
+            <td>Ajay</td>
+            <td>Singh</td>
+            <td>$300</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h2>empty-cells</h2>
+    <table class="table5">
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Mohan</td>
+            <td>Kumar</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Ravi</td>
+            <td>Sharma</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Ajay</td>
+            <td>Singh</td>
+            <td>$300</td>
+        </tr>
+    </table>
+
+    <br><br>
+
+    <h2>table-layout</h2>
+    <table class="table6">
+        <tr>
+            <th>FirstName</th>
+            <th>LastName</th>
+            <th>Savings</th>
+        </tr>
+        <tr>
+            <td>Mohan Lorem ipsum dolor, sit amet consectetur adipisicing elit. Repudiandae illum eligendi fuga
+                doloremque amet sit iure autem cum exercitationem ut delectus blanditiis ad provident facilis beatae,
+                ipsam, minus laboriosam natus?</td>
+            <td>Kumar</td>
+            <td>$100</td>
+        </tr>
+        <tr>
+            <td>Ravi Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quasi sit veniam sint, beatae, accusamus
+                aliquam molestias, ut voluptatem ex praesentium aperiam et quaerat. Accusantium, at in accusamus
+                reprehenderit ut commodi?</td>
+            <td>Sharma</td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Ajay</td>
+            <td>Singh</td>
+            <td>$300</td>
+        </tr>
+    </table>
+</body>
+
+</html>

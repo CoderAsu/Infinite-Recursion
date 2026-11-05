@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>traversal methods</title>
+    <style>
+        .outer{
+            height: 400px;
+            width: 500px;
+            border: 2px solid black;
+            background-color: antiquewhite;
+        }
+
+        .inner{
+            width: 400px;
+            height: 200px;
+            background-color: hotpink;
+            border: 1px solid black;
+            margin: 46px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+        .items{
+            width: 50px;
+            aspect-ratio: 1;
+            border: 1px solid black;
+            text-align: center;
+            align-content: center;
+            background-color: lightgray;
+        }
+
+        .box1{
+            width: 100px;
+            aspect-ratio: 1;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: center;
+            align-content: center;
+            background-color: red;
+            color: white;
+            margin-left: 140px;
+        }
+
+        .box2{
+            width: 100px;
+            aspect-ratio: 1;
+            border: 1px solid black;
+            display: inline-block;
+            text-align: center;
+            align-content: center;
+            background-color: blue;
+            color: white;
+        }
+
+
+    </style>
+</head>
+<body>
+    <div class="outer">
+        <div class="inner">
+            <div class="items item1">A</div>
+            <div class="items item2">B</div>
+            <div class="items item3">C</div>
+            <div class="items item4">D</div>
+            <div class="items item5">E</div>
+        </div>
+        <div class="box1">Box1</div>
+        <div class="box2">Box2</div>
+    </div>
+</body>
+<script>
+    // Traversal Methods:
+    /* 
+        1. parentNode
+        2. parentElement
+        3. children
+        4. childNodes
+        5. childElementCount
+        6. firstChild
+        7. firstElementChild
+        8. lastChild
+        9. lastElementChild
+        10. nextElementSibling
+        11. nextSibling
+        12. previousElementSibling
+        13. previousSibling
+    */
+
+
+   let a = document.querySelector(".inner");
+   console.log(a.parentElement);
+   a.parentElement.style.backgroundColor = "lightskyblue";
+
+
+
+   console.log(document.body.parentElement.parentElement);
+
+   console.log(document.body.parentNode.parentNode);
+
+   // parentNode returns the parent node, which could be an element, document, or other node types.
+
+   // parentElement returns null if the parent is not an element node.
+
+
+
+
+
+
+
+
+   let b = document.querySelector(".outer");
+   console.log(b.childElementCount);
+
+   console.log(a.children);
+
+   a.children.item(2).style.backgroundColor = "lightgreen";
+
+   console.log(a.childNodes);
+
+   // children returns only the element nodes (HTML elements) that are direct children of the parent element.
+
+   // childNodes returns all types of nodes that are direct children of the parent node, including element nodes, text nodes, comment nodes, etc.
+
+
+
+
+    console.log(a.firstChild);
+    console.log(a.firstElementChild);
+    console.log(a.lastChild);
+    console.log(a.lastElementChild);
+
+
+
+
+
+
+    console.log(a.nextSibling);
+    console.log(a.nextElementSibling);
+
+
+
+
+
+
+    let c = document.querySelector(".box1");
+
+    console.log(c.previousSibling);
+    console.log(c.previousElementSibling);
+</script>
+</html>

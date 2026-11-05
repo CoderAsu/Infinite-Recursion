@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dialog Tag</title>
+    <style>
+        dialog:open {
+
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+
+            &::backdrop {
+                background-color: rgb(0, 0, 0, 0.7);
+            }
+        }
+
+        dialog {
+            border: 0;
+            background-color: rgba(39, 255, 15, 0.478);
+            color: #fff;
+            border-radius: 8px;
+            height: 200px;
+            aspect-ratio: 2/1;
+            position: relative;
+        }
+
+        .btn {
+            position: absolute;
+            right: 0;
+            top: 0;
+
+            background-color: rgb(238, 54, 54);
+            color: contrast-color(rgb(238, 54, 54));
+            width: 20px;
+            aspect-ratio: 1;
+            font-size: 20px;
+            border: none;
+            align-items: center;
+            color: #fff;
+
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Dialog Tag</h1>
+    <button commandfor="my-dialog" command="show-modal">Open Dialog</button>
+
+    <dialog id="my-dialog">
+        <p>Hello from dialog!</p>
+        <button class="btn" commandfor="my-dialog" command="close">⨯</button>
+    </dialog>
+</body>
+
+</html>

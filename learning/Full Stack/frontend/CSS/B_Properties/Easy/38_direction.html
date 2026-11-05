@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>direction</title>
+    <style>
+        body {
+            font-family: arial;
+        }
+
+        .para1 {
+            direction: ltr;
+        }
+
+        .para2 {
+            direction: rtl;
+            unicode-bidi: bidi-override;
+        }
+
+        /* The direction property specifies the text direction/writing direction of the content in an element. */
+
+
+        /* values of direction:
+            1. ltr
+            2. rtl 
+        */
+
+        /* The unicode-bidi property is used together with the direction property to set or return whether the text should be overridden to support multiple languages in the same document. */
+
+        /* values of unicode-bidi:
+            1. normal
+            2. embed
+            3. bidi-override
+            4. isolate
+            5. isolate-override
+            6. plaintext
+        */
+    </style>
+</head>
+
+<body>
+    <p class="para1">This text is from left to right.</p>
+
+    <br><br>
+
+    <p class="para2">This text is from right to left.</p>
+</body>
+
+</html>

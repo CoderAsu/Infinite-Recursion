@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>background</title>
+    <style>
+        /* background-repeat */
+        .container1 {
+            background-image: url("images/img1.jpg");
+            height: 400px;
+            width: 500px;
+        }
+
+
+        /* background-repeat */
+        .container2 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1200px;
+            background-repeat: repeat;
+            border: 2px solid black;
+        }
+
+        .container3 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+        }
+
+        .container4 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: repeat-x;
+            border: 2px solid black;
+        }
+
+        .container5 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: repeat-y;
+            border: 2px solid black;
+        }
+
+        .container6 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: space;
+            border: 2px solid black;
+        }
+
+        .container7 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1200px;
+            background-repeat: round;
+            border: 2px solid black;
+        }
+
+
+        /* background-position */
+        .container8 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            background-position: left top;
+        }
+
+        .container9 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            background-position: left center;
+        }
+
+        .container10 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            background-position: left bottom;
+        }
+
+        .container11 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            background-position: right top;
+        }
+
+        .container12 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            background-position: right center;
+        }
+
+        .container13 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            background-position: right bottom;
+        }
+
+        .container14 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            background-position: center top;
+        }
+
+        .container15 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            background-position: center center;
+        }
+
+        .container16 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            background-position: center bottom;
+        }
+
+        .container17 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            background-position: 40% 60%;
+        }
+
+        .container18 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            background-position: 250px 400px;
+        }
+
+
+        /* background-attachment */
+        .container19 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 500px;
+            width: 600px;
+            background-repeat: round;
+            border: 2px solid black;
+            background-attachment: fixed;
+        }
+
+        .container20 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 500px;
+            width: 600px;
+            background-repeat: round;
+            border: 2px solid black;
+            background-attachment: scroll;
+        }
+
+
+        /* background (shorthand) */
+        .container21 {
+            background: #ffffff url(images/gradient\ resize.jpg) no-repeat scroll right top;
+            border: 2px solid black;
+            height: 800px;
+            width: 1400px;
+        }
+
+
+
+        /* background-position-x */
+        .container22 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            background-position-x: center;
+        }
+
+
+
+        /* background-position-y */
+        .container23 {
+            background-image: url("images/gradient\ resize.jpg");
+            height: 800px;
+            width: 1400px;
+            background-repeat: no-repeat;
+            border: 2px solid black;
+            background-position-y: center;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- background properties or shorthand -->
+    <!-- 
+        1. background-color
+        2. background-image
+        3. background-repeat
+        4. background-attachment
+        5. background-position
+        6. background-position-x
+        7. background-position-y
+     -->
+
+
+    <!-- background-repeat values -->
+    <!-- 
+        1. repeat
+        2. no-repeat
+        3. repeat-x
+        4. repeat-y
+        5. space
+        6. round
+     -->
+
+
+    <!-- background-position values -->
+    <!-- 
+        1. left top
+        2. left center
+        3. left bottom
+        4. right top
+        5. right center
+        6. right bottom
+        7. center top
+        8. center center
+        9. center bottom
+        10. x% y%
+        11. xpx ypx
+     -->
+
+
+    <!-- background-attachment values -->
+    <!-- 
+        1. scroll
+        2. fixed
+     -->
+
+    <h1>background-image</h1>
+    <div class="container1"></div>
+
+    <br><br>
+
+    <h1>background-repeat</h1>
+    <div class="container2"></div> <br><br>
+    <div class="container3"></div> <br><br>
+    <div class="container4"></div> <br><br>
+    <div class="container5"></div> <br><br>
+    <div class="container6"></div> <br><br>
+    <div class="container7"></div> <br><br>
+
+    <h1>background-position</h1>
+    <div class="container8"></div> <br><br>
+    <div class="container9"></div> <br><br>
+    <div class="container10"></div> <br><br>
+    <div class="container11"></div> <br><br>
+    <div class="container12"></div> <br><br>
+    <div class="container13"></div> <br><br>
+    <div class="container14"></div> <br><br>
+    <div class="container15"></div> <br><br>
+    <div class="container16"></div> <br><br>
+    <div class="container17"></div> <br><br>
+    <div class="container18"></div> <br><br>
+
+    <h1>background-attachment</h1>
+    <div class="container19"></div> <br><br>
+    <div class="container20"></div> <br><br>
+
+    <h1>background (shorthand)</h1>
+    <div class="container21"></div> <br><br>
+
+    <h1>background-position-x</h1>
+    <div class="container22"></div> <br><br>
+
+    <h1>background-position-y</h1>
+    <div class="container23"></div>
+
+</body>
+
+</html>

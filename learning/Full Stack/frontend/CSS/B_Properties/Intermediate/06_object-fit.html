@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>object-fit</title>
+    <style>
+        div {
+            height: 400px;
+            width: 450px;
+            border: 2px solid black;
+        }
+
+        .container1 img {
+            height: 100%;
+            width: 100%;
+            object-fit: fill;
+        }
+
+        .container2 img {
+            height: 100%;
+            width: 100%;
+            object-fit: contain;
+        }
+
+        .container3 img {
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
+        }
+
+        .container4 img {
+            height: 100%;
+            width: 100%;
+            object-fit: scale-down;
+        }
+
+        .container5 img {
+            height: 100%;
+            width: 100%;
+            object-fit: none;
+        }
+
+
+        /* values of object-fit:
+            1. fill (default)
+            2. contain
+            3. cover
+            4. scale-down
+            5. none 
+        */
+    </style>
+</head>
+
+<body>
+    <h1>fill</h1>
+    <div class="container1">
+        <img src="../Images/paris.jpg" alt="paris">
+    </div>
+    <br><br>
+
+    <h1>contain</h1>
+    <div class="container2">
+        <img src="../Images/paris.jpg" alt="paris">
+    </div>
+    <br><br>
+
+    <h1>cover</h1>
+    <div class="container3">
+        <img src="../Images/paris.jpg" alt="paris">
+    </div>
+    <br><br>
+
+    <h1>scale-down</h1>
+    <div class="container4">
+        <img src="../Images/paris.jpg" alt="paris">
+    </div>
+    <br><br>
+
+    <h1>none</h1>
+    <div class="container5">
+        <img src="../Images/paris.jpg" alt="paris">
+    </div>
+</body>
+
+</html>

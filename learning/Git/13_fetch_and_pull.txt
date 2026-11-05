@@ -1,0 +1,9 @@
+FETCH AND PULL
+
+git fetch --> download commits and refs from the configured remote and update remote-tracking information. It does not change the files in your current working branch.
+After fetching, inspect changes (for example, git log ..origin/main or git diff main..origin/main), then merge or rebase if you want to integrate them.
+
+git pull --> fetch, then integrate the fetched branch into the current branch. Integration is usually a merge, but can use rebase when configured or requested.
+git fetch --prune --> fetch updates and remove stale remote-tracking branches that no longer exist on that remote.
+git fetch origin main --> fetch the main branch from origin; inspect FETCH_HEAD or integrate it as appropriate.
+git fetch --all --> fetch from all configured remotes. It does not mean all hosting sites on the internet.

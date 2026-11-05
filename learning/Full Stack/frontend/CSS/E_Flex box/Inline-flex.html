@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>inline-flex</title>
+    <style>
+        *{
+            box-sizing: border-box;
+        }
+
+        body{
+            padding: 25px;
+            font: 17px;
+            font-family: Arial, Helvetica, sans-serif;
+            color: #777777;
+        }
+
+        .wrap{
+            padding: 15px;
+            border: 3px solid red;
+            border-radius: 5px;
+            margin-bottom: 1.5em;
+        }
+
+        .item{
+            width: 100px;
+            height: auto;
+            padding: 10px;
+            text-align: center;
+            margin: 0.5em;
+            background-color: rgb(160, 204, 160);
+            border: 2px solid green;
+        }
+
+        .flex{
+            display: flex;
+        }
+
+
+        .inline_flex{
+            display: inline-flex;
+        }
+    </style>
+</head>
+<body>
+    <h1>inline-flex vs flex</h1>
+    <div class="wrap flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <div class="wrap flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+<br><br><br>
+
+    <div class="wrap inline_flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+
+    <div class="wrap inline_flex">
+        <div class="item">1</div>
+        <div class="item">2</div>
+        <div class="item">3</div>
+    </div>
+</body>
+</html>

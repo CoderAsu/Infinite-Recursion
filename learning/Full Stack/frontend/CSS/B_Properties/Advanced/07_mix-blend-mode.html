@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>mix-blend-mode</title>
+    <style>
+        .circles {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100vw;
+            height: 100vh;
+        }
+
+
+        .circle {
+            mix-blend-mode: color-dodge;
+            position: relative;
+        }
+
+
+
+        .circle:first-child {
+            background-color: #5da2f7;
+            border-radius: 50%;
+            width: 200px;
+            aspect-ratio: 1;
+            left: 50px;
+
+        }
+
+        .circle:last-child {
+            background-color: #ed70b4;
+            border-radius: 50%;
+            width: 200px;
+            aspect-ratio: 1;
+            right: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- Values of mix-blend-mode -->
+    <!-- 
+        1. normal
+        2. multiply
+        3. screen
+        4. overlay
+        5. darken
+        6. lighten
+        7. color-dodge
+        8. color-burn
+        9. hard-light
+        10. soft-light
+        11. difference
+        12. exclusion
+        13. hue
+        14. color
+        15. saturation
+        16. luminosity
+     -->
+    <div class="circles">
+        <div class="circle"></div>
+        <div class="circle"></div>
+    </div>
+</body>
+
+</html>

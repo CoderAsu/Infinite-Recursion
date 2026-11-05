@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>append methods</title>
+    <style>
+        #test{
+            height: 200px;
+            width: 300px;
+            background-color: yellow;
+            border: 2px solid black;
+        }
+
+        #test2{
+            height: 200px;
+            width: 300px;
+            background-color: hotpink;
+            border: 2px solid black;
+        }
+
+        #test3{
+            height: 200px;
+            width: 300px;
+            background-color: lightskyblue;
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <div id="test">
+        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eos explicabo eum dignissimos dolor esse, voluptas ipsam? Maiores non numquam quidem.</p>
+    </div>
+    <br><br>
+    <div id="test2">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque non inventore aut dolore corporis eum omnis veritatis esse qui cum?</p>
+    </div>
+    <br><br>
+    <div id="test3">
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Eaque non inventore aut dolore corporis eum omnis veritatis esse qui cum?</p>
+    </div>
+</body>
+<script>
+    // append methods:
+    /* 
+        1. appendChild()
+        2. insertBefore()    
+    */
+
+
+    // create and append methods:
+    /* 
+        1. insertAdjacentElement()      for tag
+        2. insertAdjacentHTML()         for tag with text
+        3. insertAdjacentText()         for text
+    */
+
+
+
+    // insertAdjacent Positions:
+    /* 
+        1. beforebegin
+        2. afterbegin
+        3. beforeend
+        4. afterend
+    */
+
+   let newElement = document.createElement("h2");
+
+   let newText = document.createTextNode("This is just text");
+
+   newElement.appendChild(newText);
+
+   console.log(newElement);
+
+
+
+
+
+
+
+
+   let mydiv = document.querySelector("#test");
+
+   mydiv.appendChild(newElement);
+
+    
+   mydiv.insertBefore(newElement, mydiv.children[0]);
+
+   console.log(document.documentElement);
+
+
+
+
+
+
+
+
+
+    let myNewElement = document.createElement("h2");
+
+    let newTextnode = document.createTextNode("Hello I am using Javascript");
+
+    myNewElement.appendChild(newTextnode);
+
+    let target = document.querySelector("#test2");
+
+    target.insertAdjacentElement("afterbegin", myNewElement);
+
+
+
+
+
+
+
+
+
+
+    let mynewElement2 = "<h2> Welcome to JavaScript </h2>";
+    
+    let target2 = document.querySelector("#test3");
+
+    target2.insertAdjacentHTML("afterbegin", mynewElement2);
+
+
+
+
+
+    
+
+    let newTextNode2 = "JavaScript is a scripting language";
+
+    target2.insertAdjacentText("beforeend", newTextNode2);
+
+
+</script>
+</html>

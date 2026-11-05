@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>2D Transform</title>
+    <style>
+        .container {
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+        .box1 {
+            width: 250px;
+            height: 150px;
+            background-color: tomato;
+            margin: 150px 300px;
+            text-align: center;
+
+            &:hover {
+                transform: rotate(30deg);
+            }
+        }
+
+        .box2 {
+            width: 250px;
+            height: 150px;
+            background-color: rgb(139, 115, 245);
+            margin: 150px 300px;
+            text-align: center;
+
+            &:hover {
+                transform: skew(20deg, 20deg);
+            }
+        }
+
+        .box3 {
+            width: 250px;
+            height: 150px;
+            background-color: rgb(246, 122, 250);
+            margin: 150px 300px;
+            text-align: center;
+
+            &:hover {
+                transform-origin: center bottom;
+                transform: rotate(120deg);
+            }
+        }
+
+        .box4 {
+            width: 250px;
+            height: 150px;
+            background-color: rgb(230, 85, 128);
+            margin: 150px 300px;
+            text-align: center;
+
+            &:hover {
+                transform: translate(80px, 80px);
+            }
+        }
+
+        .box5 {
+            width: 250px;
+            height: 150px;
+            background-color: rgb(78, 144, 243);
+            margin: 150px 300px;
+            text-align: center;
+
+            &:hover {
+                transform: scale(2, 2);
+            }
+        }
+
+        .box6 {
+            width: 250px;
+            height: 150px;
+            background-color: rgb(236, 234, 88);
+            margin: 150px 300px;
+            text-align: center;
+
+            &:hover {
+                transform: matrix(2, 0.3, 0.2, 2, 150, 160);
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <!-- CSS Transform - 2D Values -->
+    <!-- 
+        rotate(angle) or rotate(turns)
+        translate(x,y)
+        scale(x,y)
+        skew(x,y)
+        translateX(px)
+        translateY(px)
+        scaleX(no)
+        scaleY(no)
+        skewX(angle)
+        skewY(angle)
+        matrix(scaleX(), skewY(), skewX(), scaleY(), translateX(), translateY())
+        none
+     -->
+
+    <!-- transform-origin values -->
+    <!-- 
+        1. left top
+        2. left center
+        3. left bottom
+        4. right top
+        5. right center
+        6. right bottom
+        7. center top
+        8. center center
+        9. center bottom
+        10. x% y%
+        11. xpx ypx
+      -->
+
+    <div class="container">
+        <h1>rotate(angle)</h1>
+        <div class="box1">rotate me</div>
+        <br><br>
+        <h1>skew(x,y)</h1>
+        <div class="box2">wide me</div>
+        <br><br>
+        <h1>transform-origin</h1>
+        <div class="box3">rotate me</div>
+        <br><br>
+        <h1>translate(x,y)</h1>
+        <div class="box4">move me</div>
+        <br><br>
+        <h1>scale(x,y)</h1>
+        <div class="box5">stretch me</div>
+        <br><br>
+        <h1>matrix(scaleX(),skewY(),skewX(),scaleY()translateX(),translateY())</h1>
+        <!-- NO units must be used in the value of matrix -->
+        <div class="box6">hover me</div>
+    </div>
+</body>
+
+</html>

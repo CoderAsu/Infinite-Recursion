@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>clip-path</title>
+    <style>
+        .container {
+            height: 400px;
+            width: 450px;
+            border: 2px solid black;
+        }
+
+        .cont1 img {
+            height: 100%;
+            width: 100%;
+            clip-path: circle(40% at 50% 50%);
+            /* here 40% is radius, 50% is X-axis, and 50% is Y-axis*/
+        }
+
+
+        .cont2 img {
+            height: 100%;
+            width: 100%;
+            clip-path: ellipse(40% 20% at 50% 50%);
+            /* here 40% is horizontal radius, 20% is vertical radius, 50% is X-axis, and 50% is Y-axis*/
+        }
+
+
+        .cont3 img {
+            height: 100%;
+            width: 100%;
+            clip-path: inset(20% 10% 20% 10%);
+            /* here 20% is top, 10% is right, 20% is bottom, and 10% is left*/
+        }
+
+
+        .cont4 img {
+            height: 100%;
+            width: 100%;
+            clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+            /* here 50% is X-axis and 0% is Y-axis, 0% is X-axis and 100% is Y-axis, and 100% is X-axis and 100% is Y-axis*/
+        }
+
+
+        .cont5 img {
+            height: 100%;
+            width: 100%;
+            clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+        }
+
+
+        /* https://bennettfeely.com/clippy/ for getting the clip-path of different shapes*/
+
+
+        .cont6 img {
+            height: 100%;
+            aspect-ratio: 1;
+            clip-path: shape(from 0 0, line to 100% 0%, line to 100% 80%, line to 50% 100%, line to 0 80%, close);
+        }
+
+        .cont7 img {
+            height: 100%;
+            aspect-ratio: 1;
+            clip-path: shape(from 0 0, curve to 50% 0% with 5% 0%, curve to 100% 50% with 75% 0%, close);
+        }
+
+        .cont8 img {
+            height: 100%;
+            aspect-ratio: 1;
+            clip-path: shape(from 0 0, line to 100% 0%, arc to 100% 100% of 10%, line to 0% 100%, close);
+        }
+
+        /* 
+        values of clip-path:
+        1. circle
+        2. ellipse
+        3. inset
+        4. polygon
+        5. shape
+        */
+
+        /*
+            shape rule: from, line to, curve to, arc to, close
+        */
+    </style>
+</head>
+
+<body>
+    <div class="container cont1">
+        <img src="images/img4.jpg" style="height:  400px; width: 450px;">
+    </div>
+    <br><br>
+
+    <div class="container cont2">
+        <img src="images/img4.jpg" style="height:  400px; width: 450px;">
+    </div>
+    <br><br>
+
+    <div class="container cont3">
+        <img src="images/img4.jpg" style="height:  400px; width: 450px;">
+    </div>
+    <br><br>
+
+    <div class="container cont4">
+        <img src="images/img4.jpg" style="height:  400px; width: 450px;">
+    </div>
+    <br><br>
+
+    <div class="container cont5">
+        <img src="images/img4.jpg" style="height:  400px; width: 450px;">
+    </div>
+    <br><br>
+
+    <div class="container cont6">
+        <img src="images/img4.jpg" style="height:  400px; width: 450px;">
+    </div>
+
+    <div class="container cont7">
+        <img src="images/img4.jpg" style="height:  400px; width: 450px;">
+    </div>
+
+    <div class="container cont8">
+        <img src="images/img4.jpg" style="height:  400px; width: 450px;">
+    </div>
+</body>
+
+</html>

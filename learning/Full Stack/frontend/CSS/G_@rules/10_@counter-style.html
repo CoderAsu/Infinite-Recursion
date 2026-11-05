@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@counter-style</title>
+    <style>
+        @counter-style cyclic-style{
+            system: cyclic;
+            symbols: ★ ☆;
+            prefix: '@';
+            suffix: ' ';
+        }
+
+        ul.cyclic{
+            list-style: cyclic-style;
+        }
+
+
+        @counter-style fixed-style{
+            system: fixed;
+            symbols: 🥇 🥈 🥉;
+            suffix: ': ';
+        }
+
+        ul.fixed{
+            list-style: fixed-style;
+        }
+        
+
+        @counter-style numeric-style{
+            system: numeric;
+            symbols: "2" "4" "6" "8";
+            suffix: ". ";
+        }
+
+        ul.numeric{
+            list-style: numeric-style;
+        }
+
+
+
+        @counter-style alphabetic-style{
+            system: alphabetic;
+            symbols: a b c d;
+            suffix: ") "
+        }
+
+        ul.alphabetic{
+            list-style: alphabetic-style;
+        }
+
+
+
+        @counter-style symbolic-style {
+            system: symbolic;
+            symbols: ▶ ★ ☀ ☂;
+        }
+
+        ul.symbolic{
+            list-style: symbolic-style;
+        }
+
+
+        @counter-style range{
+            system: cyclic;
+            symbols: ★ ☆;
+            range: 1 4, 8 10;
+        }
+
+        ul.range{
+            list-style: range;
+        }
+
+
+
+
+        @counter-style star-style {
+            system: additive;
+            additive-symbols:
+                100 "🌟"
+                10 "⭐"
+                1 "✨";
+            suffix: " ";
+        }
+
+        ol.additive {
+            list-style: star-style;
+        }
+
+
+
+
+
+        /* values of system are:
+            1. cyclic
+            2. numeric
+            3. alphabetic
+            4. symbolic
+            5. fixed
+            6. additive
+        */
+
+        /* Note: The name of the counter cannot be: none, decimal, disc, square, circle, disclosure-open, or disclosure-closed. */
+
+
+        /* If the system is set to additive, the additive-symbols descriptor is required. */
+
+    </style>
+</head>
+<body>
+    <ul class="cyclic">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <br><br>
+    <ul class="fixed">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ul>
+    <br><br>
+    <ul class="numeric">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <br><br>
+    <ul class="alphabetic">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <br><br>
+    <ul class="symbolic">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+    </ul>
+    <br><br>
+    <ul class="range">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+        <li>item4</li>
+        <li>item5</li>
+        <li>item6</li>
+        <li>item7</li>
+        <li>item8</li>
+        <li>item9</li>
+        <li>item10</li>
+        <li>item11</li>
+        <li>item12</li>
+    </ul>
+    <br><br>
+    <ol class="additive">
+        <li>item1</li>
+        <li>item2</li>
+        <li>item3</li>
+    </ol>
+
+</body>
+</html>

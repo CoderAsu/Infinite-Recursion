@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Event loop and microtasks</title>
+</head>
+<body>
+  <h1>Event loop and microtasks</h1>
+  <p>JavaScript runs one piece of code at a time. After synchronous code finishes, it processes promise callbacks and queued microtasks before timer callbacks such as setTimeout.</p>
+  <p>Open Developer Tools → Console, then reload this page to see the order.</p>
+  <script>
+    console.log("1. Synchronous: script starts");
+
+    setTimeout(() => console.log("5. Timer task: setTimeout callback"), 0);
+    Promise.resolve().then(() => console.log("3. Microtask: Promise.then callback"));
+    queueMicrotask(() => console.log("4. Microtask: queueMicrotask callback"));
+
+    async function showAwait() {
+      console.log("2. Synchronous: before await");
+      await Promise.resolve();
+      console.log("4. Microtask: after await");
+    }
+    showAwait();
+    console.log("2. Synchronous: script ends");
+
+    // Synchronous logs run first, then microtasks in queue order, then timer tasks.
+  </script>
+</body>
+</html>

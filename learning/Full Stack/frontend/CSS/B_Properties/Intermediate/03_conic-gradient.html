@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>conic-gradient</title>
+    <style>
+        /* with colors */
+        #grad1 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            background-image: conic-gradient(red, yellow, hotpink, blue, black);
+        }
+
+        /* pie chart with colors and degrees */
+        #grad2 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            background-image: conic-gradient(red 45deg, yellow 90deg, green 210deg);
+            border-radius: 50%;
+        }
+
+
+        /* another pie chart */
+        #grad3 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            background-image: conic-gradient(red 0deg, red 90deg, yellow 90deg, yellow 180deg, green 180deg, green 270deg, blue 270deg);
+            border-radius: 50%;
+        }
+
+
+        /* with specifed from angle */
+        #grad4 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            background-image: conic-gradient(from 120deg, red, yellow, green);
+            border-radius: 50%;
+        }
+
+
+
+
+        /* with specified center position */
+        #grad5 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            background-image: conic-gradient(at 60% 45%, red, yellow, green);
+            border-radius: 50%;
+        }
+
+
+
+
+
+        /* Repeating conic gradient */
+        #grad6 {
+            height: 200px;
+            width: 200px;
+            background-color: red;
+            background-image: repeating-conic-gradient(red 10%, yellow 20%);
+            border-radius: 50%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="grad1"></div>
+    <br><br>
+    <div id="grad2"></div>
+    <br><br>
+    <div id="grad3"></div>
+    <br><br>
+    <div id="grad4"></div>
+    <br><br>
+    <div id="grad5"></div>
+    <br><br>
+    <div id="grad6"></div>
+</body>
+
+</html>

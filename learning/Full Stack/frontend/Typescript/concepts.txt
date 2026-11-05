@@ -1,0 +1,8 @@
+1. Inference and annotation
+
+2. Datatypes:
+    -> Primitive Type (string, number, bigint, boolean, null, undefined, symbol)
+    -> Object Type (object, array, tuple)
+    -> Special Type (any, unknown, void, never)
+    -> Advanced Type (union, intersection, type alias, enum, literal types)
+    -> Function Type

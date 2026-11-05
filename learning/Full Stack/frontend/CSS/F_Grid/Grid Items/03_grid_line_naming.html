@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>grid_line_naming</title>
+    <style>
+        .container{
+            background-color: antiquewhite;
+            width: 720px;
+            margin: 45px auto 0;
+            color: white;
+            font-family: Verdana, Geneva, Tahoma, sans-serif;
+            font-weight: 600;
+
+            display: grid;
+            grid-template-columns: repeat(3, [col-start] 1fr [col-end]);
+            grid-template-rows: [header-start] 120px [header-stop menu-start] 60px [menu-end box-start] 100px [box-end content-start] 400px [content-end footer-start] 50px [footer-end];
+            gap: 15px;
+        }
+
+        .header{
+            background-color: orangered;
+            grid-row: header-start / header-stop;
+            grid-column: col-start 1 / col-end 3;
+        }
+
+        .menu{
+            background-color: yellowgreen;
+            grid-row: menu-start / menu-end;
+            grid-column: col-start 1 / col-end 3;
+        }
+
+        .box1{
+            background-color: mediumpurple;
+            grid-column: col-start 1 / col-end 1;
+            grid-row: box-start / box-end;
+        }
+
+        .box2{
+            background-color: hotpink;
+            grid-column: col-start 2 / col-end 2;
+            grid-row: box-start / box-end;
+        }
+
+        .sidebar{
+            background-color: royalblue;
+            grid-row: box-start / content-end;
+            grid-column: col-start 3 / col-end 3;
+        }
+
+        .content{
+            background-color: goldenrod;
+            grid-column: col-start 1 / col-end 2;
+            grid-row: content-start / content-end;
+        }
+
+        .footer{
+            background-color: lightsalmon;
+            grid-column: col-start 1 / col-end 3;
+            grid-row: footer-start / footer-end;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items header">Header</div>
+        <div class="items menu">Menu</div>
+        <div class="items box1">Box 1</div>
+        <div class="items box2">Box 2</div>
+        <div class="items sidebar">Sidebar</div>
+        <div class="items content">Content</div>
+        <div class="items footer">Footer</div>
+    </div>
+</body>
+</html>

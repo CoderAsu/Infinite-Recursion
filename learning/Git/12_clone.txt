@@ -1,0 +1,3 @@
+CLONE
+
+git clone url --> used to download an existing git repository from a remote sever to your local computer

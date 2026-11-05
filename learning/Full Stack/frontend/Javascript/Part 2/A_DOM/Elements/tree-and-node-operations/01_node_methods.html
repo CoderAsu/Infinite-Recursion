@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>node methods</title>
+</head>
+<body>
+    <div class="container" title ="cont" id="parent">
+        <!-- Hello World -->
+        <div id="child1">Item1</div>
+        <div id="child2">Item2</div>
+        <div id="child3">Item3</div>
+        <div id="child4">Item4</div>
+    </div>
+</body>
+<script>
+    /* 
+    
+    nodeName:
+    1. It returns the name of node in uppercase
+    2. for attribute nodes, it provides the name of the attribute.
+    3. for text node, it returns "#text"
+    4. for document nodes, it returns "#document"
+    
+    */
+
+    let element = document.getElementById("parent");
+    let attr = element.attributes[1];
+    let comment = element.firstChild.nextSibling;
+    
+    console.log(element.nodeName);
+    console.log(attr.nodeName);
+    console.log(comment.nodeName);
+    console.log(element.childNodes[0].nodeName);
+    console.log(document.nodeName);
+    console.log(document.doctype.nodeName);
+
+
+
+
+
+
+
+    /* 
+    
+    nodeType:
+    It returns a numeric code.
+
+    element node => 1
+    attribute node => 2
+    text node => 3
+    comment node => 8
+    document node => 9
+    documentType node => 10
+
+    */
+
+    console.log(element.nodeType);
+    console.log(attr.nodeType);
+    console.log(comment.nodeType);
+    console.log(element.childNodes[0].nodeType);
+    console.log(document.nodeType);
+    console.log(document.doctype.nodeType);
+
+
+
+
+
+
+    /* 
+    
+    nodeValue:
+    1. It returns or sets the value of the node.
+    2. for text nodes and comment nodes, it contains the text content.
+    3. for attribute nodes, it contains the value of the attribute.
+    4. for element nodes, it is null.
+    
+    */
+
+    console.log(element.nodeValue);
+    console.log(attr.nodeValue);
+    console.log(comment.nodeValue);
+    console.log(element.childNodes[0].nodeValue);
+    console.log(document.nodeValue);
+    console.log(document.doctype.nodeValue);
+
+
+    attr.nodeValue = "outer-div";
+    console.log(attr.nodeValue);
+
+</script>
+</html>

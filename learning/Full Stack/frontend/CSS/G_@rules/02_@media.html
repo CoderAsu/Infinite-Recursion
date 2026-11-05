@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@media</title>
+    <style>
+        html {
+            color-scheme: dark light;
+            font-family: Arial, sans-serif;
+        }
+        
+        @media screen and (max-width: 800px) {
+            body {
+                font-size: 70px;
+            }  
+        }
+
+        @media screen and (max-width: 600px) {
+            body {
+                font-size: 40px;
+            }  
+        }
+
+        @media screen and (max-width: 350px) {
+            body {
+                font-size: 20px;
+            }  
+        }
+
+
+
+
+        /* print media rule */
+
+        @media print{
+            h1{
+                color: red;
+            }
+
+            p{
+                font-family: Arial, Helvetica, sans-serif;
+                font-size: 20px;
+            }
+        }
+
+
+
+        /* types of media:
+            1. all
+            2. print
+            3. screen
+            4. speech
+        */
+
+        /* 
+            logical operators:
+            1. and
+            2. not
+            3. only
+            4. , (or)
+        */
+
+        /* media features 
+            1. any-hover
+            2. any-pointer
+            3. aspect-ratio
+            4. color
+            5. color-gamut
+            6. color-index
+            7. grid
+            8. height
+            9. hover
+            10. inverted-colors
+            11. light-level
+            12. max-aspect-ratio
+            13. max-color
+            14. max-color-index
+            15. max-height
+            16. max-monochrome
+            17. max-resolution
+            18. max-width
+            19. min-aspect-ratio
+            20. min-color
+            21. min-color-index
+            22. min-height
+            23. min-monochrome
+            24. min-resolution
+            25. min-width
+            26. monochrome
+            27. orientation
+            28. overflow-block
+            29. overflow-inline
+            30. overflow
+            31. pointer
+            32. resolution
+            33. scan
+            34. update
+            35. width
+            36. scripting
+
+        */
+
+
+    </style>
+</head>
+<body>
+    <h1>@media</h1>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Itaque eveniet esse temporibus illum asperiores? Culpa quos vitae sapiente iusto. Voluptate dignissimos nesciunt corporis, odit nobis iusto doloremque minus! Pariatur, temporibus.
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellat, enim esse! Id voluptatem nesciunt voluptas earum assumenda quam fugit, adipisci autem dolore, rerum eos magnam reiciendis! Vitae non culpa placeat repudiandae illo inventore assumenda. Dolor quo, adipisci veritatis cum eos recusandae culpa ut natus placeat hic earum, corporis incidunt officia aliquid? Exercitationem magnam mollitia nobis nesciunt voluptatum optio deleniti sint, architecto eaque ipsa dolor. Ullam dolorem sed quo nemo, laudantium ea et laborum veniam voluptas quibusdam iusto, exercitationem quaerat consequuntur, culpa totam? Ipsam eum molestias quis quia distinctio dolorum molestiae porro atque quae, ut modi corrupti ea illo? Officiis, adipisci.</p>
+</body>
+</html>
+
+
+<!-- 
+
+    Both the <link> tag and the @import rule support media conditions, so you can load a stylesheet only for specific media types or conditions.
+
+
+    <link rel="stylesheet" href="style.css" media="screen">
+
+    @import url("mobile.css") screen and (max-width: 768px);
+
+
+-->

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>timer</title>
+</head>
+
+<body>
+
+</body>
+<script>
+
+
+    /*
+        console.time() -> Start a named timer
+    
+        console.timeLog() -> Display elapsed time without stopping the timer
+        
+        console.timeEnd() -> Stop a timer and display elapsed time
+    */
+
+
+    console.time("Task");
+
+    console.log("Task started");
+
+    for (let i = 0; i < 1000000; i++) {
+        // First task
+    }
+
+    console.timeLog("Task", "First task completed");
+
+    for (let i = 0; i < 2000000; i++) {
+        // Second task
+    }
+
+    console.timeLog("Task", "Second task completed");
+
+    for (let i = 0; i < 2000000; i++) {
+        // Third task
+    }
+
+    console.timeEnd("Task");
+
+</script>
+
+</html>

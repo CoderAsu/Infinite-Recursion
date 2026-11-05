@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>styling methods</title>
+    <style>
+        .abc{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="heading" style="border: 1px solid black;">Doctor Strange</h1>
+
+    <h2 id="heading2">Ironman</h2>
+</body>
+<script>
+    // DOM CSS Styling Methods:
+    /* 
+        1. style
+        2. className
+        3. classList
+    */
+
+    let heading = document.getElementById("heading");
+
+    console.log(heading.style.border);
+    console.log(heading.style.color);
+
+    console.log(heading.style.backgroundColor = "hotpink");
+    console.log(heading.style.color = "white");
+
+
+
+
+    let heading2 = document.getElementById("heading2");
+
+    console.log(heading2.className = "abc xyz");
+
+    console.log(heading2.classList);
+
+    console.log(heading2.classList.add("efg"));
+
+    console.log(heading2.classList.add("heading2", "main-heading"));
+
+
+    console.log(heading2.classList.remove("heading2", "efg"));
+
+
+
+
+    
+    
+
+</script>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Units</title>
+    <style>
+        /* CSS has several different units for expressing a length. 
+        Many CSS properties take "length" values such as width, margin, padding etc.
+
+        Note: A whitespace cannot appear between the number and the unit. However, if the value is 0, the unit can be omitted.
+
+        For some CSS properties, negative lengths are allowed.
+
+        There are two types of length units: absolute and relative.
+        */
+
+        /* in px */
+        .box1 {
+            border: 1px solid black;
+            background-color: aquamarine;
+            width: 600px;
+            height: 300px;
+        }
+
+        /* in percentage */
+        .box2 {
+            border: 1px solid black;
+            background-color: rgb(168, 250, 74);
+            width: 50%;
+            height: 200px;
+        }
+
+        .container1 {
+            border: 1px solid black;
+            width: 600px;
+            height: 400px;
+            background-color: blanchedalmond;
+        }
+
+        .box3 {
+            border: 1px solid black;
+            background-color: red;
+            width: 50%;
+            height: 30%;
+        }
+
+
+        /* in em */
+        .container2 {
+            border: 1px solid black;
+            width: 600px;
+            height: 400px;
+            background-color: rgb(241, 122, 216);
+            font-size: 15px;
+        }
+
+        .box4 {
+            border: 1px solid black;
+            background-color: red;
+            color: white;
+            width: 50%;
+            height: 200px;
+            font-size: 2em;
+
+        }
+
+
+        /* in rem */
+        html {
+            font-size: 25px;
+
+        }
+
+        .box5 {
+            border: 1px solid black;
+            background-color: rgb(145, 139, 235);
+            color: white;
+            width: 50%;
+            height: 200px;
+            font-size: 2rem;
+        }
+
+
+        /* in vh or vw (used in screen width) */
+
+        .box6 {
+            border: 1px solid black;
+            background-color: rgb(248, 72, 101);
+            width: 50vw;
+            height: 80vh;
+        }
+
+
+        .container3 {
+            border: 2px solid black;
+            background-color: chocolate;
+            height: 400px;
+            width: 600px;
+        }
+
+        .box7 {
+            border: 1px solid black;
+            margin-top: 50px;
+            margin-left: 50px;
+            height: 50vh;
+            width: 70vw;
+            background-color: antiquewhite;
+        }
+
+
+        /* vmax and vmin */
+        .box8 {
+            border: 1px solid black;
+            margin-top: 100px;
+            width: 50vmax;
+            height: 50vmin;
+            background-color: rgb(247, 243, 8);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Absolute Lengths</h1>
+    <p>The absolute length units are fixed and a length expressed in any of these will appear as exactly that size.
+
+        Absolute length units are not recommended for use on screen, because screen sizes vary so much. However, they
+        can be used if the output medium is known, such as for print layout.
+
+        <!--  
+    
+        Unit	Description
+        cm	    centimeters
+        mm	    millimeters
+        in	    inches (1in = 96px = 2.54cm)
+        px  	pixels (1px = 1/96th of 1in)
+        pt	    points (1pt = 1/72 of 1in)
+        pc	    picas (1pc = 12 pt)
+    -->
+
+
+    <h1>Relative Lengths</h1>
+    <p>Relative length units specify a length relative to another length property. Relative length units scale better
+        between different rendering mediums.</p>
+    </p>
+
+    <!-- 
+    
+        Unit	Description	
+        em	    Relative to the font-size of the element (2em means 2 times the size of the current font)	
+        rem	    Relative to font-size of the root element	
+        vw	    Relative to 1% of the width of the viewport*	
+        vh	    Relative to 1% of the height of the viewport*	
+        vmin	Relative to 1% of viewport's* smaller dimension	
+        vmax	Relative to 1% of viewport's* larger dimension	
+        %	    Relative to the parent element
+    -->
+
+    <div class="box1"></div> <br><br>
+    <div class="box2"></div> <br><br>
+
+    <div class="container1">
+        <div class="box3"></div>
+    </div> <br><br>
+
+    <div class="container2">
+        <div class="box4"> hello I am using em unit</div>
+    </div> <br><br>
+
+
+    <div class="box5">hello I am using rem unit</div> <br><br>
+
+
+    <div class="box6"></div> <br><br>
+
+    <div class="container3">
+        <div class="box7"></div>
+    </div> <br><br>
+
+    <div class="box8"></div> <br><br>
+</body>
+
+</html>
+
+<!-- 
+    1vmin = min(W,H) / 100
+    1vmax = max(W,H) / 100
+
+    1vw = 1/100 * viewport width
+    1vh = 1/100 * viewport height
+
+
+
+
+    for example,
+
+    let width = 2560px and height = 1664px
+    so here,
+    5vmin = 1664/100 * 5 = 83.2px
+    5vw = 5/100 * 2560 = 128px
+-->

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="color-scheme" content="light dark">
+    <title>color-scheme</title>
+    <style>
+        :root {
+            --bg: light-dark(white, #1a1a2e);
+            --text: light-dark(#1a1a2e, white);
+            --bgcard: light-dark(rgb(225, 220, 220), #363641);
+            --textcard: light-dark(#1a1a2e, white);
+
+        }
+
+        body {
+            background: var(--bg);
+            color: var(--text);
+        }
+
+        .container {
+            display: block;
+        }
+
+        html:has(#dmode:checked) {
+            color-scheme: dark;
+        }
+
+        html:not(:has(#dmode:checked)) {
+            color-scheme: light;
+        }
+
+        .card {
+            background: var(--bgcard);
+            color: var(--textcard);
+            width: 250px;
+            height: 300px;
+            padding: 20px;
+            box-sizing: border-box;
+        }
+
+        .demo-element1 {
+            margin-top: 30px;
+            padding: 10px;
+            width: 500px;
+            height: 300px;
+            color-scheme: dark;
+        }
+
+
+        .demo-element2 {
+            padding: 10px;
+            width: 500px;
+            height: 300px;
+            color-scheme: light;
+        }
+
+        .demo-element3 {
+            padding: 10px;
+            width: 500px;
+            height: 300px;
+            color-scheme: dark light;
+        }
+
+        /* we can set color-scheme to meta as well as elements */
+
+        /* to set the color-scheme in root we use it in meta or html */
+
+        /* values of color-scheme 
+            1. light
+            2. dark
+            3. light dark/ dark light
+        */
+    </style>
+</head>
+
+<body>
+
+    <div class="container">
+        <input id="dmode" type="checkbox">
+        <label for="dmode"> ⏾ Dark Mode</label>
+    </div>
+    <br>
+
+    <div class="card">
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Odio recusandae dolore voluptatum ducimus aperiam
+        amet, tenetur quisquam ipsa quam velit. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Omnis tempora
+        soluta rerum, facere minima sit libero blanditiis. Perferendis laboriosam eius deleniti impedit labore sit
+        reprehenderit, ipsam minus atque, voluptatum dicta.
+    </div>
+
+
+
+    <textarea class="demo-element1">The rusty swing set creaked a lonely lullaby in the twilight, shadows lengthening like grasping fingers across the dew-kissed grass. A lone dandelion seed, adrift on the breeze, whispered secrets of faraway fields, of dandelion suns and galaxies spun from fluff. Somewhere, beyond the veil of dusk, a coyote laughed, echoing through the stillness like a forgotten memory.
+    </textarea>
+    <br><br>
+
+    <textarea class="demo-element2">The rusty swing set creaked a lonely lullaby in the twilight, shadows lengthening like grasping fingers across the dew-kissed grass. A lone dandelion seed, adrift on the breeze, whispered secrets of faraway fields, of dandelion suns and galaxies spun from fluff. Somewhere, beyond the veil of dusk, a coyote laughed, echoing through the stillness like a forgotten memory.
+    </textarea>
+    <br><br>
+
+    <textarea class="demo-element3">The rusty swing set creaked a lonely lullaby in the twilight, shadows lengthening like grasping fingers across the dew-kissed grass. A lone dandelion seed, adrift on the breeze, whispered secrets of faraway fields, of dandelion suns and galaxies spun from fluff. Somewhere, beyond the veil of dusk, a coyote laughed, echoing through the stillness like a forgotten memory.
+    </textarea>
+    <br><br>
+
+
+
+</body>
+
+</html>

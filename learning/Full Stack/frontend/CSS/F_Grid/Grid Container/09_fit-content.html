@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>auto-fill and auto-fit</title>
+    <style>
+        .container{
+            background-color: lightgray;
+            width: 600px;
+            margin: 50px auto 0;
+
+            display: grid;
+            grid-template-columns: fit-content(200px) fit-content(300px) 1fr;
+            grid-template-rows: repeat(2, Minmax(100px, min-content));
+        }
+
+
+        .item1{
+            background-color: orangered;
+        }
+
+        .item2{
+            background-color: yellowgreen;
+        }
+
+        .item3{
+            background-color: mediumpurple;
+        }
+
+        .item4{
+            background-color: hotpink;
+        }
+
+        .item5{
+            background-color: lightseagreen;
+        }
+
+        .item6{
+            background-color: royalblue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="items item1">One Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam, nemo? Lorem ipsum dolor sit amet consectetur adipisicing elit. Officia aperiam excepturi dolore temporibus, nostrum sunt, porro et necessitatibus omnis impedit placeat repellendus sapiente voluptate aut consequatur optio ipsa quisquam odio provident eveniet quam quas mollitia est nulla. Dolorum, magni doloremque quaerat laudantium id dolore! Reprehenderit vero asperiores iure blanditiis non recusandae illo dolorum sit dignissimos, sed error eligendi optio praesentium suscipit ipsum pariatur necessitatibus ratione odio atque tenetur magnam nesciunt numquam? Voluptate reprehenderit perspiciatis nostrum? Quas neque nihil earum! Aperiam rem nobis at laboriosam eaque non repellat vitae quos laudantium, dicta excepturi voluptatibus tenetur deleniti accusantium quam inventore odit illum?</div>
+        <div class="items item2">Two Lorem ipsum dolor sit amet consectetur adipisicing elit. Nesciunt, dicta? Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro eius et eveniet animi saepe repellat ipsa asperiores. Esse non reprehenderit alias doloremque. Aspernatur saepe, consequuntur esse excepturi quibusdam iusto distinctio deleniti provident consequatur odio, labore nostrum delectus ab molestiae qui magni nemo aut ea numquam architecto similique odit adipisci et! Quos reiciendis quasi soluta rerum animi maiores. Eaque rem officiis laudantium, fugit esse eveniet. Placeat, soluta vitae nam, explicabo maiores rerum, vel ab ipsum et quos libero possimus consequuntur molestias repellat? Officia alias quae, sed illum nemo voluptatem sunt incidunt laudantium modi dolore ad sequi? Iusto cum itaque cupiditate dignissimos?</div>
+        <div class="items item3">Three</div>
+        <div class="items item4">Four</div>
+        <div class="items item5">Five</div>
+        <div class="items item6">Six</div>
+    </div>
+</body>
+</html>

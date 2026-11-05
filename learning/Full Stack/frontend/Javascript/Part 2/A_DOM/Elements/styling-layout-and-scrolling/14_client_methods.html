@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>client methods</title>
+    <style>
+        .test1{
+            height: 250px;
+            width: 400px;
+            padding: 10px;
+            margin: 15px;
+            border: 5px solid red;
+            background-color: lightskyblue;
+        }
+
+        .test2{
+            height: 250px;
+            width: 400px;
+            padding: 10px;
+            margin: 15px;
+            border-top: 15px solid black;
+            border-left: 10px solid red;
+            background-color: hotpink;
+            color: white;
+            font-size: 30px;
+        }
+    </style>
+</head>
+<body>
+    <div class="test1">
+        <b>Information about myDIV:</b><br>
+        Height: 250px<br>
+        Width: 400px<br>
+        Padding: 10px<br>
+        Margin: 15px<br>
+        Border: 5px<br>
+        <p id="demo1"></p>
+    </div>
+    <div class="test2">
+        <p id="demo2"></p>
+    </div>
+</body>
+<script>
+    const element =  document.querySelector(".test1");
+    let text = `clientHeight: ${element.clientHeight}px<br>`;
+    text += `clientWidth: ${element.clientWidth}px`;
+
+    document.getElementById("demo1").innerHTML = text;
+
+
+
+
+    const element2 = document.querySelector(".test2");
+    let text2 = `clientTop: ${element2.clientTop}px<br>`;
+
+    text2 += `clientLeft: ${element2.clientLeft}px`;
+
+    document.getElementById("demo2").innerHTML = text2;
+
+
+
+    /* 
+        The clientHeight and clientWidth property returns the viewable height and width of an element in pixels, including padding, but not the border, scrollbar or margin.
+    */
+
+
+   /* 
+        The clientLeft and clientTop property returns the width and height of the element's left border and top border, in pixels.
+   */
+</script>
+</html>

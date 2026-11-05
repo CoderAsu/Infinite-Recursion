@@ -1,0 +1,124 @@
+// Functions are Objects
+// The typeof operator in JavaScript returns "function" for functions.
+
+// JavaScript functions have both properties and methods.
+
+// The arguments.length property returns the number of arguments received when the function was invoked.
+
+
+function myFunction2(a, b) {
+    console.log(arguments.length);
+};
+
+myFunction2(3, 8);
+console.log(typeof myFunction2);
+console.log(myFunction2 instanceof Object);
+console.log(myFunction2 instanceof Function);
+console.log();
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Assign properties and methods to a function
+// we can attach properties and methods to a function just like we do with an object
+
+function greet(){
+    console.log("Hello!");
+}
+
+
+// adding properties
+greet.language = "English";
+greet.version = 1;
+
+console.log(greet.language);
+console.log(greet.version);
+
+greet();
+
+
+
+// adding methods
+greet.sayHello = function(){
+    console.log("Hello to All 😊");
+}
+
+greet.sayHello();
+
+console.log();
+
+
+
+
+
+
+
+
+
+
+
+
+// Functions have built-in properties and methods
+
+function add(a, b){
+    return a + b;
+}
+
+console.log(add.name);
+console.log(add.length);
+console.log(add.prototype);
+console.log(add.toString());
+console.log();
+
+
+
+
+
+
+
+
+
+
+
+
+
+// Functions are stored in variables
+
+const myFunction = add;
+console.log(myFunction(7, 4));
+console.log();
+
+
+
+
+
+
+
+
+
+
+
+
+// Functions can be passed as arguments
+
+function greet2(){
+    console.log("Welcome to JS!");
+}
+
+function execute(callback){
+    callback();
+}
+
+execute(greet2);
+console.log();
